@@ -1,0 +1,8 @@
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\TestServices\bin\Debug\TestServices.exe
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\TestServices\bin\Debug\TestServices.pdb
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\TestServices\obj\x86\Debug\TestServices.Form1.resources
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\TestServices\obj\x86\Debug\TestServices.Properties.Resources.resources
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\TestServices\obj\x86\Debug\TestServices.csproj.GenerateResource.Cache
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\TestServices\obj\x86\Debug\TestServices.exe
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\TestServices\obj\x86\Debug\TestServices.pdb
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\TestServices\bin\Debug\TestServices.exe.config

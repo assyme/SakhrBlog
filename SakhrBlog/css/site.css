@@ -1,0 +1,18 @@
+﻿
+div#header {
+    background-color: lightblue;
+    padding-left: 20px;
+}
+
+div#header h2 {
+    margin-top: 0px;
+}
+
+.nav ul {
+    
+}
+
+.nav li {
+    float: left;
+    
+}

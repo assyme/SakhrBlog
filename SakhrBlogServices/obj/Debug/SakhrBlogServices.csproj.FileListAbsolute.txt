@@ -1,0 +1,7 @@
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\SakhrBlogServices\obj\Debug\SakhrBlogServices.csprojResolveAssemblyReference.cache
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\SakhrBlogServices\bin\SakhrBlogServices.dll
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\SakhrBlogServices\bin\SakhrBlogServices.pdb
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\SakhrBlogServices\bin\SakhrBlog.dll
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\SakhrBlogServices\bin\SakhrBlog.pdb
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\SakhrBlogServices\obj\Debug\SakhrBlogServices.dll
+C:\Users\ASAD\Documents\Visual Studio 2010\Projects\SakhrBlog\SakhrBlogServices\obj\Debug\SakhrBlogServices.pdb
