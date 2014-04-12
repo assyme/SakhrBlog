@@ -20,7 +20,7 @@ namespace SakhrBlog
             ddlUsers.DataValueField = "Id";
             ddlUsers.DataSource = users;
             ddlUsers.DataBind();
-            if (Session["userId"] == null)
+            if (Session["userId"] == null && users.Rows.Count > 0)
             {
                 Session.Add("userId",users.Rows[0][0]);
             }
