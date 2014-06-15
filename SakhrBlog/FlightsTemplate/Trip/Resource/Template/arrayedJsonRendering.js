@@ -3,8 +3,8 @@
     var elem = $('#resultPanel .flightPanel');
     var flights = aJson.flights;
     var j = 0;
-    while (j < 100) {
-        for (var i = 0; i < flights.length; i++) {
+    while (j < 200) {
+        for (var i = 0; i < flights.length; i++) { // 4 rows. 
             elem.append(flights[i]);
         }
         j++;
