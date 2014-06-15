@@ -1970,6 +1970,8 @@
     <Content Include="FlightsTemplate\Trip\Resource\Style\DefaultMobile.css" />
     <Content Include="FlightsTemplate\Trip\Resource\Style\Details.css" />
     <Content Include="FlightsTemplate\Trip\Resource\Style\Trip.css" />
+    <Content Include="FlightsTemplate\Trip\Resource\Template\AFlights.html" />
+    <Content Include="FlightsTemplate\Trip\Resource\Template\arrayedJsonRendering.js" />
     <Content Include="FlightsTemplate\Trip\Resource\Template\Flights.html" />
     <Content Include="index.aspx" />
     <Content Include="Index.html" />
