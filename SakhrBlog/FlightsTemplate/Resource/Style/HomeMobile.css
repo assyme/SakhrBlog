@@ -1,0 +1,96 @@
+/*Hidden Elements*/
+.scrollable .next,.scrollable .previous,#holidayMap,#stories,#footerPanel .list.holidays,#deals ul li div{display:none!important}
+
+/*Default Page*/
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+select{-webkit-appearance:menulist;background:#fff}
+input[type=text],input[type=password],table.grid input.text{padding:8px 5px!important}
+#contentPanel p,#contentPanel h1,#contentPanel h2,#contentPanel h3,#contentPanel h4,#contentPanel h5,#contentPanel h6,#contentPanel a,#contentPanel span{-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+#footer{padding-bottom:30px}
+#build{padding-left:22px;width:458px}
+#build #advancedBuild{margin-left:-22px;padding-left:22px}
+#build fieldset{overflow:visible;padding-bottom:10px}
+#build fieldset.hotelBudget{width:196px}
+#build fieldset.hotelBudget select{width:202px}
+#build fieldset.rooms select{width:200px}
+#build input.text{font-size:14px;padding:12px 5px;width:402px}
+#build fieldset.start{padding-right:0;width:203px}
+#build fieldset.start div{width:100%}
+#build fieldset.start input.text{width:190px}
+#build fieldset.airline input.text{width:183px}
+#build fieldset.hotelBudget{padding-right:3px}
+#build fieldset.destination{width:429px}
+#build fieldset.destination label{width:100%}
+#build fieldset.end{margin-left:2px}
+#build fieldset.cabinClass{padding-right:2px;width:203px}
+#build fieldset.cabinClass select{margin-left:2px;width:200px}
+#build fieldset.direct{margin-left:0;margin-top:0px;width:175px}
+#build fieldset.end input.text{width:188px}
+#build label{font-size:14px;width:auto}
+#build select{font-size:14px;padding:8px 5px;width:414px;-webkit-appearance:menulist-text}
+#build fieldset.multiCity span,#build fieldset.roomTypes span,#build fieldset.travelers span{font-size:14px;padding-left:0}
+#build fieldset.multiCity span.first,#build fieldset.roomTypes span,#build fieldset.travelers span{margin-top:30px}
+#build fieldset.multiCity div, #build fieldset.roomTypes div, #build fieldset.travelers div{margin-left:13px}
+#build fieldset.travelers,#build fieldset.multiCity{width:414px}
+#build fieldset.action,#build fieldset.fullWidth,#build fieldset.tripOptions{width:414px}
+#build fieldset.tripOptions ul.flightType{margin-left:0}
+#build fieldset.fullWidth input.text{width:402px!important}
+#build fieldset.multiCity input.text{width:81px!important}
+#build input.submit{padding:12px 28px 12px 14px}
+#build label.check{margin-bottom:15px;margin-top:7px}
+#build fieldset label{padding-left:0}
+#build fieldset.roomTypes,#content,#deals,#holidays,#usp,#holidayMap ul,#deals .viewport,#homePanel{width:460px}
+#build fieldset.roomTypes{width:414px}
+#content{padding:0 10px 50px}
+#calendar{width:276px}
+#calendar div.month{width:276px}
+#calendar div.month div.title{height:36px}
+#calendar div.month li.monday{margin-left:38px}
+#calendar div.month li.tuesday{margin-left:76px}
+#calendar div.month li.wednesday{margin-left:114px}
+#calendar div.month li.thursday{margin-left:152px}
+#calendar div.month li.friday{margin-left:190px}
+#calendar div.month li.saturday{margin-left:228px}
+#calendar div.month li{height:24px;padding:5px;line-height:24px;font-size:15px}
+#calendar div.month ul.days li{line-height:14px}
+#calendar div.month h3{font-weight:normal;line-height:37px}
+#calendar div.month a{width:20px;height:20px;top:0px;right:9px;padding:8px}
+#calendar div.month a.forward,#calendar div.month a.back{background-position:11px 11px}
+#deals h2,#holidays h2{margin-left:22px}
+#deals h2{margin-left:20px}
+#deals ul li{margin-right:0;width:179px}
+#deals,#homePanel,#holidays{margin:0}
+#footerPanel,#footerPanel > *{width:445px}
+#footerPanel{padding:0 10px 0 15px}
+#footerPanel .list{margin:30px 0 0 11px !important;width:210px}
+#follow{float:right;margin:50px 18px 0 0 !important;width:auto!important}
+#header{overflow:visible}
+#header,#headerPanel{height:auto}
+#headerPanel,#panoramaPanel{width:480px}
+#headerPanel a.logo{background-position:47% 74%;margin-right:21px;width:150px}
+#holidays .viewport{height:260px;width:470px}
+#holidayMap ul{background-size:100%}
+#holidays ul li{height:209px;margin-right:0;width:179px}
+#holidays ul li img{margin-left:-60px}
+#panorama{background-image:none!important}
+#primaryNavigation{margin-left:11px}
+#primaryNavigation li a em{margin-right:0px;width:31px!important}
+#primaryNavigation li a{text-indent:0px;font-size:0px}
+#primaryNavigation li.home{margin-left:2px}
+#primaryNavigation li.flight a em{background-position:0px -489px}
+#primaryNavigation li.hotel a em{background-position:-48px -489px}
+#primaryNavigation li.hotel.selected a em{background-position:-48px -519px}
+#primaryNavigation li.package a em{background-position:-89px -489px}
+#primaryNavigation li.package.selected a em{background-position:-89px -519px}
+#primaryNavigation li.holiday a em{background-position:-168px -489px}
+#primaryNavigation li.holiday a,#primaryNavigation li.business a{font-weight:normal}
+#primaryNavigation li.business a em{background-position:-128px -489px}
+#primaryNavigation li.home a{text-indent:0;font-size:14px}
+#primaryPromotion{display:block;margin-top:0;position:relative;width:100%}
+#primaryPromotion .viewport{width:446px}
+#primaryPromotion li{padding-left:0;width:446px}
+#primaryPromotion li a{margin-right:0}
+#secondaryNavigation{height:70px;margin-left:29px}
+#secondaryNavigation li{padding:5px 5px 5px 3px}
+#tertiaryNavigation{margin-left:12px;width:298px}
+#tertiaryNavigation li{margin:10px 13px 0 0}

@@ -1,0 +1,704 @@
+/*Hidden Elements*/
+#shortList,#secondaryNavigation,#panorama.small,#footer,.graphBarleaving,.graphBarreturning,.graphValueleaving,.graphValuereturning,#airport,.flightPanel .refundable,.flightPanel .more,.options,.sell,.actionBar .airline,.stops,.arrival,.photo,#location .googleMap,#hotel .details,.googleMap,.locations,#supplement,ul.form3 li.empty,#contentPanel ul.itinerary.ticket li.hotel div.details img.map.overview,#hotelDescription .goBack,#bookingReasons,#additionalContent .more.popupLink,#additionalContent #map,#contentPanel #listing table td.description .additionalInfo li.areaMap,#footerPanel .list.holidays,#infoPanel .origin2 label,#infoPanel .destination2 label,#infoPanel .start2 label,#infoPanel .origin3 label,#infoPanel .destination3 label,#infoPanel .start3 label,#contentPanel ul.itinerary li.service div.details ul table td.logo,#greatPrice,#contentPanel table.listing.packages table td.flights p,#contentPanel table.listing.flights table td.flights p,#contentPanel table.listing.flights table td.flights ul li p em,#contentPanel table.listing td.sell p.offer,.scrollable .next,.scrollable .previous,#contentPanel #listing table td.description .additionalInfo li.reviews,#contentPanel ul.itinerary li.total p.unit,#contentPanel ul.itinerary li.total p.unitPrice.less,#contentPanel ul.itinerary div.fees ul li p.unitPrice,#infoPanel #build,#contentPanel table.listing.packages table td.duration,#contentPanel table.listing.flights table td.duration,#paging a.back,#paging a.next,#searchBy fieldset.airline,#searchBy fieldset.cabinClass,fieldset.actionList,#searchBy fieldset.refundable,#travelExpert,#needVisa,#contentPanel div.advertisement.leaderbar,#contentPanel table.listing.flights table td.date{display:none!important}
+#contentPanel table.listing.flights table td.flights ul li p{display:block!important}
+
+/*
+ * General
+ */
+@font-face{font-family:DINWeb;src:url("../Font/DINWeb.eot");src:url("../Font/DINWeb.woff") format("woff")}
+a{color:inherit;cursor:pointer}
+html{font-size:62.5%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body{margin:0;height:100%;color:#444;font-size:1.3rem;font-family:Arial,Helvetica,sans-serif;padding:38px 0}
+input[type="text"],input[type="password"]{padding:8px 5px;background:#fff;border:1px solid #fff;border-radius:4px;font-size:1.3rem;-webkit-appearance:none}
+em,dfn,address,i{font-style:normal!important}
+select{-webkit-appearance:menulist-text;background:#fff;font-size:1.3rem}
+iframe{border:0 none;width:100%}
+#airportMask{position:absolute;width:0;height:0;top:0;left:0;z-index:9;display:none;background:transparenrt;border:none}
+
+/*Calendar*/
+#calendar{width:276px}
+#calendar div.month{width:276px}
+#calendar div.month div.title{height:36px}
+#calendar div.month li.thursday{margin-left:152px}
+#calendar div.month li{height:24px;padding:5px;line-height:24px;font-size:15px}
+#calendar div.month ul.days li{line-height:14px}
+#calendar div.month h3{font-weight:normal;line-height:37px}
+#calendar div.month a{width:20px;height:20px;top:0px;right:9px;padding:8px;background-position:11px 11px!important}
+#contentPanel p{margin-top:10px}
+#contentPanel p,#contentPanel h1,#contentPanel h2,#contentPanel h3,#contentPanel h4,#contentPanel h5,#contentPanel h6,#contentPanel a,#contentPanel span{-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+#calendar{-khtml-border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;background:#fff;border:1px solid #ccc;border-radius:6px;display:none;position:absolute;top:0;width:276px;z-index:998}
+#calendar div.month{border-radius:6px;overflow:hidden;width:276px}
+#calendar div.month a{cursor:pointer;display:block;height:20px;overflow:hidden;padding:8px;position:absolute;right:9px;text-indent:-9999px;top:0;width:20px}
+#calendar div.month a.back{background:url(../Image/Icon/Previous.png) no-repeat 11px 11px;left:10px;right:auto}
+#calendar div.month a.close{background:url(../Image/Icon/Bubble/Close.png?v=1001) no-repeat 0 0;display:none}
+#calendar div.month a.forward{background:url(../Image/Icon/Page.png) no-repeat 11px 11px}
+#calendar div.month div.title{height:36px;position:relative;width:100%}
+#calendar div.month h3{color:#666;font-size:13px;font-weight:400;line-height:37px;text-align:center}
+#calendar div.month li{color:#444;cursor:pointer;display:inline;float:left;font-size:1.5rem;height:24px;line-height:24px;padding:5px;text-align:center;width:28px}
+#calendar div.month li.active{-khtml-border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;background:#008ed6;border-radius:3px;color:#fff;font-weight:700}
+#calendar div.month li.default{font-weight:700}
+#calendar div.month li.friday{margin-left:190px}
+#calendar div.month li.invalid{color:#ccc;cursor:default}
+#calendar div.month li.monday{margin-left:38px}
+#calendar div.month li.saturday{margin-left:228px}
+#calendar div.month li.thursday{margin-left:152px}
+#calendar div.month li.tuesday{margin-left:76px}
+#calendar div.month li.wednesday{margin-left:114px}
+#calendar div.month ul{float:left;padding:5px}
+#calendar div.month ul.dates{padding-bottom:5px;padding-top:0}
+#calendar div.month ul.days{background:#daebf7;margin-bottom:5px;margin-top:1px;padding-bottom:0;padding-top:4px}
+#calendar div.month ul.days li{color:#006ba3;font-size:11px;height:18px;line-height:14px;padding-bottom:0;padding-top:0}
+#calendar div.next{border-left:solid 1px #ccc;float:right;margin-left:-1px}
+#calendarMask{background:transparent;border:none;display:none;height:0;left:0;position:absolute;top:0;width:0;z-index:9}
+
+/*
+ * Basic styles with class
+ */
+ 
+*{margin:0;padding:0}
+.center{text-align:center !important}
+.clear{clear:both}
+.clickable{cursor:pointer}
+.hidden{display:none !important}
+.invisible{display:none !important}
+
+/*Button*/
+.button{-khtml-border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-webkit-appearance:none;background:#ccc;border:none;border-radius:3px;box-shadow:0 0 0 #aaa;color:#444;cursor:pointer;display:inline-block;font:bold 13px Arial,Helvetica,sans-serif;margin:0 0 6px;padding:8px 14px 7px}
+.blue{background:#008ed6;box-shadow:0 0 0 #0E6994;color:#fff}
+.yellow{background:#ffc61e;box-shadow:0 0 0 #808080;color:#333}
+.secondary{background:transparent!important;border:1px solid #CCC!important;color:#CCC!important;display:inline-block;font-size:12px;height:auto;line-height:normal;margin-left:5px;margin-top:1px;padding:6px 11px;vertical-align:top}
+.subContent  .itinerary .coupon .button{background:#008ed6;border:1px solid #fff;color:#fff;display:inline-block;font-size:12px;height:auto;line-height:normal;margin-left:5px;margin-top:1px;padding:6px 11px;vertical-align:top}
+
+/*Basic panels*/
+#contentPanel{padding:15px 15px 0}
+#contentPanel h2,#contentPanel h3{color:#666;font-size:1.5rem;margin:30px 0 15px}
+#title{margin-bottom:-5px;padding:30px 15px 15px}
+#title .stamp{display:none}
+#title h1{font:2.8rem/3.1rem DINWeb,Arial,Helvetica,sans-serif}
+#header{background:#fff;border-bottom:1px solid #bbb;height:40px;width:100%;position:fixed;top:0;left:0;z-index:9999}
+#headerPanel{text-align:center;position:relative}
+#navigationIcon{display:inline-block;margin:0px 15px;margin-top:10px;float:left}
+#headerPanel a.logo{display:inline-block;width:75px;margin:0;margin-top:5px;cursor:pointer;height:30px;text-indent:-9999px;overflow:hidden;background:url(../../Resource/Image/Logo/MusafirMobile.png) no-repeat -2px -1px;background-size:100%}
+#primaryNavigation{display:none;background:#fff;font-size:0.01em;height:100%;width:100%;position:fixed;top:41px}
+#primaryNavigation li{background:none;color:#666;border-bottom:1px solid #eee;display:inline-block;font-size:1.5rem;width:100%;padding:0;position:relative;vertical-align:top;white-space:nowrap; /*Backward compatibility*/ *display:inline;zoom:1}
+#primaryNavigation li a{color:#444;display:block;height:20px;font-weight:normal;text-align:left;padding:10px 15px;text-decoration:none;vertical-align:top;white-space:nowrap; /*Backward compatibility*/ *display:inline;zoom:1}
+#primaryNavigation li a em{display:none}
+#primaryNavigation li.home a{text-indent:0;font-size:14px}
+#primaryNavigation li.more{display:none}
+#supplement{background:#f8f8f8;margin-top:15px!important}
+
+/*
+ * Filter
+ */
+ 
+#filter{background:#f7f7f7;border-left:1px solid #bbb;min-height:100%;position:absolute;right:0;top:0;width:80%;z-index:9999}
+#filter .airline ul.airlines{margin-bottom:10px}
+#filter .airline ul.alliance{border-top:1px solid #eee;padding-top:10px}
+#filter .airline ul.multiAirline li{border-bottom:1px solid #eee;margin-bottom:10px}
+#filter .airline ul.multiAirline li label{margin-bottom:5px;width:auto}
+#filter .airline.checkList label{display:block;margin-bottom:0px;width:auto}
+#filter .apply{color:#008ed6;height:41px;line-height:35px;margin-top:-40px;text-align:center;width:100%}
+#filter .apply a{font-size:1.7rem;text-decoration:none}
+#filter .checkList label{margin-bottom:4px;vertical-align:top;width:auto}
+#filter .checkList label,#filter fieldset.refundable label{cursor:pointer;display:block;line-height:2.1rem;margin-bottom:0px;margin-left:0;min-height:28px;overflow:hidden;padding:6px 30px 0 0;position:relative;z-index:999}
+#filter .filter{background:#fff;border-bottom:1px solid #bbb;color:#008ed6;font-size:1.7rem;font-weight:normal;height:40px;line-height:40px;padding-left:20px}
+#filter .filter a{float:right;margin-right:20px;text-decoration:none}
+#filter .filter span{margin-left:20px}
+#filter .filterGroup{display:inline-block;margin:0;padding:0;position:relative;width:100%}
+#filter .filterGroup > legend{left:auto;margin:15px 0 0 20px;padding-bottom:0;position:relative;top:auto}
+#filter .filterGroup fieldset.arrives.slider{margin-bottom:0}
+#filter a.more{display:none}
+#filter fieldset{background:#fff;border:0 none;border-bottom:1px solid #ddd;border-top:1px solid #ddd;color:#444;margin:45px 0;padding:5px 0px 13px;position:relative}
+#filter fieldset .airlines em{font-size:2rem}
+#filter fieldset.refundable{padding:5px 20px 5px}
+#filter fieldset input[type=checkbox]{margin:5px 0 0;padding:0;vertical-align:top}
+#filter fieldset legend em{float:right;font-style:normal}
+#filter fieldset.refundable label{display:block}
+#filter fieldset.slider{padding:18px 20px 20px}
+#filter fieldset.slider legend{color:#777}
+#filter fieldset.slider.stops{border-bottom:1px solid #ddd}
+#filter label{color:#555;display:inline-block;font-size:1.5rem;vertical-align:top}
+#filter legend{color:#777;font-size:1.3rem;left:20px;margin:0;padding:0;position:absolute;text-transform:uppercase;top:-30px;width:87%}
+#filter ul li{list-style:none;padding:0 20px}
+#filter fieldset.hotel input {margin:0 20px;width:75%}
+
+/*
+ * Flight Listing
+ */
+ 
+.flightPanel{border-bottom:1px solid #eee;font-family:"Arial Narrow", Arial, sans-serif;width:100%}
+.flightPanel .arrive span,.flightPanel .arrive em{color:#ED4300;font-size:1.1rem;margin-right:1px;text-align:right}
+.flightPanel .arrive em{display:inline-block;height:14px;margin-left:-4px;overflow:hidden;vertical-align:top;width:6px}
+.flightPanel .depart span{bottom:15px;color:#999;display:block;font-size:1.1rem;position:absolute}
+.flightPanel .depart span.airlines{left:0;bottom:-16px;width:75px}
+.flightPanel .details,#filter .airline em,.flightPanel p.flight span,.roundTrip .flightPanel .depart span.airlines,.roundTrip .flightPanel p.selecTrip,.roundTrip .flightPanel p.arrive span,.roundTrip .actionBar li.duration,#filter .checkList input[type=checkbox],#filter fieldset.refundable input[type=checkbox],.domestic .legends em,.domestic .graphFieldleaving,.domestic .graphFieldreturning,.filterHead{display:none!important}
+.flightPanel .offer {display:inline-block;width:100%}
+.flightPanel .offer span{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -25px -337px;height:24px;position:absolute;right:0px;top:0;white-space:nowrap;z-index:999}
+.flightPanel .offer em{background:#ddeedd;color:#338855;display:block;font-size:1.1rem;margin:0 0 0 36px;padding:6px 17px 3px 7px;text-shadow:0 1px 1px #fff;text-transform:uppercase}
+.flightPanel .route{font-size:0;margin:10px 0px 0 0;width:12%}
+.flightPanel .route li.first{border-bottom:1px solid #bbb}
+.flightPanel .route li.last{background:#FFF;border:1px solid #aaa;border-radius:13px;height:13px;margin:-9px auto 0;text-align:center;width:13px}
+.flightPanel .route li.last em{color:#777;display:block;font-size:1.1rem;font-style:normal;margin-left:1px}
+.flightPanel li div{border-top:1px solid #ddd;overflow:hidden;padding:10px 15px;position:relative}
+.flightPanel > li:hover div,.roundTrip .flightPanel li:hover{background:#F3F8FC;cursor:pointer}
+.flightPanel p{font-size:1.6rem}
+.flightPanel p em{color:#008ed6;font-size:1.1rem;font-style:normal;font-weight:400}
+.flightPanel p,.flightPanel ul{display:inline-block;vertical-align:top}
+.flightPanel p.arrive{font-weight:400;text-align:right}
+.flightPanel p.arrive span{padding:2px 0 0 5px}
+.flightPanel p.arrive span,.flightPanel p.arrive span.duration{display:table-cell}
+.flightPanel p.arrive span.duration{color:#999}
+.flightPanel p.depart{color:#444;position:relative;width:16%}
+.flightPanel p.duration{display:none;margin-left:6%;width:15%}
+.flightPanel p.flight{height:20px;margin-right:9%;width:35px}
+.flightPanel p.flight img{width:100%;margin-top:7px}
+.flightPanel p.flight.multiAirline img{display:none}
+.flightPanel p.price{color:#008ed6;float:right;padding-bottom:15px;position:relative;text-align:right}
+.flightPanel p.price em{bottom:0;display:block;position:absolute;right:0;width:100%}
+
+/*
+ * Panels
+ */
+ 
+#leaving,#returning{display:inline-block;height:43px!important;margin-left:32px;max-width:357px;overflow:hidden;width:auto!important}
+#flightSummary{background:#008ed6;bottom:0;position:absolute;width:100%;}
+#flightSummary li{display:none}
+#flightSummary li.roundTripPrice{display:block!important;height:50px;margin:0 15px}
+#flightSummary li.roundTripPrice .sell{display:block!important;float:right;margin-top:0}
+#flightSummary li.roundTripPrice .sell .button{font-size:1.7rem;margin:6px 0 0 0;padding:8px 20px 8px}
+#flightSummary li.roundTripPrice p{font-size:20px;margin-top:13px}
+#flightSummary p.price{color:#fff;display:inline-block;font-size:1.5rem;margin-top:5px}
+#flightSummary p.price em{font-style:normal}
+#flightSummary p.price strike{color:#52c3fc;margin-left:5px}
+#flightSummary li.roundTripPrice .sell .button{background:#ffc61e;box-shadow:0 0 0 #808080;color:#333}
+
+/*
+ * Panorama
+ */
+ 
+#panorama{background-size:200% auto;background-position:50% 0;height:65px;width:100%}
+#panorama.holidays{background:none!important;display:inline-block!important}
+#panorama.hotelDescription{background:rgba(0, 0, 0, 0.5);color:#fff;display:block!important;padding:10px 0;position:absolute;left:0;top:176px;width:100%;z-index:999}
+#panorama.hotelDescription .button{display:none}
+#panorama.hotelDescription h1{font-size:1.5rem;margin-left:15px}
+#panorama.hotelDescription .subTitle{font-size:1.1rem;margin-left:15px}
+#panorama.small .social{display:inline-block;margin-left:10px;position:absolute;right:15px;top:-117px;width:auto}
+#panorama.hotelDescription .rating{height:20px;margin:8px 15px 0 0}
+#panorama.hotelDescription .tripAdvisor{display:inline-block;margin:10px 0 0 0;vertical-align:top}
+/*
+ * Action Panel
+ */
+ 
+.actionBar{background:#f9f9f9;border-top:1px solid #ccc;bottom:0px;height:40px;line-height:38px;position:fixed;text-align:center;width:100%;z-index:999}
+.actionBar li{display:inline-block;margin:0 19px;width:auto}
+.actionBar.tabbing{bottom:0}
+.actionBar.tabbing li{display:none;margin:0 11px}
+.actionBar.tabbing li.selected a{border-bottom:5px solid #FFC61E;color:#444;display:inline-block;height:35px;padding:0 12px;text-shadow:none}
+.actionBar.tabbing li.selected a:hover{text-decoration:none}
+.actionBar.tabbing li.priceFrom{display:block;background:#008ed6;color:#fff;height:50px;margin:0 -15px 0 0;position:fixed;left:0;text-align:left;top:auto;bottom:0px;width:100%;z-index:9999}
+.actionBar.tabbing li.priceFrom .offer{display:none!important}
+.actionBar.tabbing li.priceFrom p{display:inline-block;font-size:2.0rem;margin:7px 0 0 15px}
+.actionBar.tabbing li.priceFrom .button{background:#ffc61e;box-shadow:0 0 0 #808080;color:#333;float:right;font-size:1.7rem;margin:7px 15px 0 0;padding:8px 20px 8px}
+.actionBar li a{color:#008ed6;font-size:1.5rem;text-decoration:none}
+.actionBar li.sortAscending a{color:#444!important;padding-right:17px}
+.actionBar li.sortDescending a{color:#444!important;padding-right:18px}
+.domestic{display:table;overflow:hidden;padding:0!important;width:100%}
+.filterMobile{font-size:0;height:24px;position:fixed;right:15px;top:7px;width:20px;z-index:9999}
+.menuMobile{display:inline-block;height:20px;left:15px;position:absolute;top:13px;width:20px}
+
+/*
+ * Round Trip
+ */
+ 
+.roundTrip .flightPanel .offer:hover{width:100%}
+.roundTrip .flightPanel .depart{position:relative;width:29%}
+.roundTrip .flightPanel .depart span.stop{position:absolute;right:-21px;text-align:center;top:-10px}
+.roundTrip .flightPanel .depart span.stop em{background:#FFF;border:1px solid #ccc;border-radius:11px;color:#777;display:inline-block;font-size:1.1rem;height:13px;line-height:1.3rem;position:relative;text-align:center;top:11px;width:13px}
+.roundTrip .flightPanel .depart span.stop.nonStop{border:0 none;height:11px;right:-20px;top:3px;width:13px}
+.roundTrip .flightPanel li{border-top:1px solid #ddd;list-style:none;padding:12px 15px 12px 14px;overflow:hidden;position:relative}
+.roundTrip .flightPanel > li:hover div,.roundTrip .flightPanel li:hover{background:#FDF5D4;box-shadow:0 2px 2px #E3DDC3 inset;border-top:1px solid #FFC61E;border-bottom:1px solid #FFC61E;margin-top:0px;margin-bottom:-1px;position:relative;z-index:9}
+.roundTrip .flightPanel p{font-size:1.5rem;letter-spacing:-0.6px}
+.roundTrip .flightPanel p.arrive,.domestic .legends span.mobOnly{float:right;letter-spacing:-0.8px}
+.roundTrip .flightPanel p.duration{color:#999;display:inline-block;font-size:1.0rem;margin-left:19%;margin-top:0;text-align:right;width:31%}
+.roundTrip .flightPanel p.flight{font-size:0;height:16px;margin-left:-4px;margin-right:4px;width:29px}
+.roundTrip .flightPanel p.flight img{margin:0 auto;position:relative;top:7px;width:100%}
+.roundTrip .flightPanel p.offer em{height:16px;letter-spacing:-0.56px;line-height:1.8rem;overflow:hidden;margin-left:31px;padding-right:15px;padding-top:4px;white-space: normal}
+.roundTrip .flightPanel p.price{font-size:1.1rem;padding-bottom:0;margin-top:0px;width:46%}
+.roundTrip .flightPanel p.price em{bottom:auto;color:#008ed6;display:inline;font-size:1.0rem;margin-bottom:0;margin-right:3px;position:relative;right:auto}
+.roundTrip .flightPanel.leave,.roundTrip .flightPanel.return{vertical-align:top;width:100%}
+.roundTrip #wrapperReturn{border-left:1px solid #DDD;margin-left:-2px}
+.roundTrip .flightPanel.return li{padding:12px 15px 12px 14px}
+.roundTrip #resultPanel .roundTripPanel{display:table;width:100%}
+.roundTrip .actionBar{bottom:50px;position:absolute}
+.roundTrip .actionBar li{margin:0}
+.roundTrip .actionBar li a{margin:0 11px;font-size:1.5rem}
+.roundTrip .actionBar li.departure{text-align:left;width:25%}
+.roundTrip .actionBar li.departure a{margin:0 14px}
+.roundTrip .actionBar li.price{border-right:1px solid #ddd;margin-right:1px}
+.roundTrip .actionBar li.price.last{border:0 none;float:right}
+.roundTrip .actionBar  li.sortAscending a, .roundTrip .actionBar  li.sortDescending a{}
+.roundTrip .actionBar  li.sortAscending a{}
+.roundTrip .flightPanel .duration span,.roundTrip .flightPanel .duration em{color:#ED4300;font-size:1.0rem;text-align:right}
+#wrapperLeave{bottom:90px;left:0;overflow:hidden;position:absolute;top:40px;z-index:1}
+#wrapperLeave,#wrapperReturn{display:table-cell;width:50%}
+#wrapperReturn{bottom:90px;overflow:hidden;position:absolute;right:0;top:40px;z-index:1}
+
+/*
+ * Jquery UI styles
+ */
+ 
+.ui-slider-horizontal{background:url(../Image/Icon/Slider/Background.gif) 50% 50% repeat-x;border:none;height:13px;margin:0 5px 0 16px;position:relative;text-align:left;width:87%}
+.ui-slider-horizontal .ui-slider-handle{border-radius:30px;cursor:default;height:30px;margin-left:-16px;position:absolute;top:-10px;width:30px;z-index:2}
+.ui-slider-horizontal .ui-slider-range{background:#008ed6;background-position:0 0;border:none;display:block;height:2px;position:absolute;top:6px;z-index:1}
+.ui-slider-horizontal .ui-slider-range-max{right:0}
+.ui-slider-horizontal .ui-slider-range-min{left:0}
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{background:#fff url(../Image/Icon/Slider/Active.png) 50% 50% repeat-x;border:1px solid #aaa}
+.ui-state-default,.ui-widget-content .ui-state-default{background:#fff}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{background:#fff;border:1px solid #eee;box-shadow:2px 2px 4px #ddd}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{background:#fff;border:1px solid #778}
+
+/*
+ * Hotel
+ */
+.hotel{width:100%}
+.hotel img{height:60px;margin:10px 10px 0 0;width:70px}
+.hotel span{display:inline-block;min-height:38px;padding-bottom:0;width:160px;margin-top:10px;margin-left:10px;position:relative;vertical-align:top}
+#hotel .hotel span i{display:inline-block;height:19px;margin-left:3px;position:absolute;right:-40px;top:5px;vertical-align:top;width:12px}
+#hotel p{display:inline-block;font-size:1.3rem;vertical-align:top}
+#hotel em{color:#999;font-size:1.1rem;font-style:normal;}
+#hotel li {position:relative}
+#hotel li div{border-top:1px solid #ddd;padding:0px 15px 0;position:relative}
+#hotel .offer {display:inline-block;width:100%}
+#hotel .offer span{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -28px -337px;height:24px;position:absolute;right:0px;top:0;white-space:nowrap;z-index:99}
+#hotel .offer em{background:#ddeedd;color:#338855;display:block;font-size:1.1rem;margin:0 0 0 36px;padding:6px 17px 3px 7px;text-shadow:0 1px 1px #fff;text-transform:uppercase}
+#hotel .price {color:#008ed6;font-size:1.7rem;font-weight:normal;right:16px;bottom:20px;position:absolute}
+#hotel .price em{color:#008ed6;display:block;text-align:right}
+#shortlist,#hotel .quickLinks, #hotel .rating em, .actionBar li.tripRating, .actionBar li.switchView, #hotel .sell em, #hotel .hotel span em{display:none}
+#hotel{border-right:1px solid #bbb;margin-top:-3px;padding:3px 0;position:relative;vertical-align:top}
+#hotel li div{margin-bottom:-9px}
+#hotelGallery{display:inline-block;margin:0!important;width:320px}
+#hotelGallery ul{display:inline-block;width:100%}
+#hotelGallery li{background:#f7f7f7;display:inline-block;height:220px;margin:0;overflow:hidden;width:320px}
+#hotelGallery .viewport {height:220px;overflow:hidden;width:320px}
+#hotelGallery.scrollable .previous{margin:-16px 10px 0 -22px}
+#hotelGallery.scrollable .next{margin:-16px 10px 0 10px}
+
+/*TripAdvisor*/
+.tripAdvisor {margin-left:15px;margin-top:-23px}
+.tripAdvisor em{display:inline-block;font-size:0!important;height:20px;margin:-2px 0 0 -54px;vertical-align:top;width:30px}
+.tripAdvisor span{background:#66BE89;border-radius:4px;color:#FFF;display:inline-block;font-size:1.2rem;font-weight:bold;height:16px;line-height:1.7rem;margin-left:25px;text-align:center;width:22px}
+.tripAdvisor span.rating5,.shortlistpanel .tripAdvisor span.rating5{background:#c2e5d0}
+.tripAdvisor span.rating10,.shortlistpanel .tripAdvisor span.rating10{background:#c2e5d0}
+.tripAdvisor span.rating15,.shortlistpanel .tripAdvisor span.rating15{background:#abdbbe}
+.tripAdvisor span.rating20,.shortlistpanel .tripAdvisor span.rating20{background:#abdbbe}
+.tripAdvisor span.rating25,.shortlistpanel .tripAdvisor span.rating25{background:#94d1ac}
+.tripAdvisor span.rating30,.shortlistpanel .tripAdvisor span.rating30{background:#94d1ac}
+.tripAdvisor span.rating35,.shortlistpanel .tripAdvisor span.rating35{background:#7dc89b}
+.tripAdvisor span.rating40,.shortlistpanel .tripAdvisor span.rating40{background:#7dc89b}
+.tripAdvisor span.rating45,.shortlistpanel .tripAdvisor span.rating45{background:#66be89}
+.tripAdvisor span.rating50,.shortlistpanel .tripAdvisor span.rating50{background:#66be89}
+
+/*Rating*/
+.rating{display:inline-block;margin:-23px 0 0 88px;width:43px}
+.rating em{display:block;font-size:0px;color:#999}
+.rating a{padding:0px!important}
+.rating span{-khtml-border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;background:#E5B31C;color:#fff;display:inline-block;font-size:12px;font-weight:bold;height:15px;line-height:16px;margin-left:19px;overflow:hidden;text-align:center;text-indent:0;width:22px}
+.rating span.star1,.shortlistpanel .rating span.star1{background:#f5e1a4}
+.rating span.star2,.shortlistpanel .rating span.star2{background:#f1d582}
+.rating span.star3,.shortlistpanel .rating span.star3{background:#edca60}
+.rating span.star4,.shortlistpanel .rating span.star4{background:#eabe3e}
+.rating span.star5,.shortlistpanel .rating span.star5{background:#e6b31c}
+
+/*Scrollable elements*/
+.scrollable .viewport{float:left;overflow:hidden;position:relative}
+.scrollable .viewport ul{position:absolute;left:0;top:0}
+.scrollable .viewport ul li{float:left}
+.scrollable .previous,.scrollable .next{display:none}
+
+/*
+ * Hotel Description
+ */
+ 
+#freePanel {padding-top:0;padding-bottom:40px}
+#freePanel p{font-size:1.3rem}
+#freePanel h2,#freePanel h3{font-size:1.5rem;margin:30px 0 15px}
+#freePanel .twoColumnContent,#freePanel .infoPanel{padding:0 15px;display:block;margin-bottom:25px }
+.infoPanel h6{font-size:1.5rem;margin:0;padding:30px 0 15px;text-shadow:1px 1px 0 #FFF}
+.percentagePanel{position:relative;vertical-align:top}
+.percentagePanel h6{padding-top:1px!important}
+.percentagePanel span{display:inline-block;font-weight:bold;margin:12px 0 0 12px;vertical-align:top}
+.percentagePanel  a.tripLogo{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -171px -631px;height:23px;position:absolute;left:84px;top:64px;width:127px}
+.percentagePanel  a.travellerChoice{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -305px -627px;height:70px;position:absolute;left:219px;top:36px;width:72px}
+.percentagePanel .percentage{-khtml-border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;color:#fff;background:#5a7;display:inline-block;font-size:34px;font-weight:normal;height:70px;line-height:21px;margin:0;text-align:center;width:70px}
+.percentagePanel .percentage em{display:block;font-size:11px;font-weight:bold;padding-top:10px;padding-left:3px;text-transform:uppercase}
+.percentagePanel .tripAdvisor{margin:20px 0 0px!important}
+.percentagePanel .tripAdvisor li{list-style:none;margin-bottom:10px}
+.percentagePanel .tripAdvisor li a{display:inline-block;margin-right:22px;width:64px}
+.percentagePanel .tripAdvisor li span {margin:0 0 0 15px}
+
+/*Hotel Description Rating*/
+.hotelDescription .rating,#freePanel .rating{margin:3px 15px 3px;width:75px}
+.hotelDescription .rating em,#freePanel .rating em{display:block;font-size:11px;color:#999}
+.hotelDescription .rating a, #freePanel .rating a{padding:0px!important}
+.hotelDescription .rating span, #freePanel .rating span{display:inline-block;background:url(../../../Resource/Image/Background/Hotel/BigStars.png) no-repeat -70px top;margin-top:3px;margin-left:0;min-height:18px;text-indent:-9000px;width:71px}
+.hotelDescription .rating span.star0, #freePanel .rating span.star0{background-position:-71px 0}
+.hotelDescription .rating span.star1, #freePanel .rating span.star1{background-position:-56px 0}
+.hotelDescription .rating span.star2, #freePanel .rating span.star2{background-position:-42px 0}
+.hotelDescription .rating span.star3, #freePanel .rating span.star3{background-position:-28px 0}
+.hotelDescription .rating span.star4, #freePanel .rating span.star4{background-position:-14px 0}
+.hotelDescription .rating span.star5, #freePanel .rating span.star5{background-position:0 0}
+
+/*Hotel Description TripAdvisor*/
+.hotelDescription .tripAdvisor, #freePanel .tripAdvisor{margin-right:0;margin-top:5px}
+.hotelDescription .tripAdvisor em, #freePanel .tripAdvisor em{display:none}
+.hotelDescription .tripAdvisor span, #freePanel .tripAdvisor span{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -44px -658px;display:inline-block;font-size:0px;height:19px;margin:0px;vertical-align:top;width:105px}
+
+/*Lists*/
+.list{margin-bottom:5px}
+.list li{width:auto;padding:3px 0}
+.list.separated li{border-bottom:1px solid #ddd;list-style:none;padding:5px 0}
+.list.separated li a{padding-right:16px}
+.list.separated li.last{border-bottom:0 none}
+.list a{color:#006ba3;text-decoration:none}
+.list a:hover{text-decoration:underline}
+.list em{margin-left:3px}
+
+/*Room type*/
+.roomType{margin-bottom:13px!important}
+.roomType li.showDetail div{box-shadow:0 2px 2px #D5DBE0 inset}
+.roomType h3{margin:30px 0 15px 15px!important}
+.roomType #hotel{border:0 none;width:100%}
+.roomType #hotel li{}
+.roomType #hotel li div{background:#F3F8FC;border-top:1px solid #008ed6;border-bottom:1px solid #008ed6;margin-bottom:-1px;margin-left:-3px;padding:0px 18px 0 20px}
+.roomType #hotel li div.details{border-top:0px solid #008ED6;box-shadow:0 0;padding-top:5px}
+.roomType #hotel .hotel{margin-top:0;width:149px}
+.roomType #hotel .hotel span{margin-left:0;width:125px}
+.roomType #hotel .price{font-weight:normal;font-size:1.7rem;margin-top:0px;position:absolute;right:18px;top:27px}
+.roomType #hotel .price em{display:inline-block;margin-right:3px;text-align:right}
+.roomType #hotel .details {display:inline-block!important}
+.roomType #hotel .details .room{line-height:1.5em;list-style:none;padding-left:0}
+.roomType #hotel .details .room p{margin-bottom:10px}
+.roomType #hotel .inclusion{color:#777;display:block;padding:0 0 10px}
+.roomType .actionBar{margin:20px -60px 0 -30px;padding:0 30px 0 17px}
+.roomType .actionBar a{color:#666}
+
+/*Comments*/
+.twoColumnContent .comments{margin-top:-8px;margin-left:0px}
+.twoColumnContent .comments li{border-bottom:1px solid #ddd;list-style:none;padding:15px 0 10px;position:relative}
+.twoColumnContent .comments img{-khtml-border-radius:25px;-moz-border-radius:25px;-webkit-border-radius:25px;border-radius:25px;float:left;height:50px;margin-right:15px;width:50px}
+.twoColumnContent .comments p{margin-left:65px!important}
+.twoColumnContent .comments h4, .twoColumnContent .comments em{display:block;margin:0!important;vertical-align:top}
+.twoColumnContent .comments h4{margin-bottom:5px!important}
+.twoColumnContent .comments em{background:none;display:block;font-size:1.1rem!important;height:auto;padding-bottom:7px;width:auto}
+.twoColumnContent .comments span{display:block;margin:5px 0}
+.twoColumnContent .comments a.loadMore{color:#008ed6;float:right;margin-top:15px;text-decoration:none}
+.twoColumnContent .comments.tripAdvisor span{margin-bottom:10px!important}
+#location{margin-bottom:0!important}
+#location a{display:block}
+#location img{display:inline-block;width:100%}
+
+/*Builder inside Free panel */
+#filter{display:none}
+#freePanel .findHotel h3{margin-left:15px}
+#freePanel #build {background:#008ed6;color:#fff;padding:0 15px}
+#freePanel #build > * {vertical-align:top}
+#freePanel #build fieldset {border:none;display:inline-block;padding:0 0px 5px 0px;margin:0;width:100%}
+#freePanel #build fieldset.start,#freePanel #build fieldset.end{width:133px}
+#freePanel #build fieldset.start{margin-right:10px;width:114px}
+#freePanel #build fieldset.start input.text{width:114px}
+#freePanel #build fieldset.tripOptions ul.tripType{display:none}
+#freePanel #build fieldset.rooms,#freePanel #build fieldset.roomTypes,#freePanel #build fieldset.travelers {margin-top:2px;width:auto}
+#freePanel #build fieldset.travelers span{display:none}
+#freePanel #build fieldset.travelers div{display:inline-block;margin-left:10px}
+#freePanel #build fieldset label{display:block;font-size:1.3rem;padding-bottom:3px}
+#freePanel #build fieldset label a{text-decoration:none}
+#freePanel #build  input.text{width:120px}
+#freePanel #build fieldset.end input.text{float:right}
+#freePanel #build select{border-radius:4px;border:1px solid #fff;width:50px;padding:6px 5px}
+#freePanel #build .button{float:right;margin:10px 0}
+#freePanel #build fieldset.roomTypes span{display:block;margin:10px 0 5px}
+#freePanel #build fieldset.roomTypes div{display:inline-block;margin-right:10px}
+
+/*
+ * Holidays
+ */
+ 
+/*Holidays*/
+#holidays{display:inline-block;margin:15px 0 -60px;padding:0 15px;vertical-align:top}
+#holidays li em{display:none}
+#holidays li h3{color:#555;display:inline-block;font-size:1.6rem;font-weight:400;height:25px;line-height:20px;margin:12px 0 0 20px;overflow:hidden;zoom:1}
+#holidays li h3 a{color:#555;text-decoration:none}
+#holidays li img{height:130px;margin:-20px 0 0 0px !important;width:100%}
+#holidays li p{color:gray;font-size:1.3rem;margin:-5px 0 0 20px}
+#holidays li span{color:#008ed6;display:block;font-size:1.6rem;font-weight:400;margin:9px 20px 0 0;text-align:right}
+#holidays li span em{color:#006ba3;display:inline;font-size:1.1rem;font-weight:400}
+#holidays li.hover{border-color:#008ed6;box-shadow:0 2px 1px #ccc}
+#holidays li.hover *{color:#008ed6!important}
+#holidays ul{margin:0}
+#holidays ul li{background:#fff;border-color:#e8e8e8 #e8e8e8 #ccc;border-radius:6px;border-style:solid;border-width:1px;box-shadow:0 2px 1px #f4f4f4;display:inline-block;height:188px;margin:0 0 20px;overflow:hidden;padding:20px 0;width:100%}
+
+
+/*Holidays Theme*/
+.holidayTheme{overflow:hidden;padding:15px 0}
+.holidayTheme h1,.holidayTheme ul{display:none}
+.holidayTheme .choose{display:inline-block;margin-top:10px;margin-left:15px}
+.holidayTheme .choose fieldset{display:inline-block;border:0 none}
+.holidayTheme .choose fieldset.theme{display:inline-block}
+.holidayTheme .choose select{border-color:#ddd;border-radius:6px;border-style:solid;border-width:1px;box-shadow:0 0 0 #d8d8d8 inset;color:#000;font:13px Arial,Helvetica,sans-serif;margin:0;padding:10px}
+
+/*
+ * Package
+ */
+ 
+/*Itinerary Calendar*/
+#contentPanel.alternative a.button{float:right}
+#contentPanel.alternative table.grid{border-collapse:collapse}
+#contentPanel.alternative table.grid td{color:#444;text-align:left;vertical-align:middle;border-top:1px solid #cccccc}
+#contentPanel.alternative table.grid{width:100%!important}
+#contentPanel.alternative table.grid.itinerary{margin-bottom:15px;border-top:2px solid #fff}
+#contentPanel.alternative table.grid.itinerary td{padding:0px 10px 8px}
+#contentPanel.alternative table.grid.itinerary .calendar{vertical-align:top;padding-left:0}
+#contentPanel.alternative table.grid.itinerary td.calendar p{width:50px;background:#DAEBF7;color:#444;border-radius:6px;text-align:center;text-transform:uppercase;font-size:11px;border:solid 1px #c4dff3;padding:4px 0 1px 0}
+#contentPanel.alternative table.grid.itinerary td p strong{color:#666}
+#contentPanel.alternative table.grid.itinerary td.calendar em{display:block;font:27px DINWeb,Arial,Helvetica,sans-serif;line-height:1em;font-style:normal;margin-top:0}
+
+/*Contact form*/
+#infoPanel.alternative{float:left;margin:25px 0 0;width:100%}
+#infoPanel .packageSummary{margin-bottom:20px}
+#infoPanel.alternative .contact div.mandatory{background-position:250px 4px;width:269px}
+#infoPanel.alternative .contact h6{font:27px/1.2em DINWeb,Arial,Helvetica,sans-serif!important;text-shadow:0 0 0 #fff}
+#infoPanel.alternative .contact input.submit{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;border:0;box-shadow:none;color:#006ba3;cursor:pointer;float:right!important;font:13px Arial,Helvetica,sans-serif;margin:8px 2px 0 0 !important;text-align:right}
+#infoPanel.alternative .contact li{background:none;border-top:0;margin-bottom:10px!important;padding:0 15px;width:270px}
+#infoPanel.alternative .contact li div{color:#fff;font-size:11px;margin-bottom:5px}
+#infoPanel.alternative .contact li input.text{width:277px}
+#infoPanel.alternative .contact li.message textarea{width:264px}
+#infoPanel.alternative .contact div.mandatory{background-position:250px 4px;width:269px}
+#infoPanel.alternative .contact div.message{background:#fbfbfb;background-position:right top;background-repeat:no-repeat;border:1px solid #ccc;border-radius:4px;margin:10px 0 20px;padding:0 35px 11px 0;width:227px}
+#infoPanel.alternative .contact div.message *{color:#444!important}
+#infoPanel.alternative .contact div.message dfn{display:block;padding:0 0 0 10px}
+#infoPanel.alternative .contact div.message p{float:none;font-size:1.3rem;line-height:normal;margin:0;padding:10px 35px 0 14px;width:auto}
+#infoPanel.alternative .contact div.message p em{display:block;font-weight:700}
+#infoPanel.alternative .contact div.message strong{color:#c30;font-weight:700;text-decoration:none}
+#infoPanel.alternative .contact div.message ul{margin:0 0 0 12px}
+#infoPanel.alternative .contact div.message ul li{line-height:19px;margin-top:0}
+#infoPanel.alternative .contact div.message,#freePanel .highlight .contact div.message{background-position:right -9px;margin-left:15px;padding:0 0px 11px 0;width:288px}
+#infoPanel.alternative .contact div.message.confirmation{background-color:#fbfef5;background-image:url(../Image/Background/Message/Confirmation.gif);border-color:#acd357}
+#infoPanel.alternative .contact div.message.error{background-color:#fff8f8;background-image:url(../Image/Background/Message/Error.gif);border-color:#c30}
+#infoPanel.alternative .contact div.message.information{background-color:#fbfef5;background-image:url(../Image/Background/Message/Information.gif);border-color:#acd357}
+#infoPanel.alternative .contact div.message.warning{background-color:#ffe;background-image:url(../Image/Background/Message/Warning.gif);border-color:#ffc61e}
+#infoPanel.alternative .contact h6{font:27px/1.2em DINWeb,Arial,Helvetica,sans-serif!important;text-shadow:0 0 0 #fff}
+#infoPanel.alternative .contact input.submit{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;border:0;box-shadow:none;color:#006ba3;cursor:pointer;float:right!important;font:13px Arial,Helvetica,sans-serif;margin:8px 2px 0 0 !important;text-align:right}
+#infoPanel.alternative .contact li{background:none;border-top:0;margin:0 15px!important;margin-bottom:10px!important;padding:0;width:290px}
+#infoPanel.alternative .contact li.submit{padding:0;margin:0 0 15px!important;width:100%}
+#infoPanel.alternative .contact li.submit .submit{margin-right:15px!important}
+#infoPanel.alternative .contact li div{color:#fff;font-size:1.3rem;margin-bottom:5px}
+#infoPanel.alternative .contact li.message textarea{width:264px}
+#infoPanel.alternative .contact li.telephone{margin-bottom:0!important}
+#infoPanel.alternative .contact li.telephone fieldset li.country{margin:0 0 10px 0!important;padding:0;width:70px}
+#infoPanel.alternative .contact li.telephone fieldset li.country input.text{width:47px}
+#infoPanel.alternative .contact li.telephone fieldset li.number{margin:0 0 10px 0!important;padding:0;width:208px}
+#infoPanel.alternative .contact li.telephone fieldset li.number input.text{width:100%}
+#infoPanel.alternative .highlight{background:#008ed6!important;padding-left:0;padding-right:0;width:100%}
+#infoPanel.alternative .highlight .contact,#freePanel .highlight .contact{display:inline-block;margin:0;padding-top:0;width:320px}
+#infoPanel.alternative .highlight .price img,#freePanel .highlight .price img{float:right;height:45px;margin:10px;width:75px}
+#infoPanel.alternative .highlight .price img.large,#freePanel .highlight .price img.large{float:right;height:65px;margin:0;width:100px}
+#infoPanel.alternative .highlight .price p em strike,#freePanel .highlight .price p em strike{color:#a9a9a9!important;font-weight:400}
+#infoPanel.alternative .highlight .price p em,#freePanel .highlight .price p em{color:#ffc51d!important;display:block;font-size:20px;font-style:normal;font-weight:400}
+#infoPanel.alternative .highlight .price p em.offer,#freePanel .highlight .price em.offer{background:url(../Image/Icon/Sprite.png?0.4) no-repeat right -110px;padding-right:50px}
+#infoPanel.alternative .highlight .price p,#freePanel .highlight .price p{display:inline-block;font-size:11px;max-width:184px;padding:14px 0 14px 14px;width:auto}
+#infoPanel.alternative .highlight .price,#freePanel .highlight .price{-moz-box-shadow:inset -1px 5px 5px #113459;-webkit-box-shadow:inset -1px 5px 5px #113459;background:#164271;border-top:1px solid #53a2da;box-shadow:inset -1px 5px 5px #113459;display:inline-block;margin:0;width:100%}
+#infoPanel.alternative .highlight div,#freePanel .highlight div{color:#fff!important;text-align:left}
+#infoPanel.alternative .highlight ul{list-style-type:none!important;margin:0!important;padding:0!important;width:auto!important}
+#infoPanel.alternative .highlight ul fieldset{border:0 none}
+#infoPanel.alternative .highlight ul.form1 input.submit,#freePanel .highlight .contact ul.form1 input.submit{background:#ffc61e url(../Image/Background/ButtonHome.png?v=1001) no-repeat 100% 55%!important;border-radius:3px;box-shadow:0 0 0 gray!important;color:#333!important;font:bold 14px Arial,Helvetica,sans-serif!important;padding:7px 23px 7px 9px !important}
+#infoPanel.alternative .highlight ul.form1 li.telephone fieldset label,#freePanel .highlight ul.form1 li.telephone fieldset label{color:#B2DBF8!important}
+#infoPanel.alternative > .highlight h6{color:#fff!important;font:27px/1.2em DINWeb,Arial,Helvetica,sans-serif!important;letter-spacing:0;margin:0 0 10px!important;padding:15px 15px 0;text-shadow:none!important}
+#infoPanel.alternative > div{margin-bottom:20px}
+#infoPanel .googleMap{display:inline-block!important;height:150px;width:320px}
+
+/*oneColumn form*/
+.form1 a.help{background:url(../Image/Icon/Help.png) no-repeat 100% 45%;color:#444!important;padding-right:18px;text-decoration:none}
+.form1 a.save{background:url(../Image/Caption/Save.gif) no-repeat 0 0;float:left;height:13px;margin:3px 0 0 -15px;overflow:hidden;text-indent:-9999px;width:36px}
+.form1 div{color:#444;float:left;padding:0 35px 0 0;width:212px}
+.form1 div.mandatory{background:url(../Image/Icon/MandatoryLarge.gif) no-repeat 223px 4px}
+.form1 div.noscript a.save{margin:3px 0 0 5px}
+.form1 fieldset{display:block;float:left;width:290px}
+.form1 input.check{float:left;height:14px;margin:3px 0 0;width:15px}
+.form1 input.radio,.form1 input.check{float:left;height:13px;width:13px}
+.form1 input.submit{float:left!important;margin:-3px 0 0 248px !important}
+.form1 input.submit.secondary,.form1.build input.submit.secondary{margin:-3px 0 0 10px !important}
+.form1 input.text{color:#444;float:left;font:13px Arial,Helvetica,sans-serif}
+.form1 label{float:left;line-height:19px}
+.form1 label.check{float:left;line-height:19px;padding-left:8px}
+.form1 label.mandatory,.form1 label.radio,.form1 label.check{padding:0 20px 0 8px}
+.form1 li{border-top:solid 1px #ddd;float:left;margin:-1px 0 0!important;padding:10px 0 11px;width:723px}
+
+/*Other Holidays*/
+#supplement.holiday {display:inline-block!important;margin:0 auto;margin-bottom:0;padding:0 0 30px;width:100%}
+#supplement.holiday  h3{color:#888;font-size:18px;font-weight:400;margin-bottom:20px;text-shadow:1px 1px 0 #FFF}
+#supplement.holiday  #holidays .viewport h3{margin-bottom:4px}
+#supplement.holiday  #holidays .viewport{height:240px;overflow:hidden;width:290px}
+#supplement.holiday  #holidays ul li{width:288px}
+
+/*Theme*/
+#infoPanel.alternative .theme{border:0 none;border-top:1px solid #d8d8d8;margin:0 15px;padding:15px 0;overflow:hidden;width:290}
+#infoPanel.alternative .theme ul{width:520px;margin-left:0}
+#infoPanel.alternative .theme li{float:left;margin:0px 9px 0px 18px;width:30px;height:30px;background-image:url(../Image/Icon/Sprite.png?0.4);background-repeat:no-repeat;opacity:0.75;filter:alpha(opacity=75);display:none}
+#infoPanel.alternative .theme li:hover{opacity:1;filter:alpha(opacity=100)}
+#infoPanel.alternative .theme li a{text-decoration:none;padding-top:30px;display:block;font-size:11px}
+#infoPanel.alternative .theme li.beach{background-position:-120px -281px;display:block}
+#infoPanel.alternative .theme li.warm{background-position:-47px -345px;display:block}
+#infoPanel.alternative .theme li.family{background-position:-192px -282px;display:block}
+#infoPanel.alternative .theme li.summer{background-position:-4px -347px;display:block}
+#infoPanel.alternative .theme li.island{background-position:-44px -282px;display:block}
+#infoPanel.alternative .theme li.romantic{background-position:-84px -288px;display:block}
+#infoPanel.alternative .theme li.couple{background-position:-234px -282px;display:block}
+#infoPanel.alternative .theme li.winter{background-position:-274px -284px;display:block}
+#infoPanel.alternative .theme li.adventure{background-position:-3px -286px;display:block}
+#infoPanel.alternative .theme li.royal{background-position:-138px -341px;display:block}
+#infoPanel.alternative .theme li.friends{background-position:-160px -281px;display:block}
+#infoPanel.alternative .theme li.deadline{background-position:-92px -347px;display:block}
+
+
+/*
+ * TripDetails
+ */
+
+/*containers*/
+.subContent {background:#efeff4;padding:15px 5px;overflow:hidden;position:relative}
+.subContent.last{margin-bottom:-38px}
+.subContent ul{list-style:none}
+.subContent .itinerary  ul{border-radius:6px;background:#fff;border:1px solid #ddd;display:inline-block;overflow:hidden;width:307px}
+.subContent .itinerary  ul ul{border-radius:0px;background:#fff;border:0 none;padding:0}
+.subContent  .itinerary ul li{position:relative;padding:0 0 10px 45px}
+.tripHead,.subContent .itinerary .travelSector .pnr,.item,.list.travelers,.subContent .actionBar,.subContent .travelExpert{display:none}
+
+/*Section heading*/
+.subContent  .itinerary .travelSector h5{color:#333;display:inline-block;font-size:1.2rem;font-weight:normal;margin-left:6px;padding:15px 0 3px 0;text-transform:uppercase}
+.subContent  .itinerary .travelSector h5 i{display:inline-block;font-size:0;height:13px;margin:0 7px;margin-top:1px;vertical-align:top;width:28px}
+.subContent  .itinerary .travelSector .pnr{background:#fff;border:2px solid #daeaf7;border-radius:4px;color:#666;margin-top:10px;float:right;padding:0 10px}
+.subContent  .itinerary .travelSector .pnr strong{font-weight:bold}
+
+
+/*Date*/
+.subContent  .itinerary ul .date{background:#75b2e3;color:#fff;height:100%;font-size:1.2rem;left:0;position:absolute;margin:0;padding-top:10px;text-align:center;text-transform:uppercase;width:35px}
+.subContent  .itinerary ul .date{font-size:1.2rem}
+.subContent  .itinerary ul .date em{display:block;font-size:1.8rem;margin-top:-1px}
+
+/*Details*/
+.subContent  .itinerary ul p.details {padding:0;position:absolute;top:6px;right:10px;text-align:right}
+.subContent  .itinerary ul p.details span{display:inline-block;margin-bottom:5px;height:24px;line-height:22px;vertical-align:top;width:88px}
+.subContent  .itinerary ul p.details span em{border:2px solid #ffc61e;border-radius:4px;color:#666;font-size:1.2rem;font-weight:normal;margin-top:1px;padding:0 5px;text-align:left;vertical-align:top}
+.subContent  .itinerary ul p.details span em strong{float:right;margin-left:2px}
+.subContent  .itinerary ul p.details dfn{display:none}
+.subContent  .itinerary ul p.details a{color:#008ed6;font-size:1.2rem}
+
+/*Flight Details*/
+.subContent ul .flight p{padding-top:40px;vertical-align:top}
+.subContent ul p.flight{display:inline-block;margin-right:4px;width:100px}
+.subContent ul p.flight img, .subContent ul p.flight span strong{position:absolute;left:47px;top:10px}
+.subContent ul p.flight img{height:20px;width:35px}
+.subContent ul p.flight span strong{left:90px;width:102px}
+.subContent ul p.from{display:inline-block;overflow:hidden;width:70px}
+.subContent ul p.to{display:inline-block;overflow:hidden;text-align:right;width:70px}
+.subContent ul p span{font-size:1.8rem}
+.subContent .itinerary ul p em{display:block;font-size:1.5rem;height:20px;margin-top:7px;overflow:hidden;vertical-align:top}
+.subContent .itinerary ul p.flight span{font-size:1.5rem}
+.subContent .itinerary ul p.flight span em{color:#333;font-size:1.8rem;margin-top:0}
+.subContent .itinerary ul p.flight span strong{font-weight:normal}
+.subContent ul p.from span,.subContent ul p.to span{font-size:0}
+.subContent ul p.from span i,.subContent ul p.to span i{color:#333;font-size:1.8rem}
+.subContent ul p dfn{color:#888;display:block;font-size:1.1rem;vertical-align:top}
+.subContent  .itinerary .arrowHead{height:13px;margin-top:3px;position:absolute;left:213px;top:54px;width:21px}
+.subContent  .itinerary .hotel .arrowHead{left:203px;top:46px}
+.subContent ul p dfn.operator{color:#ED4300;font-size:1.1rem;left:91px;position:absolute;top:25px}
+.subContent  .itinerary ul .layover{border-top:1px solid #DDD;color:#ED4300;height:1px;margin:5px 0 -3px 0;padding:3px 0;text-align:center;width:100%;z-index:999}
+.subContent  .itinerary ul .layover p{background:#FFF;bottom:12px;display:inline-block;font-size:1.1rem;padding:0 8px;position:relative}
+
+/*Hotel Details*/
+.subContent ul p.hotel{display:inline-block;vertical-align:top;width:104px}
+.subContent ul .hotel p{padding-top:40px}
+.subContent ul .hotel span{position:absolute;left:36px;top:0;width:230px}
+
+/*Extras*/
+.subContent .itinerary .extras ul{border-radius:0;display:block;margin:15px -15px;width:auto}
+.subContent .itinerary .extras ul li{padding:15px}
+.subContent .itinerary .extras ul .insurance img{display:none}
+.subContent .itinerary .extras ul .insurance input{margin-left:7px}
+.subContent .itinerary .extras ul .insurance label{margin-left:5px}
+.subContent .itinerary .extras ul .insurance a{color:#008ed6;display:block;margin:5px 0 0 30px}
+.subContent .itinerary .extras ul .coupon{margin-top:15px}
+.subContent .itinerary .extras ul .coupon input.text{background:#f1f1f1;margin-left:22px}
+
+/*TripDetails Information Panel*/
+.subContent .infoPanel{background:#fff;margin:0px -5px;padding:0}
+.subContent .fare h5{color:#333;display:inline-block;font-size:1.2rem;font-weight:normal;margin-left:6px;padding:0px 0 3px 0;text-transform:uppercase}
+.subContent .fare span{color:#888;float:right;font-size:1.1rem;text-transform:uppercase}
+.infoPanel .fareDetails{border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+.infoPanel .fareDetails dl{color:#888;display:inline-block;font-size:1.3rem;width:320px}
+.infoPanel .fareDetails dl dt{border-bottom:1px solid #ddd;display:inline-block;padding:10px 0 10px 11px;vertical-align:top;width:238px}
+.infoPanel .fareDetails dl dd{border-bottom:1px solid #ddd;display:inline-block;margin-left:-4px;padding:10px 11px 10px 0;text-align:right;vertical-align:top;width:58px}
+.infoPanel .fareDetails p{font-size:1.5rem;font-weight:normal;padding:10px 12px;text-align:right}
+.infoPanel .fareDetails p span{float:left}
+.infoPanel .fareDetails .text{background:#f1f1f1;width:50px;padding:2px 0;margin:-5px}
+
+/*Travelers*/
+.subContent  .itinerary .traveler .travelers{display:inline-block;margin-left:0px;margin-top:8px;padding:5px 0;vertical-align:top;width:127px}
+.subContent  .itinerary .traveler .travelers *{display:inline-block}
+.subContent  .itinerary .traveler .travelers h6{font-size:1.3rem;font-weight:normal;margin-top:5px;margin-right:5px;vertical-align:top}
+.subContent  .itinerary .traveler .travelers select{border:1px solid #ccc;padding:3px 10px}
+.subContent  .itinerary .traveler li{padding:0 11px}
+.subContent  .itinerary .traveler ul{border-radius:0;display:block;margin:0 -5px;margin-bottom:15px;padding:5px 0;width:auto}
+.subContent  .itinerary .traveler ul.form2{display:inline-block;float:none;margin:8px -10px 0 0!important}
+.subContent  .itinerary .traveler ul.form2 input{border:1px solid #ccc;width:286px}
+.subContent  .itinerary .traveler ul.form2 li{padding-left:0;margin-bottom:5px}
+.subContent  .itinerary .traveler ul .date{background:none;position:relative}
+.subContent  .itinerary .insurance ul .date{background:#ddd}
+
+/*Payment*/
+.subContent .itinerary .payment li{display:inline-block;padding:10px 12px}
+.subContent .itinerary .payment li.selected{border-bottom:2px solid #008ed6}
+.paymentLogo{text-align:center;padding:5px 0}
+.paymentLogo img{width:246px}
+
+/*Terms*/
+.subContent .terms{margin:15px 0}
+.subContent .terms input{margin-left:11px}
+.subContent .terms label{margin-left:10px}
+.subContent .action .button{display:block;padding-left:0;padding:10px 0px;text-align:center;text-transform:uppercase;width:100%}
+
+/*HD Sprite Image for Touch Devices*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min--moz-device-pixel-ratio: 1.5), 
+only screen and (min-resolution: 240dpi) {
+
+#filter .checkList input[type="checkbox"]+ label,#filter fieldset.refundable input[type="checkbox"]+ label  {background-image:url(../../Resource/Image/Icon/SpriteListingHD.png);background-repeat:no-repeat;background-position:right -237px;background-size:400px 700px;-webkit-background-size: 400px 700px} 
+#filter .checkList input[type="checkbox"]:checked + label , #filter fieldset.refundable input[type="checkbox"]:checked + label{background-position:right -104px!important}
+.filterMobile{background-image:url(../../Resource/Image/Icon/SpriteListingHD.png);background-repeat:no-repeat;background-position: -377px -13px;background-size:400px 700px;-webkit-background-size: 400px 700px} 
+.menuMobile{background-image:url(../../Resource/Image/Icon/SpriteListingHD.png);background-repeat:no-repeat;background-position:left -12px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.flightPanel .offer span, #hotel .offer span{background-image:url(../../Resource/Image/Icon/SpriteListingHD.png);background-repeat:no-repeat;background-position:6px -335px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.roundTrip .flightPanel .offer span{background-position:0px -335px}
+.actionBar li.sortAscending a{background:url(../../Resource/Image/Icon/SpriteListingHD.png);background-repeat:no-repeat;background-position:right -485px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.actionBar li.sortDescending a{background:url(../../Resource/Image/Icon/SpriteListingHD.png);background-repeat:no-repeat; background-position:right -425px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.roundTrip .flightPanel .depart span.stop.nonStop{background-image:url(../../Resource/Image/Icon/SpriteListingHD.png);background-repeat:no-repeat; background-position:-19px -419px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.tripAdvisor em{background-image:url(../../../Resource/Image/Icon/SpriteListingHD.png);background-repeat:no-repeat; background-position:right -520px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+#resultPanel .rating{background-image:url(../../../Resource/Image/Icon/SpriteListingHD.png); background-position:left -508px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+#hotel .hotel span i{background-image:url(../../../Resource/Image/Icon/SpriteListingHD.png); background-position:0 -563px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.flightPanel p.flight.multiAirline{background-image:url(../../Resource/Image/Icon/SpriteListingHD.png);background-position:-365px -570px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.hotelDescription .tripAdvisor span, #freePanel .tripAdvisor span{background-image:url(../../../Resource/Image/Icon/SpriteListingHD.png);background-size:400px 700px;-webkit-background-size: 400px 700px}
+.hotelDescription .tripAdvisor span.rating0, #freePanel .tripAdvisor span.rating0{background-position:-44px -662px}
+.hotelDescription .tripAdvisor span.rating5, #freePanel .tripAdvisor span.rating5{background-position:-44px -644px}
+.hotelDescription .tripAdvisor span.rating10, #freePanel .tripAdvisor span.rating10{background-position:-44px -625px}
+.hotelDescription .tripAdvisor span.rating15, #freePanel .tripAdvisor span.rating15{background-position:-44px -607px}
+.hotelDescription .tripAdvisor span.rating20, #freePanel .tripAdvisor span.rating20{background-position:-44px -589px}
+.hotelDescription .tripAdvisor span.rating25, #freePanel .tripAdvisor span.rating25{background-position:-44px -571px}
+.hotelDescription .tripAdvisor span.rating30, #freePanel .tripAdvisor span.rating30{background-position:-44px -553px}
+.hotelDescription .tripAdvisor span.rating35, #freePanel .tripAdvisor span.rating35{background-position:-44px -535px}
+.hotelDescription .tripAdvisor span.rating40, #freePanel .tripAdvisor span.rating40{background-position:-44px -517px}
+.hotelDescription .tripAdvisor span.rating45, #freePanel .tripAdvisor span.rating45{background-position:-44px -498px}
+.hotelDescription .tripAdvisor span.rating50, #freePanel .tripAdvisor span.rating50{background-position:-44px -480px}
+.percentagePanel a.tripLogo{background-image:url(../../../Resource/Image/Icon/SpriteListingHD.png); background-position:-182px -655px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.percentagePanel  a.travellerChoice{background-image:url(../../../Resource/Image/Icon/SpriteListingHD.png); background-position:-329px -617px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.subContent  .itinerary .travelSector h5 i{background-image:url(../../../Resource/Image/Icon/SpriteListingHD.png); background-position:0 -179px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+.subContent  .itinerary .arrowHead{background-image:url(../../../Resource/Image/Icon/SpriteListingHD.png); background-position:0 -126px;background-size:400px 700px;-webkit-background-size: 400px 700px}
+}

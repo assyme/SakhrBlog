@@ -1,0 +1,174 @@
+
+/*Basic Panels*/
+#content{background:none;border:0 none;padding:0;margin-top:0px;width:1020px}
+#header{background:none;border:0 none;position:absolute;right:0;top:20px}
+
+
+.subContent{border-radius:6px;background:#fff;border:1px solid #eee;margin:0 auto;margin-top:25px;overflow:hidden;padding:30px;padding-right:0;position:relative;width:988px}
+.subContent .itinerary{display:inline-block;line-height:1.5em;margin:20px 0 0;padding:0 30px 0 0;width:758px}
+.subContent .infoPanel{background:#f8f8f8;border-left:1px solid #ccc;border-right:1px solid #ddd;display:inline-block;height:100%;margin-bottom:0px;padding:0 15px;overflow:hidden;position:absolute;right:-1px;width:169px;z-index:99}
+.subContent .infoPanel ul.list.travelers{margin-top:58px}
+.subContent .infoPanel ul.list.travelers li{border-bottom:1px solid #ddd;padding:5px 0}
+.subContent .infoPanel ul.list.travelers li.last{border:0 none}
+.subContent .infoPanel ul.list.travelers a{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat left -206px;color:#999;display:block;padding-left:25px}
+.subContent .infoPanel ul.list.travelers li:hover a{background-position:-383px -221px;color:#008ed6;text-decoration:none}
+
+/*ActionBar*/
+.subContent .actionBar{background:#daeaf7;height:40px;margin:-30px 0 0 -30px;overflow:hidden;padding:0 0 0 15px}
+.subContent .actionBar li{display:inline-block;padding:0px;position:relative}
+.subContent .actionBar li h2{color:#008ED6;font:15px/38px Arial,Helvetica,sans-serif;height:40px;padding:0 10px 0 15px;text-decoration:none;text-shadow:1px 1px 0px #FFF}
+.subContent .actionBar li.infoHead{border-left:1px solid #bbb;float:right;margin-right:0px;margin-top:-14px;padding-left:0px;padding-top:15px}
+.subContent .actionBar li.infoHead span{color:#444;display:block;height:40px;line-height:40px;margin:0 15px;width:169px}
+.subContent .actionBar li.price{width:auto}
+.subContent .actionBar li.price a{text-align:right}
+.subContent .actionBar li.sortAscending a{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat right -241px;color:#444!important;display:inline-block;padding-right:15px;text-shadow:none}
+.subContent .actionBar li.sortDescending a{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat right -275px;color:#444!important;display:inline-block;padding-right:15px;text-shadow:none}
+.subContent .actionBar li.sortDescending a{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat right -275px;color:#444!important;display:inline-block;padding-right:15px;text-shadow:none}
+
+/*Section heading*/
+.subContent  .itinerary .travelSector {background:#f3f8fc;margin:-20px -30px 0;padding:0 30px}
+.subContent  .itinerary .travelSector h5{color:#777;display:inline-block;font-size:12px;font-weight:normal;padding:10px 0;text-transform:uppercase}
+.subContent  .itinerary .travelSector h5 i{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat left -615px;display:inline-block;font-size:0;height:13px;margin:0 15px;margin-top:1px;vertical-align:top;width:28px}
+.subContent  .itinerary .travelSector .pnr{background:#fff;border:2px solid #daeaf7;border-radius:4px;color:#666;margin-top:10px;float:right;padding:0 10px}
+.subContent  .itinerary .travelSector .pnr strong{font-weight:bold}
+/*Sections*/
+.subContent  .itinerary ul{margin:0 -30px 20px -30px}
+.subContent  .itinerary ul li{padding:15px 30px 18px;position:relative}
+.subContent  .itinerary ul p{display:inline-block;vertical-align:top}
+.subContent  .itinerary ul p em{color:#666;font-size:17px;display:block;margin-bottom:0px}
+.subContent  .itinerary ul p em strong{color:#ED4300;font-size:11px;font-weight:normal}
+.subContent  .itinerary ul p span{font-size:18px;font-weight:normal}
+.subContent  .itinerary ul p span em{color:#444;display:inline-block;margin-bottom:0}
+.subContent  .itinerary ul p dfn{color:#999;display:block;font-size:12px;line-height:14px;max-width:145px}
+.subContent  .itinerary ul p dfn.baggage,.subContent  .itinerary ul p dfn.from,.subContent  .itinerary ul p dfn.to{display:none}
+.subContent  .itinerary ul p dfn.operator{color:#ED4300;margin-top:3px}
+.subContent  .itinerary .arrowHead{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -171px -487px;display:inline-block;height:13px;margin-top:3px;width:21px}
+.subContent .itinerary ul p.from{text-align:right;padding-right:15px;width:145px}
+.subContent .itinerary ul p.flight img{float:left;margin:3px 15px 0 0;width:35px}
+.subContent .itinerary ul p.flight span{font-size:15px;float:right;width:140px}
+.subContent .itinerary ul p.flight span strong{font-weight:normal}
+.subContent .itinerary ul p.flight span em{margin-left:0}
+.subContent .itinerary ul p.flight em{font-size:13px;margin-left:54px}
+.subContent .itinerary ul p.flight dfn{font-size:12px;line-height:12px;margin-left:54px}
+.subContent  .itinerary ul .date{background:#75b2e3;border-top:1px solid #fff;color:#fff;height:35px;font-size:12px;left:0;position:absolute;padding:7px 12px 7px 30px;text-align:center;text-transform:uppercase;width:29px}
+.subContent  .itinerary  ul .date em,.subContent  .itinerary ul .item em{color:#fff;display:block;font-weight:normal;font-size:18px;margin:-4px 0 0 0;text-align:center;width:100%}
+.subContent  .itinerary ul .date,.subContent  .itinerary ul .item{background:#75b2e3;border-top:1px solid #fff;color:#fff;height:33px;font-size:12px;left:0;position:absolute;padding:5px 12px 7px 30px;text-align:center;text-transform:uppercase;width:29px}
+.subContent  .itinerary .extras .item {background:#ccc}
+.subContent  .itinerary .traveler .item.ticket{background:#efefef}
+.subContent  .itinerary .payment .item{background:#efefef}
+.subContent  .itinerary .payment  .selected .item,.subContent  .itinerary .payment li:hover .item{background:#66be89}
+.subContent  .itinerary .item em{height:28px;margin-top:3px!important}
+.subContent  .itinerary .extras .item em{background:url(../../../Resource/Image/Icon/SpriteListing.png) 0px -521px}
+.subContent  .itinerary .traveler .item em{background:url(../../../Resource/Image/Icon/SpriteListing.png) -1px -485px}
+.subContent  .itinerary .traveler .item.ticket em{background:url(../../../Resource/Image/Icon/SpriteListing.png) -1px -562px}
+.subContent  .itinerary .payment .netBanking .item em{background:url(../../../Resource/Image/Icon/SpriteListing.png) 0px -1px}
+.subContent  .itinerary .payment .creditCard .item em{background:url(../../../Resource/Image/Icon/SpriteListing.png) -63px -1px}
+.subContent  .itinerary .payment .debitCard .item em{background:url(../../../Resource/Image/Icon/SpriteListing.png) -126px -1px}
+.subContent  .itinerary .payment .netBanking:hover .item em,.subContent  .itinerary .payment .netBanking.selected .item em{background-position:-31px -1px}
+.subContent  .itinerary .payment .creditCard:hover .item em,.subContent  .itinerary .payment .creditCard.selected .item em{background-position:-93px -1px}
+.subContent  .itinerary .payment .debitCard:hover .item em,.subContent  .itinerary .payment .debitCard.selected .item em{background-position:-155px -1px}
+.subContent  .itinerary ul .logo{margin-left:85px}
+.subContent  .itinerary ul .layover{border-bottom:1px solid #DDD;color:#ED4300;height:1px;margin:8px 0;padding:0;text-align:center;width:100%;z-index:999}
+.subContent  .itinerary ul .layover p{background:#FFF url(../../../Resource/Image/Icon/SpriteListing.png) -10px -309px;bottom:9px;font-size:11px;padding:0 8px 0 29px;position:relative}
+.subContent  .itinerary ul .flight{margin:0 20px 0 65px;width:194px}
+.subContent  .itinerary ul .hotel{margin:0 10px 0 65px;width:269px}
+.subContent  .itinerary ul .hotel span{font-size:15px}
+.subContent  .itinerary ul .hotel em{font-size:13px}
+.subContent  .itinerary ul .hotel dfn{font-size:12px}
+.subContent  .itinerary ul p.details{float:right}
+.subContent  .itinerary ul p.details span{display:inline-block;margin-bottom:5px;height:24px;vertical-align:top;width:101px}
+.subContent  .itinerary ul p.details span em{border:2px solid #ffc61e;border-radius:4px;color:#666;font-size:13px;font-weight:normal;margin-top:1px;padding:0 10px;vertical-align:top}
+.subContent  .itinerary ul p.details span em strong{font-size:13px;font-weight:bold;color:#666}
+.subContent  .itinerary ul p.details span a{font-size:13px;margin-left:12px}
+.subContent  .itinerary ul p.details dfn{margin:0px 0 2px 12px;padding-left:22px} 
+.subContent  .itinerary ul p.details .duration{background:url(../../../Resource/Image/Icon/SpriteListing.png) -291px -510px}
+.subContent  .itinerary ul p.details .baggage{background:url(../../../Resource/Image/Icon/SpriteListing.png) -291px -528px}
+.subContent .itinerary ul p.insurance{margin-left:66px;margin-top:5px}
+.subContent .itinerary ul p.insurance  input{display:none}
+.subContent .itinerary ul p.insurance label{background:url(../../../Resource/Image/Background/Checkbox.png) no-repeat 0 0;cursor:pointer;display:inline-block;height:20px;line-height:21px;margin-right:13px;padding:0 20px 0 27px;position:relative;z-index:999}
+.subContent .itinerary ul p.insurance label.checked{background-position:0 -20px !important}s
+.subContent  .itinerary ul .from{text-align:right;margin-right:15px;width:145px}
+.subContent  .itinerary ul .from i,.subContent  .itinerary ul .to i{display:none}
+.subContent  .itinerary li.hotel ul .from{width:80px}
+.subContent  .itinerary ul .to{margin-left:15px;width:145px}
+.subContent  .itinerary ul .baggage{font-size:11px;color:#999;width:60px}
+.subContent  .itinerary ul .baggage em{margin-bottom:0px;margin-top:-5px}
+.subContent  .itinerary ul .flight em.codeShared{background:url(../../../Resource/Image/Icon/SpriteListing.png) -386px -74px;padding-left:18px}
+.subContent  .itinerary .hotels .hotel{margin-right:15px;width:200px}
+.subContent  .itinerary .hotels .logo{margin-top:4px;width:100px}
+.subContent  .itinerary  .hotels ul .from{width:160px}
+.subContent  .itinerary .insurance ul li{border-top:1px solid #ccc}
+.subContent  .itinerary .traveler li{width:758px}
+.subContent  .itinerary .traveler li ul li{margin-bottom:2px;width:auto}
+.subContent  .itinerary .traveler ul .item{background:#ffc71c}
+.subContent  .itinerary .traveler ul .item em{}
+.subContent  .itinerary .traveler h6{font-size:13px;font-weight:normal}
+.subContent  .itinerary .traveler .travelers{display:inline-block;margin-left:63px;margin-top:8px;vertical-align:top;width:127px}
+.subContent  .itinerary .traveler .travelers *{display:inline-block}
+.subContent  .itinerary .traveler .travelers h6{margin-top:7px;margin-right:17px;vertical-align:top}
+.subContent  .itinerary .traveler ul.form2{display:inline-block;float:none;margin:8px -10px 0 0!important}
+.subContent  .itinerary .traveler ul .date{background:none;position:relative}
+.subContent  .itinerary .insurance ul .date{background:#ddd}
+.subContent  .itinerary .coupon{margin-top:20px}
+.subContent  .itinerary .coupon ul .date{background:none;}
+.subContent  .itinerary .insurance ul .date em{background-position:2px -557px}
+.subContent  .itinerary .coupon ul .date em{background-position:2px -518px}
+.subContent  .itinerary .traveler ul .date em{background-position:0px -484px}
+.subContent  .itinerary .coupon ul,.subContent  .itinerary .ticket ul{margin-bottom:0}
+.subContent  .itinerary .insurance{margin-left:42px;width:691px}
+.subContent  .itinerary .insurance a{color:#008ed6;text-decoration:none}
+.subContent  .itinerary .insurance a:hover{text-decoration:underline}
+.subContent  .itinerary .insurance img{float:right}
+.subContent  .itinerary .coupon{margin-left:63px}
+.subContent  .itinerary .coupon .button{background:#008ed6;border:1px solid #fff;color:#fff;display:inline-block;font-size:12px;height:auto;line-height:normal;margin-left:5px;margin-top:1px;padding:6px 11px;vertical-align:top}
+.subContent  .itinerary .traveler  li,.subContent  .itinerary .ticket  li{display:inline-block;padding-bottom:0px}
+.subContent  .itinerary .traveler  ul.threeColumnForm{margin:0px 0px 0px 82px !important;width:580px!important}
+.subContent  .itinerary .traveler ul.threeColumnForm li, .subContent  .itinerary .ticket ul.threeColumnForm li{border:0 none;min-height:30px;padding:0px 15px 7px 0;width:231px}
+.subContent  .itinerary .traveler ul.threeColumnForm li select{color:#999}
+.subContent  .itinerary .traveler ul.threeColumnForm li select:focus{color:#444}
+.subContent  .itinerary .traveler ul.threeColumnForm li.punctuation{width:60px}
+.subContent  .itinerary .traveler ul.threeColumnForm li.dob{margin-left:75px}
+.subContent  .itinerary .traveler ul.threeColumnForm li.optional{color:#999;font-size:11px;margin-left:75px;min-height:16px;padding-bottom:0;width:100%}
+.subContent  .itinerary .traveler ul.threeColumnForm li.optional a{text-decoration:none}
+.subContent  .itinerary .traveler ul.threeColumnForm li.punctuation select{width:58px}
+.subContent  .itinerary .ticket ul.threeColumnForm li.recipient{width:142px}
+.subContent  .itinerary .ticket ul .threeColumnForm{margin:0!important}
+.subContent .itinerary iframe{border:0 none;width:500px}
+.subContent  p.terms{margin-left:194px}
+.subContent  p.terms input{display:none}
+.subContent  p.terms label{background:url(../../../Resource/Image/Background/Checkbox.png) no-repeat 0 0;cursor:pointer;display:inline-block;height:20px;line-height:21px;margin-right:13px;padding:0 20px 0 27px;position:relative;z-index:999}
+.subContent  p.terms label.checked{background-position:0 -20px !important}
+.subContent  p.action {float:right;margin-right:453px;width:auto}
+.subContent  .payment{display:inline-block;margin:0 0 0px -30px!important;vertical-align:top;width:200px}
+.subContent  .payment li{display:inline-block;height:46px;margin-bottom:2px;padding:0!important;width:100%}
+.subContent  .payment li.selected{}
+.subContent  .payment a{color:#666;display:block;height:31px;padding:15px 0 0 93px;text-decoration:none}
+.subContent  .infoPanel .paymentLogo{border-bottom:1px solid #bbb;margin-bottom:15px;padding:15px 0}
+.subContent  .infoPanel .paymentLogo img{display:inline-block;width:100%}
+.subContent  .infoPanel .paymentLogo em{background:url(../../../Resource/Image/Icon/SpriteListing.png) -277px -487px;float:right;font-size:0;height:30px;margin-top:13px;width:30px}
+.subContent  .infoPanel .travelExpert{color:#777;font-size:11px}
+.subContent  .infoPanel .travelExpert span{display:block;font-size:13px}
+.subContent  .infoPanel .travelExpert em{color:#008ed6}
+.subContent  ul.oneColumnForm.paymentForm {display:inline-block;margin-left:30px!important;width:553px!important}
+.subContent  ul.oneColumnForm.paymentForm li{border:0px none;padding:4px 0;width:550px!important}
+.subContent  ul.oneColumnForm.paymentForm li fieldset{width:100%}
+.subContent  ul.oneColumnForm.paymentForm li label{margin:5px 25px 0 0;width:100px}
+.subContent  ul.oneColumnForm.paymentForm li.finePrint span{color:#999;width:100%!important}
+.subContent  ul.oneColumnForm.paymentForm li.expiry input.text{margin-right:9px;width:100px}
+.subContent  ul.oneColumnForm.paymentForm li.insurance label{float:none;margin-left:5px}
+.subContent  ul.oneColumnForm.paymentForm li.insurance a{color:#008ed6;text-decoration:none}
+.subContent  ul.oneColumnForm.paymentForm li.insurance a:hover{text-decoration:underline}
+.subContent  ul.oneColumnForm.paymentForm li.submit input{margin:15px 0 0 125px !important}
+
+.subContent .fare{display:none}
+.infoPanel .fareDetails a{display:table;width:auto}
+.infoPanel .fareDetails h4{color:#777;font-size:11px;font-weight:normal;margin:15px 0 0;text-transform:uppercase}
+.infoPanel .fareDetails dl{display:inline-block;font-size:12px;width:100%}
+.infoPanel .fareDetails dl dt{display:inline-block;margin-bottom:6px;vertical-align:top;width:70px}
+.infoPanel .fareDetails dl dd{display:inline-block;margin-bottom:6px;text-align:right;vertical-align:top;width:55px}
+.infoPanel .fareDetails .text{padding:2px 5px;width:40px}
+.infoPanel .fareDetails p{border-top:1px solid #ddd;color:#008ed6;font-size:18px;font-weight:bold;margin-bottom:15px;padding-top:5px;text-align:right}
+.infoPanel .fareDetails p span{display:none}
+.infoPanel .fareDetails p em{font-weight:normal;font-size:11px}
+
+.subContent .itinerary .extras ul{border-top:1px solid #ddd;margin-top:-20px;margin-bottom:0}

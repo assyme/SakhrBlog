@@ -1,0 +1,413 @@
+/*Hidden Elements*/
+#hotelDescription .reviews,#contentPanel #listing table td.description .additionalInfo li.roomType,#tripSummary,#infoPanel #tripSummary.hidden,ul.form3 li.empty,#contentPanel ul.itinerary.ticket li.hotel div.details img.map.overview,#hotelDescription .goBack,#bookingReasons,#additionalContent .more.popupLink,#additionalContent #map,#contentPanel #listing table td.description .additionalInfo li.areaMap,#footerPanel .list.holidays,#infoPanel .origin2 label,#infoPanel .destination2 label,#infoPanel .start2 label,#infoPanel .origin3 label,#infoPanel .destination3 label,#infoPanel .start3 label,#contentPanel ul.itinerary li.service div.details ul table td.logo,#greatPrice,#contentPanel table.listing.packages table td.flights p,#contentPanel table.listing.flights table td.flights p,#contentPanel table.listing.flights table td.flights ul li p em,#contentPanel table.listing td.sell p.offer,.scrollable .next,.scrollable .previous,#panorama,#contentPanel #listing table td.description .additionalInfo li.reviews,#contentPanel ul.itinerary li.total p.unit,#contentPanel ul.itinerary li.total p.unitPrice.less,#contentPanel ul.itinerary div.fees ul li p.unitPrice,#infoPanel #build,#contentPanel table.listing.packages table td.duration,#contentPanel table.listing.flights table td.refundable,#paging a.back,#paging a.next,#searchBy fieldset.airline,#searchBy fieldset.cabinClass,fieldset.actionList,#searchBy fieldset.refundable,#travelExpert,#needVisa,#contentPanel div.advertisement.leaderbar,#contentPanel table.listing.flights table td.date{display:none!important}
+#contentPanel table.listing.flights table td.flights ul li p{display:none!important;width:100%;margin-left:0px}
+#contentPanel table.listing.flights table td.flights ul li p:after{content:""}
+
+/*Common styles*/
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+input[type=text],input[type=password],table.grid input.text{padding:8px 5px!important}
+select{-webkit-appearance:menulist;background:#fff;padding:7px 5px}
+#calendar div.month{width:276px}
+#calendar div.month div.title{height:36px}
+#calendar div.month li.monday{margin-left:38px}
+#calendar div.month li.tuesday{margin-left:76px}
+#calendar div.month li.wednesday{margin-left:114px}
+#calendar div.month li.thursday{margin-left:152px}
+#calendar div.month li.friday{margin-left:190px}
+#calendar div.month li.saturday{margin-left:228px}
+#calendar div.month li{height:24px;padding:5px;line-height:24px;font-size:15px}
+#calendar div.month ul.days li{line-height:14px}
+#calendar div.month h3{font-weight:normal;line-height:37px}
+#calendar div.month a{width:20px;height:20px;top:0px;right:9px;padding:8px}
+#calendar div.month a.forward,#calendar div.month a.back{background-position:11px 11px}
+#content{padding:0 10px 50px;width:460px}
+#contentPanel p,#contentPanel h1,#contentPanel h2,#contentPanel h3,#contentPanel h4,#contentPanel h5,#contentPanel h6,#contentPanel a,#contentPanel span{-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+#footer{padding-bottom:30px}
+#footerPanel,#footerPanel > *{width:445px}
+#header{overflow:visible}
+#headerPanel{width:480px}
+#headerPanel a.logo{background-position:47% 74%;margin-right:21px;width:150px}
+#primaryNavigation{margin-left:8px}
+#primaryNavigation li a em{margin-right:0px;width:31px!important}
+#primaryNavigation li a{text-indent:0px;font-size:0px}
+#primaryNavigation li.home{margin-left:2px}
+#primaryNavigation li.flight a em{background-position:0px -489px}
+#primaryNavigation li.hotel a em{background-position:-47px -489px}
+#primaryNavigation li.package a em{background-position:-89px -489px}
+#primaryNavigation li.holiday a em{background-position:-168px -489px}
+#primaryNavigation li.holiday a,#primaryNavigation li.business a{font-weight:normal}
+#primaryNavigation li.business a em{background-position:-128px -489px}
+#primaryNavigation li.home a{text-indent:0;font-size:14px}
+#secondaryNavigation{height:70px;margin-left:29px}
+#secondaryNavigation li{padding:5px 5px 5px 3px}
+#tertiaryNavigation{margin-left:12px;width:298px}
+#tertiaryNavigation li{margin:10px 13px 0 0}
+#footerPanel{padding:0 10px 0 15px}
+#footerPanel .list{margin:30px 0 0 11px !important;width:210px}
+#footerPanel .list ul li span{margin-bottom:5px;margin-left:0}
+#follow{float:right;margin:50px 18px 0 0 !important;width:auto!important}
+
+/*Flight Page*/
+fieldset.actionList{display:inline-block;float:none;margin:0 20px 20px 0;width:auto}
+#contentPanel{margin:0}
+#contentPanel p{margin-left:22px;width:414px}
+#contentPanel table.listing{margin-left:22px;width:438px}
+#contentPanel table.listing.flights{display:block;float:none;margin-left:22px;width:438px}
+#contentPanel table.listing.flights table td.duration{width:63px}
+#contentPanel table.listing.flights td.sell{padding:8px 20px;width:180px}
+#contentPanel table.listing.flights table td.arrival{width:55px}
+#contentPanel table.listing.flights table td.departure{width:80px}
+#contentPanel table.listing.flights table td.departure{text-align:center}
+#contentPanel table.listing table td.flights ul li p span{display:none}
+#contentPanel table.listing.packages table td.city p{width:70px;word-wrap:break-word}
+#contentPanel table.listing td.sell p.prefix{margin-top:4px;white-space:nowrap;overflow:hidden}
+#contentPanel table.listing.packages td.sell{padding:8px 20px;width:272px}
+#contentPanel table.listing.packages td.sell input{float:right}
+#contentPanel table.listing.packages table td.date,#contentPanel table.listing.packages table td.arrival,#contentPanel table.listing.packages table td.departure{width:99px}
+#contentPanel ul.itinerary li div.details ul table tr.last td.destination p,#contentPanel ul.itinerary li div.details ul table tr.first td.origin p,#contentPanel ul.itinerary li div.details ul table tr.first td.date p,#contentPanel ul.itinerary li div.details ul table tr.last td.date p,#contentPanel ul.itinerary li div.details ul table td p{word-wrap:break-word}
+#contentPanel ul.itinerary li.footer h4{margin:0!important;width:100px}
+#content #build fieldset{float:left;margin:0 0 5px 22px;width:200px}
+#content #build fieldset.travelers{padding-bottom:0;width:470px}
+#content #build fieldset.travelers div{margin-right:7px;width:auto}
+#content #build fieldset.travelers div select{margin-right:8px;width:62px}
+#content #build fieldset.travelers div label{width:62px}
+#content #build fieldset.multiCity div.last input.text{width:189px}
+#content #build fieldset.moreFlights{padding:0}
+#content #build fieldset.multiCity span{display:table-row-group}
+#content #build fieldset.multiCity div,#infoPanel #build fieldset.multiCity div.last{width:91px}
+#content #build fieldset ul li{display:inline-block;margin-right:10px;width:auto}
+#content #build fieldset input.text{width:179px}
+#build fieldset.multiCity div,#build fieldset.roomTypes div,#build fieldset.travelers div{margin-left:13px}
+#infoPanel{margin:28px 37px 0 0;width:100%}
+#infoPanel > div > h6 > a{background-position:right center;margin:-12px 0 -15px -15px}
+#paging ul{padding-left:0!important;width:444px!important}
+#searchBy fieldset{float:left;margin-bottom:0;padding:0 0 7px 6px;width:193px}
+#searchBy fieldset.departure,#searchBy fieldset.arrival{margin-top:0;width:184px!important}
+#searchBy fieldset.stops{border:0 none;margin-bottom:0;padding-bottom:0}
+#searchBy fieldset.airline,#searchBy fieldset.cabinClass{margin-top:10px;width:430px}
+#searchBy .checkList label,#searchBy fieldset.cabinClass li label{margin-right:10px;width:110px;word-wrap:break-word}
+#searchBy .slider .ui-slider{margin-bottom:9px;width:173px}
+#searchBy fieldset legend{padding:0 0 13px}
+#tripSummary ul li{padding-left:6px}
+#tripSummary ul input.submit{margin:6px 9px 2px 0}
+#tripSummary input.submit{margin:0 23px -4px 0;width:274px}
+#tripSummary ul,#tripSummary ul li.last{width:424px}
+.ui-slider-horizontal .ui-slider-handle{-khtml-border-radius:11px;-moz-border-radius:11px;-webkit-border-radius:11px;border-radius:11px;height:16px;top:-2px;width:16px}
+
+/*TripDetails Page*/
+#contentPanel div.message{width:421px}
+#contentPanel div.addon p{background:none;padding-left:23px;padding-top:18px;width:136px}
+#contentPanel div.addon ul{width:257px}
+#contentPanel h3{padding-left:21px;width:438px}
+#contentPanel ul.itinerary{width:460px!important}
+#contentPanel ul.itinerary .summary h4{margin-left:0px}
+#contentPanel ul.itinerary div.fees table{margin-right:0px!important;width:322px!important}
+#contentPanel ul.itinerary div.fees ul{width:322px!important}
+#contentPanel ul.itinerary div.fees ul li{width:336px!important}
+#contentPanel ul.itinerary div.fees ul li p.unit{width:102px!important}
+#contentPanel ul.itinerary div.fees ul li p.units{width:233px}
+#contentPanel ul.itinerary .flights div.fees ul li p.units,#contentPanel ul.itinerary .hotel div.fees ul li p.units,#contentPanel ul.itinerary .service div.fees ul li p.units{width:118px}
+#contentPanel ul.itinerary .service div.fees ul li p.unit{ width:80px}
+#contentPanel ul.itinerary .service div.fees ul li p.unit{margin-right:5px}
+#contentPanel ul.itinerary div.fees table td.first{min-width:50px}
+#contentPanel ul.itinerary div.fees ul li p.units.simple{width:230px}
+#contentPanel ul.itinerary li.hotel div.details div.note{width:370px}
+#contentPanel ul.itinerary li.hotel div.details div.note p{margin-left:0;width:360px}
+#contentPanel ul.itinerary li.service div.details div.note{float:left;padding-left:49px;width:388px}
+#contentPanel ul.itinerary li.service div.details div.note p{margin-left:0;width:388px}
+#contentPanel ul.itinerary li.total h4{margin-left:7px;width:162px}
+#contentPanel ul.itinerary div.fees div{font-size:0;margin:0 10px 0 8px;width:88px}
+#contentPanel ul.itinerary div.fees div h4{width:85px}
+#contentPanel ul.itinerary li.flights.summary div.fees div{margin:0 0 12px 8px}
+#contentPanel ul.itinerary div.fees div a,#contentPanel ul.itinerary div.fees div h4{margin-top:10px}
+#contentPanel ul.itinerary div.fees div a.information,#contentPanel ul.itinerary li.summary div.fees h4{margin-top:0px}
+#contentPanel ul.itinerary div.fees div a.information.flexibleRules{margin-bottom:10px;margin-top:0}
+#contentPanel ul.itinerary li.service div.details ul table td.flight{padding-left:22px;width:103px}
+#contentPanel ul.itinerary li.service div.details img.map{max-width:100%}
+#contentPanel ul.itinerary li.insurance label{display:inline-block;padding-left:10px;padding-top:14px;width:359px}
+#contentPanel ul.itinerary li.insurance input[type=checkbox]{float:left;margin-left:22px;margin-top:21px}
+#contentPanel ul.itinerary li.coupon{width:430px}
+#contentPanel ul.itinerary div.originDestination p{padding-right:6px}
+#contentPanel ul.itinerary li div.details ul table td.flight{width:102px}
+#contentPanel ul.itinerary li div.details ul table td.destination{width:93px}
+#contentPanel ul.itinerary li.coupon input.text{float:left;margin-right:14px;padding:8px 5px}
+#contentPanel ul.itinerary li.coupon input.submit{float:left;margin-right:0;margin-top:11px}
+#contentPanel ul.itinerary li.coupon p{float:left;margin:11px 16px 3px 7px;text-align:left;width:111px}
+#contentPanel p.quotes{margin-left:11px;width:420px}
+#contentPanel #rules,#acceptRules,#contentPanel div.addon{padding-left:22px;width:438px!important}
+#contentPanel #acceptRules{width:428px!important}
+#contentPanel #rules{margin-left:28px;padding-left:22px;width:385px!important}
+#content #build input.submit{margin-right:23px}
+#contentPanel input.submit.blue105{margin-right:21px}
+#contentPanel input.submit.blue105.secondary{-webkit-appearance:none;margin-right:0}
+#contentPanel #listing table td.description .additionalInfo{float:left;margin-top:5px;text-align:left;width:auto}
+#hotelDescription .rating{display:inline-block;float:none;margin-left:22px;margin-right:334px;margin-top:0}
+
+/*HotelListing Page*/
+#contentPanel #listing table td.description .additionalInfo li{display:block;padding-left:0;width:100%}
+#contentPanel #listing table td.description .additionalInfo li.roomType{float:left;width:auto}
+#contentPanel #listing .map .viewport{left:-135px;top:9px}
+#contentPanel #listing .map a.close{position:relative}
+#hotels{margin-bottom:20px;margin-left:22px;width:438px}
+#listing table td.description{padding-right:9px;width:180px}
+#listing table td.description h5{display:inline-block;margin-right:0;padding:0;width:178px}
+#listing table td.description .rating{display:block;position:relative;width:61px!important}
+#listing table td.description .additionalInfo li a{margin-right:5px;padding-left:0}
+#hotels table tr.roomCategories td:first-child{background:#f3f8fc;border-top:1px solid #d8d8d8}
+#hotels table tr.roomCategories table{border-left:0}
+#hotels table tr.roomCategories table td.priceInfo{width:308px}
+#listing table td.priceInfo{width:125px}
+#listing table td.description .additionalInfo li.areaMap a{background-position:left top;float:left;text-indent:-9999px}
+#searchBy fieldset li *{vertical-align:top}
+#searchBy fieldset li label{margin-top:3px}
+#searchBy .checkList ul li label{margin-top:3px;width:104px}
+
+/*HotelDescription Page*/
+#additionalContent{border-left:0 none;float:left;margin-top:13px;padding-left:20px;padding-top:0;width:436px}
+#additionalContent #photos ul{height:120px;overflow:hidden}
+#additionalContent #photos li{width:229px}
+#additionalContent ul{padding-left:0!important;width:auto!important}
+#additionalContent #photos .more{background-position:91% 39%;border-right:0 none;padding:6px 35px 11px}
+#hotelDescription #details{width:437px}
+#hotelDescription #details p,#additionalContent #photos h3{margin-left:21px}
+#hotelDescription .goBack{margin-left:22px}
+#hotelDescription .reviews{margin-right:16px}
+#roomsPanel #listing td.description h3{width:113px}
+#roomsPanel #listing td.description .breakfast{width:98px}
+#roomsPanel #listing td.description .more,#roomsPanel td.description .less{margin-left:0;padding-right:0;text-align:left;text-indent:-9999px;width:auto}
+#roomsPanel #listing td.priceInfo{padding:17px 15px 12px 17px;width:183px;min-width:76px}
+#roomsPanel #listing td.description .summary p{margin:14px 15px 14px 0;width:auto}
+#roomsPanel #listing td.priceInfo input{margin-right:9px}
+#roomsPanel #listing{margin-left:21px;width:438px}
+#roomsPanel #priceDescriptor{margin:-1px 0 10px 330px;width:125px}
+
+/*Ticket Page*/
+#contentPanel ul.itinerary.ticket li ul.tickets li div.eTicket{margin-left:0;width:203px}
+#contentPanel ul.itinerary.ticket li ul.tickets{padding-left:0;width:460px}
+#contentPanel ul.itinerary.ticket li ul.tickets li{padding-left:21px;width:423px}
+#contentPanel ul.itinerary.ticket li.hotel div.hotelNotes h5,#contentPanel ul.itinerary.ticket li.service div.serviceNotes h5{margin-left:7px}
+#contentPanel ul.itinerary.ticket li.hotel div.hotelNotes p,#contentPanel ul.itinerary.ticket li.service div.serviceNotes p{margin-left:7px;width:415px}
+#contentPanel ul.itinerary.ticket li.receipt ul.tickets li div.receipt p{width:94px}
+#contentPanel ul.itinerary.ticket li.receipt ul.tickets li div.payment p{width:113px}
+#contentPanel ul.itinerary.ticket li.service div.details ul table td.flight{padding-left:22px;width:335px}
+#contentPanel ul.itinerary.ticket li.service div.details div.note{padding-left:50px}
+#contentPanel ul.itinerary.ticket li img.map{height:200px;width:460px}
+#contentPanel ul.itinerary.ticket li.footer div.issuer{padding-left:22px;padding-right:20px;width:98px}
+#contentPanel ul.itinerary.ticket li.footer div.contact{padding-right:20px;width:141px}
+#contentPanel ul.itinerary.ticket li.footer div.contact ul,#contentPanel ul.itinerary.ticket li.footer div.contact ul li{width:100%!important}
+#contentPanel ul.itinerary.ticket li.footer div.reference{width:140px}
+#contentPanel ul.itinerary.ticket li div.details ul table td.destination{width:73px}
+#contentPanel ul.itinerary.ticket div.originDestination p{padding-right:9px}
+#contentPanel ul.itinerary.ticket li.hotel div.details ul table td.description{width:112px}
+#contentPanel ul.itinerary.ticket li div.details ul table td.origin{width:89px}
+#contentPanel ul.itinerary.ticket li.hotel div.details div.note{margin-left:77px;width:382px}
+#contentPanel ul.itinerary.ticket li.receipt table .amount{padding-right:25px}
+#contentPanel ul.itinerary.ticket li.receipt ul.tickets li div.payment{width:128px}
+#contentPanel ul.itinerary.ticket li.receipt ul.tickets li div.amount {width:110px}
+#contentPanel ul.itinerary.ticket li.receipt ul.tickets li div.payment dfn{display:inline;margin-left:0px}
+#contentPanel ul.itinerary li.summary div.fees a.expand{float:right;margin-left:3px;margin-right:8px;margin-top:8px}
+#contentPanel ul.itinerary li.summary div.fees ul li p.units.simple{width:340px}
+#contentPanel ul.itinerary li.service.summary div.fees ul li p.units.simple,#contentPanel ul.itinerary li.hotel.summary div.fees ul li p.units.simple{width:230px}
+#contentPanel ul.itinerary li.total.average p.customer{width:130px}
+#contentPanel ul.itinerary li.hotel ul.tickets li div.eVoucher{width:214px}
+#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms{width:190px}
+#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li ul,#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li p,#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li,#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li ul li{width:188px}
+#contentPanel ul.itinerary li.hotel div.details ul table td.thumbnail,#contentPanel ul.itinerary li.hotel div.details ul table td.thumbnail span.imageContainer{width:68px}
+#contentPanel ul.itinerary.ticket li.receipt ul.tickets li div.receipt{width:174px}
+#contentPanel ul.itinerary.ticket li.hotel div.details ul table td.origin{width:100px}
+#contentPanel ul.itinerary li.total li{width:418px}
+#contentPanel ul.itinerary li.total p.status{width:215px;padding-left:7px}
+
+/*TravelerDetails Page*/
+#contentPanel h4.traveler,#contentPanel h5.traveler{padding-left:22px!important;width:428px;margin-left:0px!important}
+#contentPanel h4.contact{margin-left:0px;width:428px;padding-left:22px!important}
+#contentPanel ul.form3{margin-bottom:5px!important;margin-left:22px!important;width:454px!important}
+#contentPanel ul.itinerary li.total p.price{margin-left:26px}
+#contentPanel ul.itinerary li.total p.units{width:134px}
+#contentPanel ul.itinerary li.total.average h4{width:22px}
+#contentPanel ul.itinerary li.total.average p.units{width:138px}
+#contentPanel ul.itinerary div.fees ul li p.units{width:155px}
+#contentPanel ul.itinerary li.total p.customerPrice{margin-left:50px}
+#contentPanel input.submit{-webkit-appearance:none;margin-right:23px}
+#contentPanel ul.itinerary div.sector a.collapse{margin-right:8px}
+#contentPanel.alternative{padding-top:22px;width:460px}
+#contentPanel.alternative h1{margin-left:22px;width:416px}
+#contentPanel.alternative div.planner p{margin-left:0;width:100%}
+#contentPanel.alternative table.list{margin-left:20px}
+#contentPanel ul{padding-left:38px;width:399px}
+#contentPanel.alternative .stamp{margin-top:5px;padding-left:22px;width:438px}
+#contentPanel.alternative .stamp em{display:inline-block;margin-bottom:9px;width:230px}
+#contentPanel.alternative #paging ul{width:480px!important}
+#contentPanel.alternative q{margin-right:23px;padding-left:22px}
+#contentPanel.alternative a.button,#contentPanel.alternative input.submit,#infoPanel.alternative input.submit{padding:9px 26px 10px 14px !important}
+#contentPanel.alternative .photo{margin-right:23px;width:395px}
+#contentPanel.alternative table.grid.itenerary td.calendar p{margin-left:12px}
+#contentPanel.alternative a.button{float:right;margin-right:23px}
+#contentPanel.alternative #holidays.recommended{display:none}
+#contentPanel.alternative #holidays ul li span{margin-right:4px}
+#contentPanel.alternative #holidays .viewport{height:260px;width:470px}
+#contentPanel.alternative #holidays ul li img{width:226px}
+#contentPanel.alternative #holidays ul li{height:209px;margin-right:0;width:185px}
+#contentPanel.alternative table.grid.itinerary p{margin-left:0;width:338px}
+#contentPanel.alternative table.grid{margin-left:15px;width:423px!important}
+#contentPanel.alternative .terms{margin-left:22px!important}
+#contentPanel .linkList{padding-left:22px;width:420px}
+#contentPanel .articles p,#contentPanel.alternative p{width:414px}
+#contentPanel.alternative #holidays ul li h3,#contentPanel.alternative .offer{padding-left:0!important}
+#contentPanel.alternative ul.offer{margin-left:22px!important;width:413px}
+#contentPanel.alternative ul.offer li{background:none!important;border-right:1px solid #eee;padding:12px 15px 20px!important;text-align:left}
+#contentPanel.alternative ul.offer li.active{background:#ffc212!important}
+#contentPanel.alternative ul.offer li.last{border:0 none}
+#contentPanel.alternative ul.offer li p{font-size:11px!important;margin-left:0}
+#contentPanel.alternative ul.offer li span{display:block;font-size:11px;width:59px}
+#contentPanel.alternative .pane #haveTrips{width:450px}
+#contentPanel.alternative .pane h4.section{margin-left:15px}
+#contentPanel.alternative .pane table.grid{margin-left:15px;width:435px!important}
+#contentPanel h4{margin-left:15px;width:410px}
+#contentPanel ul.itinerary li.flights fieldset.selectSegment{padding:5px 22px;width:416px}
+#contentPanel ul.itinerary li ul.tickets li{padding-left:21px;width:423px}
+#contentPanel ul.itinerary li ul.tickets li div.eTicket{margin-left:6px;padding-right:22px;width:186px}
+#contentPanel ul.itinerary li ul.tickets li div.eTicket em{font-size:15px}
+#contentPanel ul.itinerary div.sector p{padding-right:7px}
+#contentPanel ul.itinerary li.receipt table tr.new td.amount input.text{width:51px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.receipt em{display:inline;margin-left:20px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.payment{width:423px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.payment dfn{display:inline;margin-left:20px}
+#contentPanel ul.itinerary li.hotel div.hotelNotes{padding-left:20px;width:437px}
+#contentPanel ul.itinerary li.flights tr.moreInfo p.remark{width:215px}
+#contentPanel ul.itinerary li ul.tickets li div.traveler p{width:250px}
+#contentPanel ul.itinerary div.fees ul{margin-left:0!important}
+#contentPanel ul.form1 select{width:222px}
+#contentPanel ul.itinerary div.sector h4{margin-left:0!important;width:auto!important}
+#contentPanel .itineraryView h4.section{margin-left:0!important;padding:4px 22px!important;width:416px!important}
+#infoPanel #build input.submit{padding:10px 23px 11px 15px !important}
+#infoPanel.alternative .list.separated li{padding:10px 0}
+#infoPanel.alternative .theme ul{width:565px}
+#infoPanel.alternative .theme li{margin:0 15px 0 19px}
+#infoPanel.alternative > div.list ul,#infoPanel.alternative > div#recent ul{margin-left:22px;margin-right:25px}
+#infoPanel.alternative .contact h6{margin-top:0;padding-top:0}
+#infoPanel.alternative .contact ul.form1 li{padding-left:0;width:420px}
+#infoPanel.alternative .contact ul.form1 li.telephone fieldset ul{width:423px!important}
+#infoPanel.alternative .contact ul.form1 li div{font-size:13px;width:402px}
+#infoPanel.alternative .contact li.telephone fieldset li.number input.text{width:334px}
+#infoPanel.alternative .contact li.message textarea{min-height:100px;width:411px}
+#infoPanel.alternative .contact.highlight ul.form1 input.submit{float:right!important;margin-right:12px;padding:12px 28px 12px 14px !important}
+#infoPanel.alternative .contact ul.form1 li.first,#infoPanel.alternative .contact ul.form1 li.lastName{padding:0;width:213px!important}
+#infoPanel.alternative .contact ul.form1 li.first input.text,#infoPanel.alternative .contact ul.form1 li.lastName input.text{width:190px!important}
+#infoPanel.alternative .contact ul.form1 li.telephone{width:438px!important}
+#infoPanel.alternative .subscribe ul.form3.subform{margin:0 23px!important}
+#primarySubNavigation ul li a{background-position:22px 6px;padding:8px 0 8px 47px}
+#primarySubNavigation ul li li a{background-position:40px 6px;padding:7px 0 7px 65px}
+#tripSearch input.text{width:401px}
+#tripSearch input.submit{margin-right:24px}
+div.planner{margin:40px 20px 0;width:420px}
+div.planner ul{width:420px!important}
+div.planner ul.events li span{line-height:12px}
+div.mondayFirst ul.events li.first.tue,div.sundayFirst ul.events li.first.mon{margin-left:60px}
+div.mondayFirst ul.events li.first.wed,div.sundayFirst ul.events li.first.tue{margin-left:120px}
+div.mondayFirst ul.events li.first.thu,div.sundayFirst ul.events li.first.wed{margin-left:180px}
+div.mondayFirst ul.events li.first.fri,div.sundayFirst ul.events li.first.thu{margin-left:240px}
+div.mondayFirst ul.events li.first.sat,div.sundayFirst ul.events li.first.fri{margin-left:300px}
+div.mondayFirst ul.events li.first.sun,div.sundayFirst ul.events li.first.sat{margin-left:360px}
+div.oversizeGrid{-webkit-overflow-scrolling:touch;width:460px}
+table.grid td.first,table.grid th.first{padding-left:22px!important}
+table.grid td.last,table.grid th.last,table.grid td.right{padding-right:22px!important}
+ul.form3 li{margin-left:0;min-height:55px;padding-right:0;width:216px}
+ul.form3 input.text,ul.form3 li.double input.text{width:186px}
+ul.form3 li.double{width:197px}
+ul.form3 select,ul.form1 select{padding:7px 5px;width:198px}
+ul.form3 li.half input.text{width:80px!important}
+ul.form3 li.frequentFlier div{padding-top:15px;text-align:left;width:189px}
+ul.form3 input.file,ul.form3 input.text{padding:8px 5px}
+ul.form1{margin-left:22px!important;width:438px!important}
+ul.form1 li{width:416px}
+ul.form1 div{margin-right:10px;width:147px}
+ul.form1 div.mandatory{background-position:169px 4px}
+ul.form1 input.text{width:210px}
+ul.form3 li.frequentFlier ul li{padding-right:0}
+ul.form3 li.frequentFlier div img{float:left!important;margin:-2px 10px 0 0 !important}
+ul.form3 li.dateMonthYear fieldset select.year,ul.form3 li.dateMonthYear fieldset select.month{width:66px}
+ul.form3 li.triple,ul.form3 li.frequentFlier{width:440px}
+ul.form3 li.message textarea{width:407px}
+ul.form3 li.paragraph textarea{width:417px}
+ul.form1 li.telephone fieldset li.number input{width:141px}
+ul.form1 li.telephone fieldset ul{width:233px!important}
+ul.form1 li.telephone fieldset li.number{width:154px}
+.modalDialog a.close{background-position:5px 5px;padding:5px}
+.subscribe ul.form3.subform,.subscribe ul.form3.subform li,.subscribe ul.form3.subform div.mandatory{width:414px!important}
+.subscribe ul.form3.subform input.text{width:401px!important}
+.twoColumn.arrowhead li{min-width:195px}
+
+/*validation page*/
+#additionalContent h3,#contentPanel #listing tr td h3,#contentPanel ul.form1.build li.multiCity ul li.location label,#contentPanel ul.form1.build li.multiCity ul li.clarify label,#contentPanel ul.form1.build li.multiCity ul li label{padding-left:0}
+#calendar,#calendar div.month,#contentPanel ul.itinerary li.flights tr.moreInfo td div,#contentPanel ul.form1.build fieldset,#contentPanel ul.form1.build select{width:276px}
+#contentPanel ul.form1.build input.text{width:264px}
+#contentPanel ul.form1.build li.travelers ul li.infants{padding-left:10px}
+#contentPanel ul.form1.build div{width:95px}
+#contentPanel ul.form1.build li.location fieldset p,#contentPanel ul.form1.build li.clarify fieldset p{padding-top:0;width:274px!important}
+#contentPanel ul.form1.build li.location ul,#contentPanel ul.form1.build li.clarify ul{width:244px!important}
+#contentPanel ul.form1.build li.location ul li,#contentPanel ul.form1.build li.clarify ul li{width:270px}
+#contentPanel ul.form1.build p{padding-top:8px;width:414px!important}
+#contentPanel ul.form1.build div.mandatory{background-position:111px 4px}
+#contentPanel ul.form1.build li.travelers ul li{padding:0 0 0 10px;width:85px}
+#contentPanel ul.form1.build input.submit{margin:-3px 0 0 33px !important}
+#contentPanel ul.form1.build input.submit.secondary{margin:-3px 0 0 10px !important}
+#contentPanel ul.form1.build li.multiCity ul li{width:311px}
+#contentPanel ul.form1.build li.multiCity p{padding-left:0;width:228px!important}
+#contentPanel ul.form1.build li.multiCity ul li.location div label,#contentPanel ul.form1.build li.multiCity ul li.clarify div label{width:187px!important}
+#contentPanel ul.form1.build li.multiCity input.text{width:217px!important}
+#contentPanel ul.form1.build li.multiCity ul li label.mandatory{background-position:0 4px;padding-left:22px}
+#contentPanel ul.form1 li.multiCity ul li label{width:81px}
+#contentPanel ul.form1.build ul#advanced {padding-left:0px;list-style:none}
+#contentPanel ul.form1.build ul#advanced fieldset{width:416px}
+#contentPanel ul.form1.build ul#advanced fieldset select{width:275px}
+#contentPanel ul.form1.build ul#advanced fieldset label{width:105px}
+#contentPanel ul.form1.build ul#advanced fieldset ul {margin-bottom:5px!important}
+#contentPanel ul.form1.build ul#advanced fieldset ul li label{width:165px}
+#contentPanel ul.form1.build ul#advanced li.direct fieldset label{margin-right:35px}
+#contentPanel ul.form1.build ul#advanced fieldset label.check{width:150px;margin-right:0px}
+#contentPanel ul.form1.build ul#advanced fieldset input.text{width:264px}
+#contentPanel ul.itinerary div.sector h4,#contentPanel ul.itinerary div.originDestination h5,#infoPanel #subNavigation li{padding-left:7px}
+#contentPanel ul.itinerary li.flights.summary div.fees h4,#contentPanel ul.itinerary li.total.average p.customerPrice,#contentPanel ul.itinerary li.total.average p.price,#contentPanel.alternative #holidays ul li p,#tripOverview em.icon,#tripOverview dfn a,div.mondayFirst ul.events li.first.mon,div.sundayFirst ul.events li.first.sun{margin-left:0}
+#contentPanel ul.itinerary div.fees div *,#contentPanel.alternative #addComment ul.form3.subform div,#infoPanel.alternative .contact ul.form1 li.telephone fieldset label,#contentPanel ul.form3 div,#tripSearch label,div.planner ul.events li p{font-size:13px}
+#contentPanel ul.itinerary li div.details ul table td.origin,#contentPanel ul.itinerary li.total p.customer,#contentPanel ul.itinerary div.fees ul li p.customer{width:92px}
+#contentPanel ul.itinerary li div.details ul table td.date,#contentPanel ul.form1 li.multiCity ul li label.mandatory{width:60px}
+#contentPanel ul.itinerary input.submit,#tripOverview ul.visual{margin-right:22px}
+#contentPanel ul.itinerary li.insurance img,#searchBy .checkDoubleList li{margin-right:20px}
+#contentPanel ul.itinerary li div.details ul table td.logo,#contentPanel ul.itinerary.ticket li.receipt table .package,#contentPanel.alternative table.grid.itinerary .calendar,#contentPanel ul.itinerary li.receipt table .package{padding-left:22px}
+#contentPanel ul.itinerary div.originDestination,#contentPanel ul.itinerary div.fees,#contentPanel ul.itinerary li.footer h5,#contentPanel ul.itinerary div.sector,#contentPanel ul.itinerary li.total,#contentPanel ul.itinerary div.fees ul,#contentPanel ul.itinerary div.fees ul li,#contentPanel ul.itinerary div.sector,#contentPanel ul.itinerary.ticket li.service div.serviceNotes,#contentPanel ul.itinerary.ticket li.hotel div.hotelNotes{width:430px}
+#contentPanel ul.itinerary.ticket li ul.tickets li div.traveler,#contentPanel ul.itinerary.ticket li ul.tickets li div.traveler p,ul.form3 div{width:198px}
+#contentPanel ul.itinerary li.total p.customerPrice,#contentPanel ul.itinerary div.fees ul li p.customerPrice,div.planner ul li,div.planner ul.days li{width:50px}
+#contentPanel ul.itinerary li.flights div.details ul table td,#contentPanel ul.itinerary li.hotel div.details ul table td,#contentPanel ul.itinerary li.service div.details ul table td,#contentPanel ul.itinerary li.receipt table .amount{padding-right:22px}
+#contentPanel ul.itinerary li.receipt table tr.new td.reference input.text,#contentPanel ul.itinerary li.receipt table tr.new td.for select{width:70px}
+#contentPanel ul.itinerary li.flights div.details div.note h6,#contentPanel ul.itinerary li.flights div.details div.note p{margin-left:29px}
+#contentPanel ul.itinerary li.hotel div.hotelNotes p,#tripSearch select{width:411px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock h4{margin-left:0;width:70px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock li{margin:0 20px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock span{display:block;margin-left:22px;margin-top:0!important}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock ul li span{display:none}
+#contentPanel a.alternative,#contentPanel div.nearbyLocations{float:none;margin-left:22px}
+#contentPanel.alternative #addComment input.text,#infoPanel.alternative .contact ul.form1 li input.text,ul.form3.subform li{width:403px}
+#contentPanel div.message a.alternative{margin-left:0px}
+#contentPanel h2,#contentPanel .articles li img{margin-left:20px;width:415px}
+#contentPanel table.listing tr.offer td.sell p.offer,#infoPanel.alternative .contact{display:block}
+#contentPanel table.listing.packages table td.city,ul.form3 li.telephone fieldset li.number input{width:116px}
+#contentPanel table.listing input.submit,#listing table td.priceInfo .submit,#listing table td.priceInfo .submit.request{-khtml-border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;height:27px;min-width:27px;padding:0;text-indent:-9999px}
+#content #build fieldset.multiCity div input.text,#contentPanel ul.form1.build li.travelers select{width:85px}
+#content #build h6,#contentPanel input.submit.secondary{margin-right:0}
+#content #build input.radio,#searchBy fieldset.starRating input[type=checkbox]{margin-top:0}
+#content #build .tripOptions label.radio,#content #build input.check,#content #build label.check,#searchBy .checkList ul li,#additionalContent .reviews{display:inline-block}
+#contentPanel table.listing.flights table td.flights,#contentPanel table.listing.packages table td.flights,#searchBy fieldset,#contentPanel #hotels p,#listing table td.priceInfo p,#contentPanel ul.itinerary.ticket li.footer div.contact ul li em,#contentPanel.alternative #holidays ul li h3,#contentPanel.alternative #holidays p,#contentPanel.alternative ul.offer li,#contentPanel.alternative ul.offer li p,#contentPanel ul.itinerary li ul.tickets p,#contentPanel ul.itinerary li.receipt ul.tickets li div.payment p{width:auto}
+#content #build fieldset select,#content #build fieldset div.date,#infoPanel #build fieldset select,#contentPanel ul.itinerary li ul.tickets li div.traveler{width:200px}
+#content #build fieldset ul,#content #build fieldset.tripOptions,#searchBy .hotel.field,#searchBy fieldset.starRating{width:420px}
+#contentPanel div.message p,#contentPanel .itineraryView ul.itinerary li div.details ul table td.logo{padding-left:20px}
+#header,#headerPanel,ul.form3 li.frequentFlier fieldset{height:auto}
+#hotelDescription .goBack,#tripOverview a,#tripOverview em,#tripOverview dfn,#tripSearch fieldset{margin-left:22px}
+#infoPanel > div,#contentPanel,#contentPanel ul.itinerary li,#contentPanel ul.itinerary li.insurance,#contentPanel ul.itinerary.ticket li.receipt table,#contentPanel ul.itinerary.ticket li.hotel div.details img.map,#contentPanel ul.itinerary.ticket li.footer,#contentPanel .articles,#contentPanel .articles li img,#contentPanel.alternative #comments ul,#contentPanel ul.itinerary li.receipt table{width:460px}
+#infoPanel > div > h6,.list.otherFlights li a{padding-left:21px}
+#searchBy fieldset.airline li,#searchBy fieldset.cabinClass li,#contentPanel a.nearby{display:inline-block;width:auto}
+#searchBy .hotel.field label,#searchBy .hotel.field input[type=text],ul.form3.subform li.submit{width:410px}
+#tripSummary ul li.flight table,#contentPanel ul.itinerary.ticket li.footer p,#contentPanel.alternative .photo img,#contentPanel ul.itinerary li ul.tickets li div.eTicket p,#contentPanel ul.itinerary li.receipt ul.tickets li div.amount,#contentPanel ul.itinerary li.receipt ul.tickets li div.amount p,ul.form3 select.serviceType{width:100%}
+ul.form1 li textarea,#contentPanel ul.form1.build li.location label.radio,#contentPanel ul.form1.build li.clarify label.radio{width:218px}
+ul.form1 fieldset,#contentPanel ul.form1.build li.multiCity fieldset{width:224px}
+ul.form1 li.multiCity ul li.location div,ul.form1 li.multiCity ul li.clarify div{width:189px!important}

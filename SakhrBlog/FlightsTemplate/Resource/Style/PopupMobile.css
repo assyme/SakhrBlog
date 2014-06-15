@@ -1,0 +1,28 @@
+/*Generic pages*/
+html,body,#rules li ul.travelerSegment li ul li{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+#page{padding:0 0 29px;width:460px}
+#content{padding:30px 0 20px;width:460px}
+#content ol{padding-left:45px}
+#footerPanel,#footerPanel > *{width:445px}
+#tertiaryNavigation{margin-left:12px;margin-top:40px;width:298px}
+#tertiaryNavigation li{margin:10px 13px 0 0}
+#footerPanel{padding:0 10px 0 15px}
+#footerPanel .list{margin:30px 0 0 11px !important;width:210px}
+#follow{float:right;margin:50px 18px 0 0 !important;overflow:hidden;width:auto!important}
+#content h1,#content p,#content h2{margin-left:20px;width:417px}
+#content h1{margin-left:19px}
+#footer{width:100%}
+#content ul.fares p,#content ul.fares h2{width:auto}
+#content ol li{width:394px}
+#content div.message{width:421px}
+#content ul.fares li div.item,#content ul.fares li div.sector,#rules li div.sector{padding:4px 21px;width:418px}
+#content ul.fares li table td.fee{padding-right:21px;vertical-align:middle}
+#content ul.fares li div.item p,#content ul.fares li div.sector p,#rules li div.sector p{margin-right:17px}
+#content div.message.information{padding-left:5px;width:416px}
+#content ul.fares li table td.purpose{padding-left:21px}
+#content ul.fares li div.traveler,#rules li ul.travelerSegment li{padding:4px 21px;width:418px}
+#rules li ul.details li{word-wrap:break-word}
+#rules li ul.details li ul{width:400px}
+#content ul.fares li table,#content ul.fares,#rules{width:460px}
+#content ul.fares li div.traveler,#rules li ul.details{width:418px}
+#rules li ul.details li p,#rules li ul.details li h4{margin-left:5px}

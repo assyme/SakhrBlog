@@ -1,0 +1,1091 @@
+/* 
+ * Print
+ */
+ 
+@media print
+{
+ #content{background:url(/Resource/Image/Background/PrintHeader.gif) no-repeat 0 0;margin:0!important;overflow:visible!important;padding:100px 0 0!important;width:723px!important}
+ #contentPanel{float:none!important;margin:0!important;padding:0!important}
+ #header,#headerPanel,#footer,#infoPanel,.printInvisible,fieldset.actionList,#progress,#paging,#contentPanel a.alternative,input.submit{display:none!important}
+ *{color:#000!important;page-break-after:avoid;page-break-before:avoid}
+ * html body,html{height:auto!important}
+ body{background:transparent!important;padding:35px 0 0}
+}
+@media screen and (max-width:1024px)
+{
+ body{overflow-x:hidden}
+}
+
+/* 
+ * General
+ */
+ 
+#contentPanel ul{list-style-type:square;margin:10px 0 0;padding-left:16px}
+.placeholder{color:#999!important}
+:-moz-placeholder,::-webkit-input-placeholder{color:#999}
+@font-face{font-family:DINWeb;src:url("../Font/DINWeb.eot");src:url("../Font/DINWeb.woff") format("woff")}
+a{color:#008ed6;text-decoration:none;cursor:pointer}
+a:hover{text-decoration:underline}
+a.button:hover{text-decoration:none!important}
+a.hide{background:url(../Image/Icon/Collapse.png) no-repeat center right;color:#666!important;padding-right:20px}
+a.show{background:url(../Image/Icon/Expand.png) no-repeat center right;color:#666!important;padding-right:20px}
+body{background:#f8f8f8;color:#444;font:13px Arial,Helvetica,sans-serif;margin:0;min-height:100%}
+em,dfn,address{font-style:normal!important}
+form,fieldset{border:none;margin:0;padding:0}
+h1{color:#444;font:34px DINWeb,Arial,Helvetica,sans-serif;font-weight:400;line-height:1.2em;margin-bottom:28px}
+h1 em,h2 em{font-style:normal}
+h1,h2,h3,h4,h5,h6,p{margin:0}
+h2{color:#444;font:27px DINWeb,Arial,Helvetica,sans-serif;font-weight:400;line-height:1.2em;margin-bottom:18px}
+img{border:none;display:block}
+p q{padding-left:0}
+q{display:inline-block;font-family:Georgia, "Times New Roman", Times, serif;font-style:italic;margin-bottom:5px}
+small{color:#999;font-size:inherit}
+sup{position:relative;top:-.5em;vertical-align:top}
+ul{list-style:none;margin:0;padding:0}
+
+/* Button */
+#contentPanel a.button{background:#008ed6 url(../Image/Background/Button.png) no-repeat 100% 49%;border:none;border-radius:6px;box-shadow:2px 2px 1px #ddd;color:#fff;cursor:pointer;display:block;float:left;font:bold 13px/31px Arial,Helvetica,sans-serif;margin:10px 15px 10px 0;padding:0px 23px 0px 9px;vertical-align:middle}
+#contentPanel a.button.secondary{background:#999;box-shadow:2px 2px 1px #ddd;padding-right:14px}
+#contentPanel a.submit{background:#008ed6 url(../Image/Background/Button.png) no-repeat 100% 49%;border:none;border-radius:6px;box-shadow:0 2px 1px #f4f4f4;color:#fff;cursor:pointer;display:block;float:right;font:bold 13px Arial,Helvetica,sans-serif;margin:30px 0 0 10px;min-width:33px;padding:7px 23px 7px 9px;vertical-align:middle}
+#contentPanel a.submit.request{background:#999 url(../Image/Background/Button.png) no-repeat 100% 55%!important}
+#contentPanel a.submit.secondary{background:#008ed6!important;box-shadow:2px 2px 1px #ddd;color:#fff!important;padding-right:14px!important}
+#contentPanel input.submit,#infoPanel.alternative .packageSummary input.submit,#infoPanel.alternative .contact .form1 input.submit{-khtml-border-radius:6px;-moz-border-radius:4px;-webkit-border-radius:4px;background:#008ed6 url(../Image/Background/Button.png) no-repeat 100% 49%;border:none;border-radius:4px;box-shadow:2px 2px 1px #ddd;color:#fff;cursor:pointer;display:block;float:right;font:bold 13px Arial,Helvetica,sans-serif;margin:30px 0 0 10px;min-width:65px;padding:7px 23px 7px 9px;vertical-align:middle}
+#contentPanel input.submit.alternative{float:left;margin:10px 0 0}
+#contentPanel input.submit.button{display:inline!important;float:right!important;margin:0 0 0 10px !important}
+#contentPanel input.submit.request{background:#999 url(../Image/Background/Button.png) no-repeat 100% 55%!important;box-shadow:2px 2px 1px #ddd}
+#contentPanel input.submit.secondary{background:#999!important;box-shadow:2px 2px 1px #ddd;color:#fff!important;padding-right:9px!important}
+.button{background:#ccc;border:none;border-radius:3px;box-shadow:0 0 0 #aaa;color:#444;cursor:pointer;display:inline-block;font:bold 13px/32px Arial,Helvetica,sans-serif;height:32px;margin:0 0 6px;padding:0px 16px 0px 14px;text-align:center}
+.blue{background:#008ed6!important;box-shadow:0 0 0 #0E6994!important;color:#fff!important}
+.yellow{background:#ffc61e;box-shadow:0 0 0 gray!important;color:#333!important}
+.secondary{background:transparent!important;border:1px solid #CCC!important;color:#CCC!important;display:inline-block;font-size:12px;height:auto;line-height:normal;margin-left:5px;margin-top:1px;padding:6px 11px;vertical-align:top}
+
+/* Basic styles with class */
+.center{text-align:center!important}
+.clear{clear:both}
+.clickable{cursor:pointer}
+.hidden,.invisible{display:none!important}
+.newLine{clear:both!important}
+.right{text-align:right!important}
+
+/*Icons*/
+em.icon{background-repeat:no-repeat;display:inline-block;height:16px;width:16px}
+em.icon span{display:none}
+img.flag{margin:0!important;padding:3px 0 0}
+
+/*Heading with custom class*/
+h4.contact{background:#c4dff3;border-top:solid 1px #008ed6;color:#333!important;font-size:13px!important;font-weight:400;margin-top:12px;padding:3px 10px!important;width:703px}
+h4.contact,h4.section,h4.traveler{background:#c4dff3;border-top:solid 1px #008ed6;color:#333!important;font-size:13px!important;font-weight:400;margin-top:12px;padding:4px 10px!important;width:703px}
+h4.related{margin-top:1px!important}
+h4.section a{text-decoration:none}
+h4.section a:hover{text-decoration:underline}
+h5.section{margin-top:1px}
+h5.traveler,h5.section{background:#daebf7;color:#333!important;float:left;font-size:13px!important;font-weight:400;line-height:17px;margin-top:2px;padding:3px 10px!important;width:703px}
+
+/* 
+ * Page
+ */
+ 
+/*Content*/
+#content{background:#fff;border:1px solid #eee;border-radius:6px;margin:25px auto 0;overflow:hidden;padding:30px;width:958px}
+#content.holiday{background:none;border:none;margin:18px auto 0;overflow:hidden;padding:0 5px 40px;width:960px}
+#contentPanel > :first-child{margin-top:0!important;padding-top:0!important}
+#contentPanel a{color:#006ba3;text-decoration:none}
+#contentPanel h3{color:#666;font-size:15px;font-weight:700;line-height:1.2em;margin:30px 0 15px}
+#contentPanel h3 a.alternative{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;box-shadow:none;color:#006ba3;font-size:13px;font-weight:400;padding-right:15px;text-decoration:none}
+#contentPanel h3.first,#contentPanel ol li,#contentPanel ul li,#contentPanel p{margin-top:10px}
+#contentPanel h4{color:#006ba3;font-size:13px;line-height:17px;padding:26px 0 1px}
+#contentPanel h4 span{float:right;font-size:11px}
+#contentPanel h4.total span{font-size:13px}
+#contentPanel img{margin:20px 0}
+#contentPanel ol{margin:10px 0 0;padding-left:30px}
+#contentPanel p img,#contentPanel ol img,#contentPanel ul img{float:right;margin:3px 0 17px 25px}
+#contentPanel p.fineprint{color:#999;font-size:11px;margin-top:20px}
+#supplement{margin:0 auto;padding:30px 0;width:960px}
+
+/*Title*/
+#contentPanel .linkList a,#contentPanel .linkList em,#title .linkList em,#title .linkList a{font-size:11px}
+#contentPanel .linkList a,#title .linkList a{margin-right:12px}
+#contentPanel .linkList em,#title .linkList em{color:#c4c9cc;margin-left:0}
+#contentPanel .linkList,#title .linkList{margin-bottom:10px;margin-top:-28px;width:328px}
+#title{margin:0 auto;padding:0 30px;position:relative;width:960px}
+#title .comments a,#contentPanel .articles .comments,#title .stamp .social a,#infoPanel.alternative .theme li.last{margin-right:0}
+#title .comments,#contentPanel .articles .comments{background:url(../Image/Icon/Sprite.png) no-repeat -381px 0;float:left;font-weight:700;margin:0 5px 0 10px;min-height:20px;padding-left:26px;width:auto}
+#title .linkList{margin-top:0!important}
+#title .stamp{float:right;margin:30px 0 8px;min-width:150px;width:auto}
+#title .stamp a{margin-right:5px}
+#title h1 span{font-size:43px;margin-left:5px}
+#title h1,#title h2{display:inline-block;margin-bottom:0;margin-top:28px;max-width:650px;width:auto}
+
+/*Header*/
+#header{background:#fff;border-bottom:1px solid #e8e8e8;height:60px;overflow:hidden;width:100%}
+#headerPanel{height:80px;margin:0 auto;width:960px}
+#headerPanel a.logo{background:url(../Image/Icon/SpriteDefault.png) no-repeat 0 0;cursor:pointer;float:right;height:60px;margin:5px 0 0;overflow:hidden;text-indent:-9999px;width:111px}
+
+/*Footer*/
+#footer{color:#888;font-size:0.01em;margin:0 auto 15px auto;padding-bottom:10px;width:960px}
+#footer > *{display:inline-block;font-size:100em;padding:0;margin:0;vertical-align:top;width:960px;zoom:1; /*Backward compatibility*/ *display:inline;zoom:1}
+#footer.withMap{padding-bottom:40px}
+
+/*Content panel*/
+#contentPanel{float:left;line-height:1.5em;margin:0;padding:0;width:723px}
+#contentPanel a,#title a{color:#006ba3;text-decoration:none}
+#contentPanel a.alternative{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;box-shadow:none;color:#006ba3;float:left;font-size:13px;font-weight:400;margin:-12px 0 17px;padding-right:15px;text-decoration:none}
+#contentPanel a.terms{display:inline-block}
+
+/*Information Panel*/
+#infoPanel{display:inline;float:right;margin:0 0 0 32px;width:200px}
+#infoPanel > div{background-color:#f6f6f6;border:0 solid #d8d8d8;border-top:1px solid #d8d8d8;color:#555;float:left;margin-bottom:15px;padding-bottom:16px;width:198px}
+#infoPanel > div > *{margin-left:15px;margin-right:15px}
+#infoPanel > div > h6{color:#444;font-size:17px;font-weight:400;line-height:15px;margin:8px 0;padding:10px 15px 11px}
+#infoPanel > div > h6 > a{background-position:170px center;color:#444!important;display:block;margin:-10px -15px -12px;padding:10px 15px 12px;text-decoration:none}
+#infoPanel > div > h6 > a:hover{color:#008ed6!important;text-decoration:none}
+#infoPanel > div.hidden{display:block!important;padding-bottom:0}
+#infoPanel > div.hidden > *{display:none}
+#infoPanel > div.hidden > h6{background:none;border-bottom:none;box-shadow:none;display:block;margin:8px 0}
+
+/*Information Alternative*/
+#infoPanel.alternative{float:right;margin:0;width:300px}
+#infoPanel.alternative .subscribe a.button{background:#008ED6;border:none;border-radius:6px;box-shadow:2px 2px 1px #DDD;color:#FFF;cursor:pointer;display:inline-block;float:none;font:bold 13px Arial,Helvetica,sans-serif;margin:-5px 15px 10px 0;padding:8px 12px;text-decoration:none;vertical-align:middle}
+#infoPanel.alternative .subscribe p{display:inline-block;margin-right:0;width:164px}
+#infoPanel.alternative > div{background:none;margin-bottom:20px;width:300px}
+#infoPanel.alternative > div > h6{border-bottom:none;box-shadow:none;color:#444;font-size:17px;font-weight:400;line-height:21px;margin:0 0 15px;padding:15px 15px 0;text-shadow:1px 1px 0 #fff}
+#infoPanel.alternative > div > h6 > a{margin:-15px -15px 0;padding:15px 15px 0}
+#infoPanel.alternative > div.build{background-color:#e6f1fa;border-color:#008ed6}
+
+/*Information Alternative with Highlight*/
+#infoPanel .highlight input.submit{background:#008ed6 url(../Image/Background/Button.png) no-repeat 100% 49%;border:none;border-radius:6px;box-shadow:2px 2px 1px #ddd;color:#fff;display:block;font-weight:700;margin-right:10px;padding:7px 23px 7px 9px !important}
+#infoPanel.alternative > .highlight{background:#008ed6!important;border:0 none;color:#fff!important;padding-left:0px;padding-right:0px;width:100%}
+#infoPanel.alternative > .highlight a,#infoPanel.alternative > .highlight label{color:#fff}
+#infoPanel.alternative > .highlight h6{color:#fff!important;font:27px/1.2em DINWeb,Arial,Helvetica,sans-serif!important;letter-spacing:0;margin-bottom:10px!important;margin-right:-5px;text-shadow:none!important}
+#infoPanel.alternative > .highlight input.submit{background:#ffc61e url(../Image/Background/ButtonHome.png) no-repeat 100% 55%!important;border:0;box-shadow:0 0 0 gray!important;color:#333!important;cursor:pointer!important;float:right;font:bold 14px Arial,Helvetica,sans-serif!important;margin:12px 4px 3px;text-align:right}
+
+/*Panorama panel*/
+#panorama{background-color:#fff;background-position:50% 0;background-repeat:repeat-x;box-shadow:0 2px 1px #f4f4f4;margin-top:-1px;min-height:200px;width:100%}
+#panorama.small{margin-bottom:-66px}
+#panorama.small #panoramaPanel{margin:0 auto;min-height:196px;width:1020px}
+#panorama.small #panoramaPanel .button{margin-top:3px;margin-right:15px}
+#panorama.small #panoramaPanel a.secondary{background:transparent;border:1px solid #ccc;color:#ccc;display:inline-block;font-size:12px;height:auto;letter-spacing:0.1em;line-height:normal;margin-left:5px;margin-top:40px;padding:6px 11px;text-transform:uppercase;vertical-align:top}
+#panorama.small #panoramaPanel a.secondary:hover{border:1px solid #fff!important;color:#fff!important}
+#panorama.small h1{color:#fff;display:inline-block;margin:35px 15px 0 27px;width:auto}
+#panoramaPanel{margin:0 auto;min-height:200px;width:960px}
+
+/*FreePanel alternative to Content panel*/
+#freePanel{margin:0;padding-left:0;width:960px}
+#freePanel #holidays{margin-bottom:-30px;margin-top:15px}
+#freePanel #holidays h1{margin-bottom:18px;margin-top:0}
+#freePanel .twoColumnContent{display:inline-block;margin:0 35px 0 0;width:606px}
+#freePanel .twoColumnContent h3{margin:30px 0 15px}
+#freePanel .twoColumnContent p{margin:10px 0}
+#freePanel > *{display:inline-block;margin:0;padding:0;vertical-align:top}
+#freePanel a.button{cursor:pointer;display:block;float:left;font:bold 13px/32px Arial,Helvetica,sans-serif;margin:10px 15px 10px 0;padding:0px 23px 0px 9px;text-decoration:none;vertical-align:middle}
+#freePanel h3{color:#666;font-size:15px}
+
+/*Business SignIn page*/
+#freePanel .signIn{background:#008ed6;color:#fff;margin-top:0;padding:20px;width:266px}
+#freePanel .signIn .message *,#infoPanel.alternative .contact div.message *{color:#444!important}
+#freePanel .signIn .message p dfn,#infoPanel.alternative .contact div.message dfn{display:block;padding:0 0 0 10px}
+#freePanel .signIn .message p em,#infoPanel.alternative .contact div.message p em{display:block;font-weight:700}
+#freePanel .signIn .message p,#infoPanel.alternative .contact div.message p{float:none;font-size:13px;line-height:normal;margin:0;padding:10px 14px 0;width:auto}
+#freePanel .signIn .message strong,#infoPanel.alternative .contact div.message strong{color:#c30;font-weight:700;text-decoration:none}
+#freePanel .signIn .message ul li,#infoPanel.alternative .contact div.message ul li{line-height:19px;margin-top:0}
+#freePanel .signIn .message ul,#infoPanel.alternative .contact div.message ul{margin:0 0 0 12px}
+#freePanel .signIn .message,#infoPanel.alternative .contact div.message{background:#fbfbfb;background-position:right top;background-repeat:no-repeat;border:1px solid #ccc;border-radius:6px;margin:10px 0 20px;padding:0 35px 11px 0;width:227px}
+#freePanel .signIn .message.confirmation,#infoPanel.alternative .contact div.message.confirmation{background-color:#fbfef5;background-image:url(../Image/Background/Message/Confirmation.gif);border-color:#acd357}
+#freePanel .signIn .message.error,#infoPanel.alternative .contact div.message.error{background-color:#fff8f8;background-image:url(../Image/Background/Message/Error.gif);border-color:#c30}
+#freePanel .signIn .message.information,#infoPanel.alternative .contact div.message.information{background-color:#fbfef5;background-image:url(../Image/Background/Message/Information.gif);border-color:#acd357}
+#freePanel .signIn .message.warning,#infoPanel.alternative .contact div.message.warning{background-color:#ffe;background-image:url(../Image/Background/Message/Warning.gif);border-color:#ffc61e}
+#freePanel .signIn a{float:left;margin-top:9px;text-decoration:none}
+#freePanel .signIn div{font-size:11px;margin-bottom:2px}
+#freePanel .signIn fieldset,.faq li{margin-bottom:10px}
+#freePanel .signIn h6{font:27px/1.2em DINWeb,Arial,Helvetica,sans-serif!important;margin-bottom:20px}
+#freePanel .signIn input.submit{background:#ffc61e url(../Image/Background/ButtonHome.png) no-repeat 100% 55%;border:none;border-radius:6px;box-shadow:2px 2px 1px gray;color:#333;cursor:pointer;display:inline-block;float:right;font:bold 14px Arial,Helvetica,sans-serif;margin-right:2px;padding:8px 28px 7px 14px}
+#freePanel .signIn input.text{width:254px}
+#freePanel .signIn input[type=text],#freePanel .signIn input[type=password]{background:#fff;border:1px solid #ccc;border-radius:4px;box-shadow:-1px 1px 1px #eee inset;padding:5px}
+#freePanel .signIn input[type=text]:focus,#freePanel .signIn input[type=password]:focus{background:#fff;border:1px solid #008ed6;color:#000;outline:none}
+
+/* 
+ * Navigation
+ */
+ 
+/*Primary Navigation*/
+#primaryNavigation{font-size:0.01em;height:40px;margin-left:-1px;margin-top:0px;padding-top:4px}
+#primaryNavigation li{background:url(../Image/Background/PrimaryNavigation.gif) no-repeat 0 100%;display:inline-block;font-size:14px;height:20px;padding:11px 20px 25px 20px;position:relative;vertical-align:top;white-space:nowrap; /*Backward compatibility*/ *display:inline;zoom:1}
+#primaryNavigation li a{color:#008ed6;display:inline-block;height:20px;margin:-11px -20px -9px -19px;padding:19px 20px 19px 20px;font-weight:bold;text-decoration:none;vertical-align:top;white-space:nowrap; /*Backward compatibility*/ *display:inline;zoom:1}
+#primaryNavigation li a:hover{border-top:4px solid #ffc61e;margin-top:-15px}
+#primaryNavigation li.active a, #primaryNavigation li.selected a{color:#555;border-top:4px solid #ffc61e;margin-top:-15px}
+#primaryNavigation li.flight{background:none;padding-left:0px}
+#primaryNavigation li.home{margin-right:20px;padding-left:0}
+#primaryNavigation li.country{position:relative}
+#primaryNavigation li.country a{margin-right:20px;padding-left:0}
+#primaryNavigation li.country ul{position:absolute;left:0;top:40px}
+
+/*Tertiary Navigation*/
+#tertiaryNavigation{margin-top:16px;width:630px}
+#tertiaryNavigation li{display:inline;font-size:13px;margin:10px 25px 0 0;zoom:1}
+#tertiaryNavigation li a{color:#888;text-decoration:none}
+#tertiaryNavigation li a:hover,#helpPanel ul a:hover,#signInPanel a:hover{text-decoration:underline}
+
+/* 
+ * Articles
+ */
+ 
+#contentPanel .articles .comments{float:right}
+#contentPanel .articles h2{margin-bottom:28px}
+#contentPanel .articles h2 a{color:#444}
+#contentPanel .articles img{float:none;margin:0 0 10px;padding-top:0}
+#contentPanel .articles li{border-bottom:1px solid #ddd;display:inline-block;list-style:none;margin-bottom:30px;margin-top:0;padding-bottom:20px;width:100%}
+#contentPanel .articles li.last{border-bottom:0}
+#contentPanel .articles p{width:100%}
+#contentPanel .articles p img{float:right;margin:3px 0 17px 25px}
+#contentPanel .stamp{float:right;margin:5px 0 8px;width:auto}
+#contentPanel.alternative .stamp{margin-top:-28px}
+
+/*Promotion offer*/
+#contentPanel.alternative .offer{background:url(../Image/Icon/Sprite.png) repeat-x 0 -635px;border-color:#e8e8e8 #e8e8e8 #ccc;border-radius:6px;border-style:solid;border-width:1px;box-shadow:0 2px 1px #f4f4f4;display:inline-block;height:74px;margin:0 0 15px!important;overflow:hidden;padding-left:0!important;width:608px}
+#contentPanel.alternative .offer li{background:url(../Image/Icon/Sprite.png) no-repeat right -542px;float:left;list-style:none;margin-top:0!important;padding:20px 30px 20px 14px;text-align:center}
+#contentPanel.alternative .offer li p{font-size:15px;font-weight:700;margin-top:0!important}
+#contentPanel.alternative .offer li.active{background:#ffc61e url(../Image/Icon/Sprite.png) no-repeat right -457px;border-radius:6px 0 0 0;color:#000;padding-left:20px}
+#contentPanel.alternative .offer li.active p{color:#333}
+#contentPanel.alternative .offer li.last{background:none}
+
+/*Recent post*/
+#recent a{display:inline-block;height:54px;overflow:hidden;text-decoration:none;width:54px}
+#recent img{float:left;height:54px;margin-right:14px}
+#recent p{display:inline-block;margin-bottom:10px;margin-left:10px;vertical-align:top;width:200px}
+#recent p a{color:#006ba3;display:inline;height:auto;overflow:visible;width:auto}
+#recent p a:hover{text-decoration:underline}
+#recent p em{color:#c4c9cc;display:block;font-size:11px;margin-top:10px}
+
+/*Search*/
+#search{background:none;border:0 none!important;box-shadow:0 0 0 #f4f4f4;margin-bottom:5px;position:relative;width:100%}
+#search input.submit{background:url(../Image/Icon/Sprite.png) no-repeat 0 -62px;border:0 none;cursor:pointer;height:24px;margin-right:9px;position:absolute;right:2px;text-indent:-9999px;top:11px;width:24px}
+#search input.text{background:#f6f6f6;border:1px solid #f3f3f3;border-radius:6px;box-shadow:0 1px 1px #f4f4f4;height:34px;line-height:34px;margin-left:-3px;margin-top:3px;padding:0 40px 0 15px;width:246px}
+
+/*Graph*/
+.graph{cursor:default;display:inline-block;margin-left:153px;margin-top:13px;width:auto}
+.graph li{display:inline-block;margin-right:-2px;opacity:0.65;width:53px}
+.graph li em{background:#fff;display:block;height:5px;width:100%}
+.graph li span{color:#ccc;display:block;margin-top:7px;text-align:center;width:100%}
+.graph li.h1 em{background:#fcc}
+.graph li.h2 em{background:#f99}
+.graph li.h3 em{background:#f66}
+.graph li.h4 em{background:#f33}
+.graph li.h5 em{background:red}
+.graph li.h6 em{background:#c00}
+.graph li.h7 em{background:#600}
+.graph li.l1 em{background:#cfc}
+.graph li.l2 em{background:#9f9}
+.graph li.l3 em{background:#6f6}
+.graph li.l4 em{background:#3f3}
+.graph li.l5 em{background:#0f0}
+.graph li.l6 em{background:#0c0}
+.graph li.l7 em{background:#060}
+.graph li.today span{color:#fff}
+.graph li.today,.graph li:hover{opacity:1}
+.priceWatch{color:#ccc;cursor:default;display:inline-block;float:right;margin-right:30px;margin-top:26px;vertical-align:top}
+.priceWatch em{color:#fff;font-size:11px}
+
+/*Google Map*/
+.googleMap{border:0 none;display:inline-block;min-height:200px;width:100%}
+.googleMap div{margin:0!important}
+
+/*Package Summary*/
+.packageSummary{background:#008ed6!important;margin:0 0 20px 0 !important;padding-left:0!important;padding-right:0!important;width:100%!important}
+.contact{float:left;margin:0!important;padding-top:0px!important;width:298px}
+.contact div.message{margin-left:15px!important;padding:0 38px 11px 0 !important;width:229px!important}
+.contact .form1 input.submit{background:#ffc61e url(../Image/Background/ButtonHome.png) no-repeat 100% 55%!important;box-shadow:2px 2px 1px gray!important;color:#333!important;font:bold 14px Arial,Helvetica,sans-serif!important;padding:7px 23px 7px 9px !important}
+.contact .form1 li.telephone fieldset label{color:#B2DBF8!important}
+.packageSummary .price{background:#164271;border-top:1px solid #53a2da;box-shadow:inset -1px 5px 5px #113459;display:inline-block;margin:0!important;padding-left:0;width:300px}
+.packageSummary .price img{float:right;height:45px;margin:10px;width:75px}
+.packageSummary .price img.large{float:right;height:65px;margin:0;width:100px}
+.packageSummary .price p{display:inline-block;font-size:11px;max-width:184px;padding:14px 0 14px 14px;width:auto}
+.packageSummary .price p em{color:#ffc51d!important;display:block;font-size:19px;font-weight:700}
+.packageSummary .price p em strike{color:#a9a9a9!important;font-weight:400}
+.packageSummary .price p em.offer{background:url(../Image/Icon/Sprite.png) no-repeat right -110px;padding-right:50px}
+.contact a.button{background:#ffc61e url(../Image/Background/ButtonHome.png) no-repeat 100% 55%!important;border:0;border-radius:6px;box-shadow:2px 2px 1px gray!important;color:#333!important;cursor:pointer!important;float:right;font:bold 14px Arial,Helvetica,sans-serif!important;margin:20px 18px 3px 4px !important;padding:7px 23px 7px 9px !important;text-align:right}
+.contact a.button.toggleShown,#contentPanel a.autoFocus.toggleShown{display:none}
+.packageSummary div{color:#fff!important;text-align:left}
+
+/*Theme block*/
+.theme{overflow:hidden;padding:15px 0}
+.theme li{background-image:url(../Image/Icon/Sprite.png);background-repeat:no-repeat;display:none;filter:alpha(opacity=75);float:left;height:30px;margin:0 9px 0 18px;opacity:0.75;width:30px}
+.theme li a{display:block;font-size:11px;padding-top:30px;text-decoration:none}
+.theme li.adventure{background-position:-3px -286px;display:block}
+.theme li.beach{background-position:-120px -281px;display:block}
+.theme li.couple{background-position:-234px -282px;display:block}
+.theme li.deadline{background-position:-92px -347px;display:block}
+.theme li.family{background-position:-192px -282px;display:block}
+.theme li.friends{background-position:-160px -281px;display:block}
+.theme li.island{background-position:-44px -282px;display:block}
+.theme li.romantic{background-position:-84px -288px;display:block}
+.theme li.royal{background-position:-138px -341px;display:block}
+.theme li.summer{background-position:-4px -347px;display:block}
+.theme li.warm{background-position:-47px -345px;display:block}
+.theme li.winter{background-position:-274px -284px;display:block}
+.theme li:hover{filter:alpha(opacity=100);opacity:1}
+.theme ul{margin-left:0!important;width:520px}
+#infoPanel.alternative .theme li span{display:none}
+
+/*Holidays Theme*/
+.holidayTheme{overflow:hidden;padding:15px 0}
+.holidayTheme h1{color:#fff;font-size:50px;margin-top:20px;margin-bottom:15px;position:relative;text-shadow:1px 1px 1px #888}
+.holidayTheme li{background-image:url(../Image/Icon/SpriteDefault.png);background-repeat:no-repeat;display:none;float:left;margin:0;width:30px}
+.holidayTheme li a{color:#fff;display:block;font-size:13px;padding:44px 10px 10px;text-align:center;text-decoration:none}
+.holidayTheme li a:hover,.holidayTheme li.selected a{color:#ffc61e}
+.holidayTheme li.allHolidays{background-position:11px -762px;display:block;width:60px}
+.holidayTheme li.romantic{background-position:-55px -762px;display:block;width:75px}
+.holidayTheme li.beach{background-position:-140px -762px;display:block;width:58px}
+.holidayTheme li.adventure{background-position:-201px -762px;display:block;width:77px}
+.holidayTheme li.weekend{background-position:-274px -762px;display:block;width:76px}
+.holidayTheme li.city{background-position:-359px -762px;display:block;width:47px}
+.holidayTheme ul{margin-left:0!important;width:520px}
+.holidayTheme li.allHolidays:hover,.holidayTheme li.allHolidays.selected{background-position:11px -860px}
+.holidayTheme li.romantic:hover,.holidayTheme li.romantic.selected{background-position:-56px -859px}
+.holidayTheme li.beach:hover,.holidayTheme li.beach.selected{background-position:-140px -863px}
+.holidayTheme li.adventure:hover,.holidayTheme li.adventure.selected{background-position:-202px -862px}
+.holidayTheme li.weekend:hover,.holidayTheme li.weekend.selected{background-position:-274px -860px}
+.holidayTheme li.city:hover,.holidayTheme li.city.selected{background-position:-358px -861px}
+.holidayTheme .choose{display:inline-block;margin-top:36px;margin-left:37px}
+.holidayTheme .choose fieldset{display:inline-block}
+.holidayTheme .choose fieldset.theme{display:none}
+.holidayTheme .choose select{background-color:rgba(255, 255, 255, 0.4);border:1px solid rgba(255, 255, 255, 0.4);color:#fff;margin-left:5px}
+.holidayTheme .choose select {color:#444\0/}
+
+/*Email Subscribe*/
+.subscribe .form3.subform{background:none;margin:0 15px!important;padding:0!important;width:270px!important}
+.subscribe .form3.subform div.mandatory{font-size:11px;width:265px}
+.subscribe .form3.subform input.text{width:255px}
+.subscribe .form3.subform li{margin-bottom:0!important;padding-right:0;width:268px}
+.subscribe .form3.subform li.compactSubmit{min-height:15px}
+.subscribe .form3.subform li.compactSubmit input.submit.button{margin-bottom:0}
+
+/* 
+ * UI elements
+ */
+
+input.readonly{background-color:#eee}
+input[type=text],input[type=password]{background:#fff;border:1px solid #ddd;border-radius:4px;padding:5px}
+input[type=text]:focus,input[type=password]:focus,select:focus{background:#fff;border:1px solid #008ed6;color:#000;outline:none}
+select{border:1px solid #ccc;border-radius:5px;font:13px Arial,Helvetica,sans-serif;padding:4px 5px}
+textarea{border:1px solid #CCC;border-radius:4px;font:13px Arial,Helvetica,sans-serif;resize:none}
+
+/*Sort option inside title*/
+fieldset.actionList{float:right;margin:30px 0 15px 20px}
+fieldset.actionList select{border:1px solid #ccc;border-radius:5px;font:13px Arial,Helvetica,sans-serif;margin:0 0 0 5px;padding:4px 5px}
+fieldset.actionList select:focus{background:#fff;border:1px solid #008ed6;color:#000;outline:none}
+
+/*Contact form*/
+#infoPanel.alternative .contact div.mandatory{background-position:250px 4px;width:269px}
+#infoPanel.alternative .contact h6{font:27px/1.2em DINWeb,Arial,Helvetica,sans-serif!important;text-shadow:0 0 0 #fff}
+#infoPanel.alternative .contact input.submit{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;border:0;box-shadow:none;color:#006ba3;cursor:pointer;float:right!important;font:13px Arial,Helvetica,sans-serif;margin:8px 2px 0 0 !important;text-align:right}
+#infoPanel.alternative .contact li{background:none;border-top:0;margin-bottom:10px!important;padding:0 15px;width:270px}
+#infoPanel.alternative .contact li div{color:#fff;font-size:11px;margin-bottom:5px}
+#infoPanel.alternative .contact li input.text{width:257px}
+#infoPanel.alternative .contact li.first div,#infoPanel.alternative .contact li.lastName div{padding-right:0;width:126px}
+#infoPanel.alternative .contact li.first fieldset,#infoPanel.alternative .contact li.lastName fieldset,#infoPanel.alternative .contact li.lastName input.text,#infoPanel.alternative .contact li.first input.text{width:116px}
+#infoPanel.alternative .contact li.first,#infoPanel.alternative .contact li.lastName{width:126px}
+#infoPanel.alternative .contact li.lastName{margin-left:0;padding-left:0}
+#infoPanel.alternative .contact li.message textarea{width:264px}
+#infoPanel.alternative .contact li.telephone{margin-bottom:0!important}
+#infoPanel.alternative .contact li.telephone fieldset li.country{padding:0;width:59px}
+#infoPanel.alternative .contact li.telephone fieldset li.country input.text{width:47px}
+#infoPanel.alternative .contact li.telephone fieldset li.number{padding:0;width:157px}
+#infoPanel.alternative .contact li.telephone fieldset li.number input.text{width:188px}
+
+/*Buttons inside contentPanel*/
+#bookingReasons h6{padding-right:10px}
+#bookingReasons ul{margin-top:11px;padding:0 10px 0 0}
+#bookingReasons ul li{background:url(../Image/Icon/CheckLarge.gif) no-repeat 0 0;margin:0 0 5px;padding:0 0 0 26px}
+#contentPanel .articles a.more{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;border:0;color:#006ba3;cursor:pointer;float:right;font:13px Arial,Helvetica,sans-serif;margin-top:10px;padding:0 17px 0 0 !important;text-align:right;width:100%}
+
+/*Scrollable elements*/
+.scrollable .next{background:url(../Image/Icon/Slider/Right.png) no-repeat scroll center center transparent;display:block;float:left;height:25px;margin:50px 0 0 10px;outline:none;overflow:hidden;padding:5px;position:absolute;text-indent:-999em;width:15px;z-index:5}
+.scrollable .previous{background:url(../Image/Icon/Slider/Left.png) no-repeat scroll center center transparent;display:block;float:left;height:25px;margin:50px 10px 0 25px;outline:none;overflow:hidden;padding:5px;position:absolute;text-indent:-999em;width:15px;z-index:5}
+.scrollable .viewport{float:left;overflow:hidden;position:relative}
+.scrollable .viewport ul{left:0;position:absolute;top:0}
+.scrollable .viewport ul li{float:left}
+.ui-corner-all{border-radius:9px}
+.ui-slider-horizontal{background:url(../Image/Icon/Slider/Background.gif) 50% 50% repeat-x;border:none;height:13px;margin:0 5px 0 8px;position:relative;text-align:left;width:151px}
+.ui-slider-horizontal .ui-slider-handle{cursor:default;height:16px;margin-left:-9px;position:absolute;top:-2px;width:16px;z-index:2}
+.ui-slider-horizontal .ui-slider-range{background:#ffc61e;background-position:0 0;border:none;display:block;height:4px;position:absolute;top:5px;z-index:1}
+.ui-slider-horizontal .ui-slider-range-max{right:0}
+.ui-slider-horizontal .ui-slider-range-min{left:0}
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{background:#fff url(../Image/Icon/Slider/Active.png) 50% 50% repeat-x;border:1px solid #aaa}
+.ui-state-default,.ui-widget-content .ui-state-default{background:#fff}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{background:#eee url(../Image/Icon/Slider/Default.png) 50% 50% repeat-x;border:1px solid #888}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{background:#dde url(../Image/Icon/Slider/Hover.png) 50% 50% repeat-x;border:1px solid #778}
+
+/* 
+ * Lists
+ */
+ 
+.list a{color:#006ba3;text-decoration:none}
+.list a:hover{text-decoration:underline}
+.list em{margin-left:3px}
+.list li{padding:3px 0;width:auto}
+.list.separated li{border-bottom:1px solid #eee;padding:5px 0}
+.list.separated li a{padding-right:16px}
+.list.separated li.last{border-bottom:0 none}
+
+/* 
+ * Bubbles
+ */
+ 
+/*Airport Bubble*/
+#airport{border:1px solid #ccc;border-radius:6px;display:none;overflow:hidden;position:absolute;width:304px;z-index:10}
+#airport a.close{background:url(../Image/Icon/Bubble/Close.png) no-repeat 0 0;cursor:pointer;float:right;height:13px;margin:5px 8px 0 0;overflow:hidden;text-indent:-9999px;width:13px}
+#airport div.title{background:#999 url(../Image/Background/Bubble.gif) repeat-x 0 0;display:none;height:24px;overflow:hidden;width:100%}
+#airport h3{color:#fff;float:left;font-size:11px;line-height:24px;padding-left:10px}
+#airport li{background:#fff no-repeat 283px 8px;color:#555;cursor:pointer;display:block;float:left;font-size:13px;height:20px;line-height:23px;margin:0;overflow:hidden;padding:2px 35px 5px 10px;width:259px}
+#airport li em{font-weight:700}
+#airport li.active{background-color:#008ed6;color:#fff}
+#airport li.active.airport{background-image:url(../Image/Icon/Bubble/AirportActive.png)}
+#airport li.active.destination{background-image:url(../Image/Icon/Bubble/DestinationActive.png)}
+#airport li.active.hotel{background-image:url(../Image/Icon/Bubble/HotelActive.png)}
+#airport li.airport{background-image:url(../Image/Icon/Bubble/Airport.png);background-position:283px 8px}
+#airport li.airport:first-child,#airport li.destination:first-child{background-position:283px 10px}
+#airport li.destination{background-image:url(../Image/Icon/Bubble/Destination.png);background-position:283px 8px}
+#airport li.hotel{background-image:url(../Image/Icon/Bubble/Hotel.png);background-position:280px 8px}
+#airport li.hotel:first-child{background-position:280px 10px}
+#airport li:first-child{padding-top:4px}
+#airport li:last-child{padding-bottom:9px}
+#airport ul{background-color:#fff;overflow:hidden;width:100%}
+#airportMask{background:transparenrt;border:none;display:none;height:0;left:0;position:absolute;top:0;width:0;z-index:9}
+
+/*Calendar Bubble*/
+#calendar{background:#fff;border:1px solid #ccc;border-radius:6px;display:none;position:absolute;top:0;width:206px;z-index:9999}
+#calendar div.month{border-radius:6px;overflow:hidden;width:206px}
+#calendar div.month a{cursor:pointer;display:block;height:13px;overflow:hidden;padding:8px;position:absolute;right:6px;text-indent:-9999px;top:0;width:13px}
+#calendar div.month a.back{background:url(../Image/Icon/Previous.png) no-repeat 8px 8px;left:6px;right:auto}
+#calendar div.month a.close{background:url(../Image/Icon/Bubble/Close.png) no-repeat 0 0;display:none}
+#calendar div.month a.forward{background:url(../Image/Icon/Page.png) no-repeat 8px 8px}
+#calendar div.month div.title{background:#fff;height:29px;position:relative;width:100%}
+#calendar div.month h3{color:#666;font-size:13px;line-height:30px;text-align:center}
+#calendar div.month li{color:#444;cursor:pointer;display:inline;float:left;font-size:13px;height:20px;padding-top:3px;text-align:center;width:28px}
+#calendar div.month li.active{background:#008ed6;border-radius:3px;color:#fff;font-weight:700}
+#calendar div.month li.default{font-weight:700}
+#calendar div.month li.friday{margin-left:140px}
+#calendar div.month li.invalid{color:#ccc;cursor:default}
+#calendar div.month li.monday{margin-left:28px}
+#calendar div.month li.saturday{margin-left:166px}
+#calendar div.month li.thursday{margin-left:112px}
+#calendar div.month li.tuesday{margin-left:56px}
+#calendar div.month li.wednesday{margin-left:84px}
+#calendar div.month ul{float:left;padding:5px}
+#calendar div.month ul.dates{padding-bottom:5px;padding-top:0}
+#calendar div.month ul.days{background:#daebf7;margin-bottom:5px;margin-top:1px;padding-bottom:0;padding-top:4px}
+#calendar div.month ul.days li{color:#006ba3;font-size:11px;height:18px;padding-bottom:0;padding-top:0}
+#calendar div.next{border-left:solid 1px #ccc;float:right;margin-left:-1px}
+#calendarMask{background:transparent;border:none;display:none;height:0;left:0;position:absolute;top:0;width:0;z-index:9}
+
+/*Country Bubble*/
+#marketProfilePrompt{height:165px;width:450px}
+#marketProfilePrompt div.contentPanel{height:116px;margin-top:10px;overflow:hidden;padding:15px 30px 20px;width:390px}
+#marketProfilePrompt h2{color:#444;font-size:27px;font-weight:400;line-height:28px;margin:0 -30px 10px;padding:0 30px}
+#marketProfilePrompt li{float:left;margin:0}
+#marketProfilePrompt li a{background:url(../Image/Icon/Flag/Large/World.png) no-repeat 15px 50%;color:#007dbd;display:block;font-size:18px;font-weight:400;height:36px;margin:0 15px 15px -15px;padding:14px 15px 0 70px;text-decoration:none;width:55px}
+#marketProfilePrompt li a.AE{background-image:url(../Image/Icon/Flag/Large/AE.gif)}
+#marketProfilePrompt li a.IN{background-image:url(../Image/Icon/Flag/Large/IN.gif)}
+#marketProfilePrompt li a:hover{background-color:#008ed6!important;background-image:url(../Image/Icon/Flag/Large/WorldHover.png);background-repeat:no-repeat;border:none;border-radius:6px;box-shadow:2px 2px 1px #ddd;color:#fff}
+#marketProfilePrompt ul{margin:15px -30px 0 0}
+
+/* 
+ * Table
+ */
+ 
+.grid{border-collapse:collapse;border-top:solid 1px #fff;margin:0 0 10px;width:723px}
+.grid input.check{height:13px;margin:8px 0 0;padding:0;width:13px}
+.grid input.text{border-radius:4px;box-shadow:-1px 1px 1px #eee inset;color:#444;font:13px Arial,Helvetica,sans-serif;padding:5px;width:85%}
+.grid td{border-top:1px solid #ccc;color:#444;padding:5px 10px 8px;text-align:left;vertical-align:middle}
+.grid td a{text-decoration:none}
+.grid td a,.grid td a:visited{color:#006ba3}
+.grid td dfn{color:#888!important;font-size:11px;line-height:13px}
+.grid td.bookingReference,.grid th.bookingReference,.grid td.reference,.grid th.reference,.grid td.smallText,.grid th.smallText,.grid td.type,.grid th.type{width:60px}
+.grid td.caption{text-align:right!important}
+.grid td.check{padding:0}
+.grid td.check,.grid th.check{width:20px}
+.grid td.currency input.text,.grid td.billed input.text,.grid td.due input.text,.grid td.longCurrency input.text{text-align:right}
+.grid td.currency,.grid td.billed,.grid td.due{text-align:right;white-space:nowrap;width:75px}
+.grid td.date,.grid th.date,.grid td.created,.grid th.created,.grid td.updated,.grid th.updated,.grid td.leaveOn,.grid th.leaveOn,.grid td.returnOn,.grid th.returnOn{text-align:center;width:50px}
+.grid td.detail a.submit{color:#fff!important;margin-top:7px!important}
+.grid td.error,.grid th.error{color:#c30!important;font-weight:700}
+.grid td.fineprint{color:#999;font-size:11px;text-align:center}
+.grid td.first,.grid th.first{padding-left:10px!important;text-align:left!important;vertical-align:top}
+.grid td.freeText{word-break:break-all}
+.grid td.freeText a span,.grid td.detail a span{cursor:pointer;display:inline-block;font-size:11px;line-height:13px}
+.grid td.freeText a,.grid td.detail a{color:#888!important;display:block}
+.grid td.freeText a.defaultClick,.grid td.detail a.defaultClick{color:#006ba3!important}
+.grid td.freeText dfn,.grid td.detail dfn{clear:both;display:block}
+.grid td.icon img,.grid th.icon img{max-height:16px}
+.grid td.icon,.grid th.icon{padding:5px;width:20px}
+.grid td.last,.grid th.last,.grid td.right{padding-right:10px!important;text-align:right!important}
+.grid td.longCurrency{text-align:right;white-space:nowrap;width:95px}
+.grid td.longDate,.grid th.longDate{text-align:center;width:75px}
+.grid td.longNumber,.grid th.longNumber{text-align:right!important;width:65px}
+.grid td.longReference,.grid th.longReference{width:105px}
+.grid td.longText,.grid th.longText,.grid td.longText select{width:100px}
+.grid td.nowrap,.grid th.nowrap{white-space:nowrap}
+.grid td.number,.grid th.number{text-align:right!important;width:50px}
+.grid td.optional,.grid th.optional,.grid td.optional input,.grid th.optional input,.grid tr.private *,.grid tr.estimate *,.grid tr.secondary *,.grid tr.history *{color:#999!important}
+.grid td.smallCurrency span,.grid td.amount span,.grid td.currency span,.grid td.billed span,.grid td.due span{color:#888;display:block;font-size:11px;line-height:15px}
+.grid td.smallCurrency,.grid td.amount{text-align:right;white-space:nowrap;width:55px}
+.grid td.smallDate,.grid th.smallDate{text-align:center;width:30px}
+.grid td.smallNumber,.grid th.smallNumber,.grid td.count{text-align:right!important;width:30px}
+.grid td.supplement{background-color:#f3f8fc}
+.grid td.text,.grid th.text{width:90px}
+.grid td.tinyCurrency{text-align:right;white-space:nowrap;width:35px}
+.grid td.tinyNumber,.grid th.tinyNumber{text-align:right!important;width:20px}
+.grid td.tinyText,.grid th.tinyText{vertical-align:middle;width:30px}
+.grid th{background-color:#daebf7;border-bottom:1px solid #fff;color:#444;font-size:11px;font-weight:400;padding:4px 10px 5px;text-align:left;vertical-align:top}
+.grid th a,.grid th a:visited{color:#444!important;text-decoration:none}
+.grid th a.ascending{background:url(../Image/Icon/TinyArrowUp.gif) no-repeat right 5px}
+.grid th a.descending{background:url(../Image/Icon/TinyArrowDown.gif) no-repeat right 5px}
+.grid th a.sort{padding-right:14px}
+.grid th a:hover,.grid td a:hover{text-decoration:underline}
+.grid th.currency,.grid th.billed,.grid th.due{text-align:right;width:75px}
+.grid th.longCurrency{text-align:right;width:95px}
+.grid th.smallCurrency,.grid th.amount,.grid td.smallCurrency input.text,.grid td.amount input.text{text-align:right;width:55px}
+.grid th.tinyCurrency,.grid td.tinyCurrency input.text{text-align:right;width:35px}
+.grid tr.clickable.hover{background-color:#f3f8fc!important;cursor:pointer}
+.grid tr.history{background:#fbfbfb}
+.grid tr.history td{border-top:1px solid #e9e8dc}
+.grid tr.private,.grid tr.estimate,.grid tr.secondary{background-color:#fbfbfb}
+.grid tr.selected{background:#fdf5d4}
+.grid tr.subsubtotal td{background-color:#f3f8fc;border-top:1px solid #fff!important}
+.grid tr.subtotal td{background-color:#daebf7;border-top:1px solid #fff!important}
+.grid tr.supplementary,.grid tr.supplementary td,.grid td.supplementary{background:#fbfbfb;color:#999!important}
+.grid tr.total td{background-color:#c4dff3;border-top:1px solid #fff!important}
+.grid.dense td,.grid.dense th{padding-left:5px;padding-right:5px}
+#contentPanel .grid.highlight{margin:20px 0}
+#contentPanel .grid.highlight td{background:#E6F1FA;border-color:#fff;border-right:1px solid #fff;text-align:center;vertical-align:middle}
+#contentPanel .grid.highlight td.last{background:#CEE4F5;border-right:none;font-weight:700;text-align:center!important}
+#contentPanel .grid.highlight th{background:#FFE189;border-right:1px solid #fff;font-size:inherit;padding:5px 10px 8px;text-align:center;vertical-align:middle}
+#contentPanel .grid.highlight th.last{background:#FFC61E;border-right:none;font-weight:700;text-align:center!important}
+#contentPanel .grid.pricingPolicy{display:inline-table}
+#contentPanel .grid.pricingPolicy .delete.check label{background-image:url(../Image/Icon/Close.png);cursor:pointer;display:inline-block;height:13px;text-align:left;text-indent:-9999px!important;width:13px}
+#contentPanel table img{margin:0}
+#contentPanel.alternative .grid{width:610px!important}
+#contentPanel.alternative .grid.itinerary{border-top:2px solid #fff;margin-bottom:25px}
+#contentPanel.alternative .grid.itinerary .calendar{padding-left:0;vertical-align:top;width:50px}
+#contentPanel.alternative .grid.itinerary td{padding:8px 10px}
+#contentPanel.alternative .grid.itinerary td p{margin-top:0!important}
+#contentPanel.alternative .grid.itinerary td.calendar em{display:block;font:27px DINWeb,Arial,Helvetica,sans-serif;line-height:1em;margin-top:0}
+#contentPanel.alternative .grid.itinerary td.calendar p{background:#DAEBF7;border:solid 1px #c4dff3;border-radius:6px;color:#444;font-size:11px;padding:4px 0 1px;text-align:center;text-transform:uppercase;width:50px}
+#paymentList td{vertical-align:top}
+
+/*Grids with Scroll*/
+div.oversizeGrid{margin-bottom:10px;overflow-x:auto;width:723px}
+div.oversizeGrid table{margin-bottom:0}
+
+/* 
+ * Forms : form1, form3, form7
+ */
+ 
+/*One Column Form*/
+.form1 a.help{background:url(../Image/Icon/Help.png) no-repeat 100% 45%;color:#444!important;padding-right:18px;text-decoration:none}
+.form1 a.save{background:url(../Image/Caption/Save.gif) no-repeat 0 0;float:left;height:13px;margin:3px 0 0 -15px;overflow:hidden;text-indent:-9999px;width:36px}
+.form1 div{color:#444;float:left;padding:0 35px 0 0;width:212px}
+.form1 div.mandatory{background:url(../Image/Icon/MandatoryLarge.gif) no-repeat 223px 4px}
+.form1 div.noscript a.link,.form1 label em,.form1 ul.advanced li.clarify.airline label{float:left}
+.form1 div.noscript a.save{margin:3px 0 0 5px}
+.form1 fieldset{display:block;float:left;width:264px}
+.form1 input.check{float:left;height:14px;margin:3px 0 0;width:15px}
+.form1 input.radio,.form1 input.check{float:left;height:13px;width:13px}
+.form1 input.submit{float:left!important;margin:-3px 0 0 248px !important}
+.form1 input.submit.secondary,.form1.build input.submit.secondary{margin:-3px 0 0 10px !important}
+.form1 input.text{color:#444;float:left;font:13px Arial,Helvetica,sans-serif;padding:5px;width:221px}
+.form1 label{float:left;line-height:19px}
+.form1 label.check{float:left;line-height:19px;padding-left:8px}
+.form1 label.mandatory,.form1 label.radio,.form1 label.check{padding:0 20px 0 8px}
+.form1 li{border-top:solid 1px #ddd;float:left;margin:-1px 0 0!important;padding:10px 0 11px;width:723px}
+.form1 li.acceptRules fieldset{background:#c4dff3;float:left;margin-bottom:10px;margin-top:10px;padding:5px 10px;width:595px}
+.form1 li.acceptRules fieldset em{float:left;line-height:normal!important;margin-left:20px}
+.form1 li.acceptRules fieldset input.check{float:left;height:13px;margin:1px 0 0;padding:0;width:13px}
+.form1 li.acceptRules fieldset label{float:left;font-weight:700;line-height:normal!important;margin-left:8px}
+.form1 li.acceptRules fieldset.warning{background:#fee38b}
+.form1 li.acceptRules,.form1 li.submit,.form1 li.first{border-top:none}
+.form1 li.dateMonthYear fieldset select.date{margin-right:9px;width:40px}
+.form1 li.dateMonthYear fieldset select.month{margin-right:9px;width:84px}
+.form1 li.dateMonthYear fieldset select.year{width:53px}
+.form1 li.geographicArea label,.form1 li.location label,.form1 li.clarify label{clear:both;display:block;float:none;line-height:15px;padding:6px 0}
+.form1 li.geographicArea label.check{clear:none;float:left;padding:2px 20px 2px 8px;width:175px}
+.form1 li.geographicArea ul li,.form1 li.location ul li,.form1 li.clarify ul li,.form1 li.travelers ul li{border-top:none;margin:0!important;padding:0 0 0 15px;width:405px}
+.form1 li.geographicArea ul,.form1 li.tripType ul,.form1 li.flightType ul{display:inline;float:left;list-style-type:none!important;margin:0 0 0 -15px !important;padding:0!important;width:225px!important}
+.form1 li.location fieldset p,.form1 li.clarify fieldset p{color:#c30;display:block;float:left;font-size:13px;margin:0!important;width:305px!important}
+.form1 li.location ul,.form1 li.clarify ul{display:inline;float:left;list-style-type:none!important;margin:5px 0 0 -15px !important;padding:0!important;width:405px!important}
+.form1 li.message textarea,.form1 li.address textarea{height:50px!important}
+.form1 li.moreFlights div{width:300px}
+.form1 li.moreFlights div a{font-size:13px;text-decoration:none}
+.form1 li.moreFlights div a.evenMore,.form1 p em{color:#006ba3}
+.form1 li.moreFlights div a.show:hover{text-decoration:underline}
+.form1 li.multiCity div{padding:0}
+.form1 li.multiCity fieldset{width:485px}
+.form1 li.multiCity ul li{border-top:none;margin:0!important;padding:0 0 8px;width:544px}
+.form1 li.multiCity ul li input.text{width:125px}
+.form1 li.multiCity ul li label{padding:2px 0 0 35px;width:60px}
+.form1 li.multiCity ul li label.mandatory{background:url(../Image/Icon/MandatoryLarge.gif) no-repeat 15px 4px;padding:0 0 0 35px;width:60px}
+.form1 li.multiCity ul li p{padding:3px 0 0 30px}
+.form1 li.multiCity ul li.location div label,.form1 li.multiCity ul li.clarify div label{background:none;padding:6px 0;width:385px!important}
+.form1 li.multiCity ul li.location div label.radio,.form1 li.multiCity ul li.clarify div label.radio,.form1 li.location label.radio,.form1 li.clarify label.radio{clear:none;float:left;padding:2px 20px 2px 8px;width:355px}
+.form1 li.multiCity ul li.location div p,.form1 li.multiCity ul li.clarify div p{padding:0;width:385px!important}
+.form1 li.multiCity ul li.location div,.form1 li.multiCity ul li.clarify div{float:left;padding:0;width:425px}
+.form1 li.multiCity ul li.location label,.form1 li.multiCity ul li.clarify label{float:left;padding:1px 0 0 35px;width:60px}
+.form1 li.roomTypes ul li{border-top:none;margin:0!important;padding:0 0 8px;width:230px}
+.form1 li.roomTypes ul li div{padding:8px 0 0;width:95px}
+.form1 li.roomTypes ul li select{width:135px}
+.form1 li.telephone fieldset label{color:#999;display:block;font-size:11px;line-height:17px;padding-top:1px}
+.form1 li.telephone fieldset li{border-top:none!important;display:inline;float:left;margin:0 2px 0 8px !important;padding:0}
+.form1 li.telephone fieldset li.area{width:40px}
+.form1 li.telephone fieldset li.area input{width:30px}
+.form1 li.telephone fieldset li.country{width:59px}
+.form1 li.telephone fieldset li.country input{width:46px}
+.form1 li.telephone fieldset li.number{width:157px}
+.form1 li.telephone fieldset li.number input{width:152px}
+.form1 li.telephone fieldset ul{display:inline;float:left;list-style:none!important;margin:0 -2px 0 -8px !important;padding:0!important;width:236px!important}
+.form1 li.travelers ul li.adults{padding-left:0!important;width:55px}
+.form1 li.travelers ul li.adults select{width:55px}
+.form1 li.travelers ul li.children select,.form1 li.travelers ul li.children{width:78px}
+.form1 li.travelers ul li.infants select,.form1 li.travelers ul li.infants{width:67px}
+.form1 li.tripType ul li,.form1 li.flightType ul li{border-top:none;margin:0!important;padding:0 0 0 15px;width:225px}
+.form1 p{color:#c30;display:block;float:left;font-size:13px;font-weight:700;margin:0!important;width:180px!important}
+.form1 select.time{display:none}
+.form1 textarea{color:#444;float:left;font:13px Arial,Helvetica,sans-serif;height:100px;padding:1px 0 1px 3px;width:228px}
+.form1,.form1 li.travelers ul,.form1 li.roomTypes ul,.form1 li.multiCity ul{list-style-type:none!important;margin:0!important;padding:0!important;width:auto!important}
+.form1.build div{width:95px}
+.form1.build div.mandatory{background:url(../Image/Icon/MandatoryLarge.gif) no-repeat 110px 4px}
+.form1.build div.noscript{float:none;padding:0;width:auto}
+.form1.build input.submit{margin:-3px 0 0 24px !important}
+.form1.build li.action a.hidden{display:block!important;visibility:hidden}
+.form1.build li.location fieldset p,.form1.build li.clarify fieldset p{width:385px!important}
+.form1.build li.location label.radio,.form1.build li.clarify label.radio{width:511px}
+.form1.build li.location ul li,.form1.build li.clarify ul li{width:570px}
+.form1.build li.location ul,.form1.build li.clarify ul{width:485px!important}
+.form1.build p{width:280px!important}
+#contentPanel.alternative .form1 div{width:130px}
+#contentPanel.alternative .form1 div.mandatory{background-position:130px 4px}
+#contentPanel.alternative .form1 input.submit{margin-left:166px!important}
+#contentPanel.alternative .form1 li{width:610px}
+#contentPanel.alternative .form1 li.telephone fieldset li.country{width:59px}
+#contentPanel.alternative .form1 li.telephone fieldset li.number{width:157px}
+#contentPanel.alternative .form1 p{width:175px!important}
+#contentPanel.alternative #disqus_thread{margin-top:35px;width:100%}
+
+/*Three Column Form*/
+.form2{float:left;list-style-type:none!important;margin:0!important;padding:0!important;width:510px!important}
+.form2 li{display:inline-block;padding:0 10px 0 0!important;width:243px}
+.form2 li.mandatory{background:url(../Image/Icon/MandatorySmall.gif?v=1001) no-repeat right 2px}
+.form2 li input.text{width:230px}
+
+/*Three Column Form*/
+.form3{float:left;list-style-type:none!important;margin:9px -15px 18px 0 !important;padding:0!important;width:741px!important}
+.form3 div,.form3 li.frequentFlier ul li label{display:block;font-size:11px;line-height:17px;padding-bottom:1px}
+.form3 div.error,.form3 label.error{background:none!important;color:#c30!important;font-weight:700}
+.form3 div.error.mandatory,.form3 label.error.mandatory{background:url(../Image/Icon/MandatorySmall.gif) no-repeat 100% 45%!important}
+.form3 div.mandatory,.form3 li.frequentFlier ul li label.mandatory{background:url(../Image/Icon/MandatorySmall.gif) no-repeat 100% 45%}
+.form3 fieldset,.form3 li.message fieldset,.form3 li.address fieldset,.form3 li.paragraph fieldset,.form3 li.checklist,.form3 li.telephone fieldset,.form3.subform li.message fieldset{height:auto}
+.form3 img{float:none!important;margin:0!important}
+.form3 input.check,.form3 input.radio{height:14px;width:15px}
+.form3 input.file,.form3 input.text{color:#444;font:13px Arial,Helvetica,sans-serif;padding:5px;width:219px}
+.form3 input.readonly{background-color:#eee}
+.form3 label.check,.form3 label.radio{padding:0 3px 0 0}
+.form3 li{float:left;margin-top:0!important;min-height:51px;padding:7px 15px 0 0!important;width:231px!important}
+.form3 li.address textarea,.form3 li.paragraph textarea{color:#444;font:13px Arial,Helvetica,sans-serif;height:50px;padding:1px 0 1px 3px;width:472px}
+.form3 li.address,.form3 li.paragraph{width:479px}
+.form3 li.checkline fieldset{float:left;padding-right:10px}
+.form3 li.checkline fieldset input.file{margin-left:10px}
+.form3 li.checkline img.icon,.form3 li.checklist img.icon{display:inline;padding-right:5px;position:relative;top:11px}
+.form3 li.checkline select,.form3 li.checklist select{display:inline;float:none!important;margin-left:5px;width:auto!important}
+.form3 li.checkline.icon fieldset{padding-right:30px!important}
+.form3 li.checklist.icon fieldset{height:45px;margin-top:-5px}
+.form3 li.dateMonthYear fieldset select.date{margin-right:9px;width:48px}
+.form3 li.dateMonthYear fieldset select.month{margin-right:9px;width:100px}
+.form3 li.dateMonthYear fieldset select.year{width:63px}
+.form3 li.double{width:477px}
+.form3 li.double input.text{width:465px}
+.form3 li.empty{height:50px}
+.form3 li.frequentFlier{padding:0;width:740px}
+.form3 li.frequentFlier div{float:left;font-size:13px;margin:0;padding:27px 15px 0 0;text-align:right;width:231px}
+.form3 li.frequentFlier div img{float:right!important;margin:-2px 0 0 10px !important}
+.form3 li.frequentFlier fieldset{float:left;height:48px}
+.form3 li.frequentFlier ul{float:left;list-style-type:none!important;margin:0!important;padding:0!important;width:auto!important}
+.form3 li.frequentFlier ul li{float:left;overflow:visible;padding:7px 15px 0 0}
+.form3 li.half input.text{width:97px!important}
+.form3 li.half span{display:inline-block;text-align:center;width:13px}
+.form3 li.message textarea{color:#444;font:13px Arial,Helvetica,sans-serif;height:150px;padding:3px 0 3px 3px;width:718px}
+.form3 li.monthYear fieldset select.month{margin-right:9px;width:110px}
+.form3 li.monthYear fieldset select.year{width:76px}
+.form3 li.paymentMethod{clear:left}
+.form3 li.short{width:108px}
+.form3 li.telephone fieldset label{color:#999;display:block;font-size:11px;line-height:17px;padding-top:1px}
+.form3 li.telephone fieldset li{display:inline;float:left;margin:0 2px 0 8px;padding:0}
+.form3 li.telephone fieldset li.area{width:41px}
+.form3 li.telephone fieldset li.area input{width:30px}
+.form3 li.telephone fieldset li.country{width:60px}
+.form3 li.telephone fieldset li.country input{width:45px}
+.form3 li.telephone fieldset li.number{width:158px}
+.form3 li.telephone fieldset li.number input{width:145px}
+.form3 li.telephone fieldset ul{display:inline;float:left;margin:0 -2px 0 -8px !important;padding:0!important;width:243px!important}
+.form3 li.triple,.form3 li.message,.form3 li.long{width:723px}
+.form3 li.unlimited fieldset{height:auto!important}
+.form3 select,.form1 select{border:1px solid #ccc;border-radius:5px;color:#444;float:left;font:13px Arial,Helvetica,sans-serif;padding:4px 5px;width:231px}
+.form3 select:focus,.form1 select:focus,textarea:focus{background:#fff;border:1px solid #008ed6;color:#000;outline:none}
+.form3.first{margin:0 -15px 18px 0 !important}
+.form3.managerInformation li,.form3.billingInformation li{min-height:42px}
+.form3.subform{background:#daebf7;margin:1px -15px 0 0 !important;padding-bottom:10px!important;padding-left:10px!important;width:713px!important}
+.form3.subform div.mandatory{background:url(../Image/Icon/MandatorySmallBlueBack.gif) no-repeat 100% 45%}
+.form3.subform input.text{width:216px}
+.form3.subform li{padding:7px 9px 0 0;width:228px}
+.form3.subform li.address{width:393px}
+.form3.subform li.address textarea{width:384px}
+.form3.subform li.compactSubmit{margin-bottom:-10px;padding-top:15px}
+.form3.subform li.compactSubmit input.submit.button{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;border:0;box-shadow:none;color:#006ba3;cursor:pointer;float:right!important;font:13px Arial,Helvetica,sans-serif;margin:0 0 15px;padding:0 14px 0 0 !important;text-align:right}
+.form3.subform li.compactSubmit p{display:inline-block;font-size:11px;width:260px}
+.form3.subform li.compactSubmit p a{color:#006ba3}
+.form3.subform li.dateMonthYear fieldset select.date{margin-right:8px}
+.form3.subform li.dateMonthYear fieldset select.month{margin-right:7px}
+.form3.subform li.double{width:463px}
+.form3.subform li.half input.text{width:96px!important}
+.form3.subform li.half span{display:inline-block;text-align:center;width:12px}
+.form3.subform li.message{width:595px}
+.form3.subform li.message textarea{color:#444;font:13px Arial,Helvetica,sans-serif;height:150px;padding:1px 0 1px 3px;width:585px}
+.form3.subform li.submit{padding-top:10px;width:702px}
+.form3.subform li.telephone fieldset li{margin:0 0 0 8px}
+.form3.subform li.triple{width:702px}
+.form3.subform select{width:228px}
+.form3.tightSibling{margin:0!important}
+
+/*Seven Column Form*/
+.form7{float:left;list-style-type:none!important;margin:9px -15px 18px 0 !important;padding:0!important;width:741px!important}
+.form7 fieldset{height:22px}
+.form7 input.check{height:14px;width:15px}
+.form7 label.check{padding:0 3px 0 0}
+.form7 li{float:left;margin-top:0!important;overflow:hidden;padding:7px 15px 0 0;width:88px}
+
+/* 
+ * Content panel layout elements
+ */
+ 
+/*Holidays*/
+#holidays{width:960px}
+#holidays .previous,#holidays .next{float:none!important;margin:23px 0 0!important}
+#holidays .next{margin-left:10px!important}
+#holidays .previous{margin-left:-2px!important}
+#holidays .viewport{height:234px;width:990px}
+#holidays li em{display:none}
+#holidays li h3{color:#555;display:inline-block;font-size:17px;font-weight:400;height:25px;line-height:20px;margin-top:12px;overflow:hidden;zoom:1}
+#holidays li h3 a{color:#555;text-decoration:none}
+#holidays li img{height:130px;margin:-20px 0 0 -20px !important;width:300px}
+#holidays li p{color:gray;font-size:13px;margin-top:-5px}
+#holidays li span{color:#008ed6;display:block;font-size:20px;font-weight:400;margin-top:9px;text-align:right}
+#holidays li span em{color:#006ba3;display:inline;font-size:13px;font-weight:400}
+#holidays li.hover{border-color:#008ed6;box-shadow:0 2px 1px #ccc}
+#holidays li.hover *{color:#008ed6!important}
+#holidays ul{margin:0 -15px}
+#holidays ul li{background:#fff;border-color:#e8e8e8 #e8e8e8 #ccc;border-radius:6px;border-style:solid;border-width:1px;box-shadow:0 2px 1px #f4f4f4;float:left;height:188px;margin:0 15px 30px;overflow:hidden;padding:20px;width:258px}
+#supplement #holidays h3{color:#888;font-size:18px;font-weight:400;margin-bottom:20px;text-shadow:1px 1px 0 #FFF}
+#supplement #holidays .viewport{width:960px}
+#supplement #holidays .viewport h3{margin-bottom:0}
+#supplement #holidays .previous, #supplement #holidays .next{margin:138px 0 0!important}
+#supplement #holidays .previous{margin-left:-18px!important}
+#supplement #holidays .next{margin-left:10px!important}
+
+
+/*Holidays inside contentPanel Alternative*/
+#contentPanel.alternative{width:610px}
+#contentPanel.alternative #holidays{display:inline-block;margin:0;padding:0;width:590px}
+#contentPanel.alternative #holidays .next{margin-left:37px!important}
+#contentPanel.alternative #holidays .previous{margin-left:-12px!important}
+#contentPanel.alternative #holidays .viewport{width:631px}
+#contentPanel.alternative #holidays ul{margin:0 -10px;padding-left:0}
+#contentPanel.alternative #holidays ul li{display:inline-block}
+#contentPanel.alternative #holidays ul li em{display:none}
+#contentPanel.alternative #holidays ul li h3{font-size:15px;margin-bottom:0}
+#contentPanel.alternative #holidays ul li img{float:none}
+#contentPanel.alternative #holidays ul li span{font-size:15px;font-weight:700}
+
+/*Follow*/
+#follow{margin:18px 0 0 30px !important;text-align:right;width:298px !important}
+#follow li{display:inline-block;margin-left:12px;overflow:hidden; /*Backward compatibility*/ *display:inline;zoom:1}
+#follow li a{background:url(../Image/Icon/Sprite.png) no-repeat right -751px;display:inline-block;height:25px;overflow:hidden;text-align:left;text-indent:-9999px;width:25px; /*Backward compatibility*/ *display:inline;zoom:1}
+#follow li a.facebook{background-position:-350px -1127px;width:15px}
+#follow li a.twitter{background-position:-313px -1127px}
+#follow li a.google{background-position:right -1127px}
+
+/*Pagination*/
+#paging{float:left;margin:26px 0 0;overflow:hidden;padding-bottom:18px;width:100%}
+#paging a,#paging em{color:#006ba3;font-weight:700;text-decoration:none}
+#paging a.back{background:url(../Image/Icon/ArrowBack.gif) no-repeat 0 50%;float:left;line-height:17px;padding-left:17px}
+#paging a.next{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;box-shadow:none;float:right;line-height:17px;padding:0 17px 0 0}
+#paging a:hover,#contentPanel a.alternative:hover{text-decoration:underline}
+#paging div{float:left;width:199px}
+#paging ul{float:left;font-size:13px;line-height:17px;list-style-type:none;margin:1px 0 0;padding:0;text-align:center;width:321px!important}
+#paging ul li{display:inline;margin-left:-3px;margin-top:0}
+#paging ul li a{padding:0 6px}
+#paging ul li em,#paging ul li a.sf_PagerSelItem{background:#008ed6;border-radius:3px;color:#fff;font-style:normal;margin:0 5px 0 4px;padding:1px 3px 1px 4px}
+#paging ul li p{display:inline;float:none;margin:0 10px 0 0;padding:0;width:auto}
+#contentPanel.alternative #paging div{width:154px}
+#contentPanel.alternative #paging ul{width:320px!important}
+
+/*Travel Expert*/
+#travelExpert{border-color:#008ed6;display:block;float:left;height:64px;line-height:17px;margin-right:0;margin-top:0;overflow:hidden;padding:17px 0 0!important;text-align:right}
+#travelExpert em{color:#006ba3;display:block;font-size:17px;letter-spacing:0;margin-left:0;margin-top:-28px;width:auto}
+#travelExpert p{background:url(../Image/Icon/Sprite.png) no-repeat -355px -386px;font-size:13px;min-height:46px;padding-left:58px;padding-top:6px;width:auto}
+#travelExpert p *{color:#3b5562}
+#travelExpert small{display:inline}
+
+ /*Visa Compare*/
+.compare{display:inline-block;margin:40px 0 30px;width:100%}
+.compare div{background:#fff;background:#f9f9f9\0/;border-radius:6px;box-shadow:0 0 6px -2px #5F5F5F;display:inline-block;margin-top:15px;padding-bottom:40px;vertical-align:top}
+.compare div.popular{background:#f5f5f5\0/;margin:0 -8px;position:relative;top:2px;width:218px;z-index:999}
+.compare div.popular em.tag{background:url(../Image/Icon/sprite.png) no-repeat -316px -759px;height:85px;left:-5px;position:absolute;top:-5px;width:85px}
+.compare div.popular p{background:#ffc820;margin-bottom:-12px!important;padding-top:24px;width:178px}
+.compare div.popular p i{background-position:0 -6px}
+.compare div.popular ul{margin-top:40px}
+.compare div.popular ul li{background-position:-278px -874px;padding:10px 0 10px 34px}
+.compare h2{background:#eee;height:97px;margin-bottom:0;overflow:hidden;text-align:center}
+.compare h2 span{display:inline-block;font-size:60px;font-weight:700;letter-spacing:-2px;line-height:normal;margin-top:10px;vertical-align:top}
+.compare h2 span em{display:inline-block;font-size:13px;font-weight:700;letter-spacing:0;line-height:16px;margin-left:5px;text-align:left;width:50px}
+.compare p{background:#ffd659;margin:0!important;padding:10px 20px;text-align:center;width:162px}
+.compare p em{display:inline-block;font-size:11px;font-style:normal;font-weight:700;margin-top:-5px;vertical-align:top}
+.compare p i{background:url(../Image/Icon/texture.png) repeat-x 0 0;display:block;height:5px;margin:8px -20px -15px}
+.compare p span{display:block;font-size:27px;font-weight:700;line-height:normal;margin-top:5px}
+.compare ul{display:inline-block;margin:17px 0 0 24px;width:164px}
+.compare ul li{background:url(../Image/Icon/sprite.png) no-repeat -278px -863px;display:block;padding:20px 0 0 34px}
+
+/*Messages*/
+#contentPanel.alternative div.message{width:581px!important}
+.message{background:#fbfbfb;background-position:right -4px;background-repeat:no-repeat;border:0 solid #ccc;border-top-width:2px;margin:0 0 20px;padding:0 35px 11px 0;width:684px}
+.message a.alternative{display:inline-block;float:none;margin-bottom:0!important;margin-top:0!important}
+.message a.button{display:inline-block;float:none;margin-bottom:6px!important;margin-top:0!important}
+.message p{float:none;line-height:19px;margin:0;padding:10px 14px 0 0;width:auto}
+.message p dfn{display:block;padding:0 0 0 10px}
+.message p em{display:block;font-weight:700}
+.message strong{color:#c30;display:inline-block;font-weight:700;text-decoration:none}
+.message ul{margin:0 0 0 12px}
+.message ul li{line-height:19px;margin-top:0}
+.message.confirmation{background-color:#fff;background-image:url(../Image/Background/Message/Confirmation.gif);border-color:#acd357}
+.message.error{background-color:#fff;background-image:url(../Image/Background/Message/Error.gif);border-color:#c30}
+.message.information{background-color:#fff;background-image:url(../Image/Background/Message/Information.gif);border-color:#acd357}
+.message.warning{background-color:#fff;background-image:url(../Image/Background/Message/Warning.gif);border-color:#ffc61e}
+
+/*Dialogs*/
+.modalBackground{-khtml-opacity:0.6;-moz-opacity:0.6;-webkit-opacity:0.6;background:#000;display:none;filter:alpha(opacity=60);height:100%;left:0;opacity:0.6;position:absolute;top:0;width:100%;z-index:100}
+.modalDialog{-khtml-border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;background:#fff;border:1px solid #ccc;border-radius:6px;display:none;overflow:hidden;position:absolute;z-index:101}
+.modalDialog a.close{background:url(../Image/Icon/Close.png) no-repeat 0 0;cursor:pointer;display:block;height:13px;overflow:hidden;position:absolute;right:15px;text-indent:-9999px;top:10px;width:13px;z-index:102}
+
+/*Photo frame*/
+.photo{background:#fff;border-color:#e8e8e8 #e8e8e8 #ccc;border-style:solid;border-width:1px;float:right;margin:12px 0 30px 30px;padding:8px;width:auto}
+.photo img{margin:0 0 10px 0!important}
+.photo span{display:block;text-align:center;width:100%}
+
+/*Price calendar*/
+.planner{border-left:0;display:inline-block;margin:40px 0 0;overflow:hidden;width:609px}
+.planner li{border-bottom:1px solid #d8d8d8;border-top:1px solid #d8d8d8;float:left;height:55px;list-style:none;margin-top:-1px!important;overflow:hidden;padding:3px 5px 12px;position:relative;width:76px;word-wrap:break-word}
+.planner ul{float:left;margin-top:0!important;padding:0!important;width:609px}.planner li.hover{background:#f3f8fc}
+.planner .days li{background:#e6f1fa;border-right:0;color:#444;font-size:11px;height:16px;padding:5px;text-align:center;width:76px;border-bottom:none}
+.planner .events{position:relative;overflow:hidden}
+.planner .days li{border-top:none}
+.planner .events li span{color:#888;display:block;font-size:11px;text-align:center}
+.planner .events li em{color:#ccc;font-size:11px}
+.planner .events li p{font-size:15px;margin-top:-1px!important;text-align:center}
+.planner .events li.highlight{background:#fdf5d4}
+.planner .events li.today{background:#f3f8fc}
+.planner .events li.hover p{font-weight:700}
+.planner .events li.hover span{color:inherit}
+.planner.sundayFirst ul li.sun.first{border-left:0 solid #d8d8d8}
+.planner.mondayFirst ul li.mon.first{border-left:0 solid #d8d8d8}
+.mondayFirst .events .first.mon,div.sundayFirst .events .first.sun{margin-left:0}
+.mondayFirst .events .first.tue,div.sundayFirst .events .first.mon{margin-left:86px}
+.mondayFirst .events .first.wed,div.sundayFirst .events .first.tue{margin-left:172px}
+.mondayFirst .events .first.thu,div.sundayFirst .events .first.wed{margin-left:258px}
+.mondayFirst .events .first.fri,div.sundayFirst .events .first.thu{margin-left:344px}
+.mondayFirst .events .first.sat,div.sundayFirst .events .first.fri{margin-left:430px}
+.mondayFirst .events .first.sun,div.sundayFirst .events .first.sat{margin-left:516px}
+
+/* 
+ * Third party Widgets 
+ */
+ 
+/*Tooltip*/
+#tooltip{background-color:#ffe;border:1px solid #000;padding:2px 3px;position:absolute;z-index:90}
+#tooltip h3,#tooltip div{color:#000;font:8pt Tahoma,Arial,Helvetica,sans-serif;margin:0}
+#tooltip img{display:inline;margin:0;padding:0}
+#tooltip p.breakAbove{border-top:1px solid #ccc;margin-top:2px;padding-top:2px}
+#tooltip p.breakBelow{border-bottom:1px solid #ccc;margin-bottom:2px;padding-bottom:2px}
+#tooltip p.spaceAbove{margin-top:10px}
+#tooltip p.spaceBelow{margin-bottom:10px}
+
+/*Add-this*/
+#contentPanel .articles{margin-bottom:-30px;margin-top:0;padding-left:0;width:610px}
+#contentPanel.alternative .social,#title .social{background-position:0 -27px;float:right;height:21px;margin-bottom:0;min-width:115px}
+
+/* 
+ * Build your trip 
+ */
+ 
+/*Builder*/
+#build{overflow:hidden}
+#build .advanced{border-top:1px solid #ddd;margin-bottom:15px;margin-top:5px;padding-top:10px}
+#build .advanced fieldset{margin-left:0;padding-left:0}
+#build a.help{background:url(../Image/Icon/Help.png) no-repeat 100% 35%;color:#444;padding-bottom:1px;padding-right:17px;text-decoration:none}
+#build a.link{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;box-shadow:none;color:#006ba3;float:left;font-size:13px;line-height:17px;padding-right:14px;text-decoration:none}
+#build a.more{background:url(../Image/Icon/Expand.png) no-repeat 100% 20%;color:#555;float:left;font-size:11px;line-height:normal;margin:5px 0 0 15px;padding-bottom:5px;padding-right:22px;text-decoration:none;width:auto}
+#build a.more.toggleShown,#contentPanel .submit a.more.toggleShown{background-image:url(../Image/Icon/Collapse.png)}
+#build a.save{background:url(../Image/Caption/Save.gif) no-repeat 0 0;display:none;float:left;height:13px;margin:1px 0 0 5px;overflow:hidden;text-indent:-9999px;width:36px}
+#build a:hover,#build fieldset.moreFlights span a.show:hover{text-decoration:underline}
+#build div.time select,#content #build fieldset.travelers div select{float:right;margin-right:1px;width:54px}
+#build fieldset{margin:0 15px 5px;width:180px}
+#build fieldset a.more,#contentPanel .advanced fieldset.airline{margin-left:0}
+#build fieldset div{border-bottom:none}
+#build fieldset div.date{display:inline;float:left;margin:0 0 -2px -2px;padding:0 0 2px 2px;width:125px}
+#build fieldset div.time{display:none}
+#build fieldset noscript div{padding:0}
+#build fieldset ul{float:left;width:149px}
+#build fieldset ul li{overflow:hidden;padding:1px 0;width:100%}
+#build fieldset ul.flightType.first{border-top:none;padding-top:0}
+#build fieldset ul.tripType{margin-bottom:5px}
+#build fieldset.action{clear:both;padding:0}
+#build fieldset.moreFlights{padding:3px 0 13px}
+#build fieldset.moreFlights span a{font-size:11px;text-decoration:none}
+#build fieldset.moreFlights span a.evenMore{color:#006ba3}
+#build fieldset.multiCity{padding:4px 0 10px}
+#build fieldset.multiCity div{float:left;padding:5px 5px 0 0;width:82px}
+#build fieldset.multiCity div input.text{width:69px}
+#build fieldset.multiCity div label{float:left;width:75px}
+#build fieldset.multiCity div.last{padding:0;width:174px}
+#build fieldset.multiCity div.last input.text{width:157px}
+#build fieldset.multiCity span{display:block}
+#build fieldset.roomTypes div{float:left;padding:0;width:175px}
+#build fieldset.travelers{padding:2px 0 12px}
+#build fieldset.travelers div{float:left;padding:5px 0 0;width:170px}
+#build fieldset.travelers div label{float:left;margin-top:6px;padding-bottom:0;width:67px}
+#build fieldset.tripOptions{margin-bottom:0;padding-bottom:7px}
+#build h6{letter-spacing:-.005em;margin-right:-5px}
+#build input.check{float:left;height:13px;margin:8px 0 0;padding:0;width:13px}
+#build input.radio{display:inline;float:left;height:13px;margin:-1px 0 0;width:13px}
+#build input.submit{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;border:0;box-shadow:none;color:#006ba3;cursor:pointer;float:right;font:13px Arial,Helvetica,sans-serif;margin:12px 15px 3px;padding-right:14px;text-align:right}
+#build input.text{background:#fff;border:1px solid #ccc;border-radius:4px;box-shadow:0 0 0 #eee inset;color:#000;font:13px Arial,Helvetica,sans-serif;margin:0;padding:5px;width:156px}
+#build input.text:focus:hover,#content #build input.text:focus,#content #build select:focus,#content #build select:focus:hover{background:#fff;border:1px solid #008ed6;color:#000;outline:none}
+#build label{color:#444;display:block;line-height:19px}
+#build label.check{float:left;font-size:13px;line-height:15px;margin:7px 0 0;padding:0 0 0 4px}
+#build label.radio{float:left;font-size:13px;line-height:15px;padding:0 0 0 8px}
+#build p{padding:0 0 7px}
+#build select{border:1px solid #ccc;border-radius:5px;float:left;font:13px Arial,Helvetica,sans-serif;padding:4px 5px;width:168px}
+#contentPanel .advanced{list-style:none;margin:-10px 0 0;padding-left:0}
+#contentPanel .advanced fieldset{display:inline-block;width:394px}
+#contentPanel .advanced fieldset input.text{width:221px}
+#contentPanel .advanced fieldset label{display:inline-block;margin-right:35px;width:95px}
+#contentPanel .advanced fieldset select{width:231px}
+#contentPanel .advanced fieldset.direct input.check{margin:3px 3px 0 0}
+#contentPanel .advanced fieldset.direct label{width:97px}
+#contentPanel .advanced fieldset.direct label.check{width:150px}
+#contentPanel .advanced li{border-bottom:0 none;padding:10px 0!important;width:717px!important}
+#contentPanel .advanced li label{margin-right:0;padding-right:0;width:131px}
+#contentPanel .advanced li.direct label{margin-right:0;width:131px}
+#contentPanel .advanced ul,#contentPanel ul.advanced li.clarify.airline p{margin-left:0!important;width:245px!important}
+#contentPanel .submit a.more{background:url(../Image/Icon/Expand.png) no-repeat 100% 20%;color:#444;float:left;margin:4px 10px 0 0;padding-bottom:5px;padding-right:22px;text-decoration:none;width:auto}
+#contentPanel ul.itinerary .delete.check label{background-image:url(../Image/Icon/Close.png);cursor:pointer;display:inline-block;height:13px;text-align:left;text-indent:-9999px!important;width:13px}
+#contentPanel .advanced li{border:0 none;border-bottom:solid 1px #ddd;margin:0;padding:10px 0!important}
+
+/*Builder inside information panel with Highlight*/
+#infoPanel.alternative #build.highlight fieldset ul li{margin-bottom:3px}
+#infoPanel.alternative #build.highlight fieldset.moreFlights span a.evenMore{background:url(../Image/Icon/Help.png) no-repeat 100% 35%;color:#ccc!important;padding-right:17px}
+#infoPanel.alternative #build.highlight input.check,#infoPanel.alternative #build.highlight input.radio,#panorama.highlight input.radio{left:-9999px!important;position:absolute!important;top:auto!important}
+#infoPanel.alternative #build.highlight label.check{background:url(../Image/Background/Checkbox.png) no-repeat 0 0!important;cursor:pointer!important;height:20px!important;line-height:13px!important;margin-top:29px!important;padding:0 0 0 27px !important}
+#infoPanel.alternative #build.highlight label.checked{background-position:0 -20px!important}
+#infoPanel.alternative #build.highlight label.radio{background:url(../Image/Background/Checkbox.png) no-repeat 0 0!important;cursor:pointer!important;height:20px!important;line-height:21px!important;padding:0 20px 0 27px !important}
+#infoPanel.alternative #build{padding-left:7px;padding-right:7px;width:286px}
+#infoPanel.alternative #build fieldset div.date{width:127px}
+#infoPanel.alternative #build fieldset input.check{float:left;height:22px;margin:22px 0 10px;padding:0;width:13px}
+#infoPanel.alternative #build fieldset input.text{border-color:#fff;border-radius:4px;border-style:solid;border-width:1px;padding:5px;width:114px}
+#infoPanel.alternative #build fieldset label{font-size:13px;padding-bottom:3px}
+#infoPanel.alternative #build fieldset label.check{float:left;font-size:13px;line-height:15px;margin:25px 0 10px;padding:0 0 0 4px}
+#infoPanel.alternative #build fieldset select{border-color:#fff;border-radius:4px;border-style:solid;border-width:1px;box-shadow:0 0 0 #eee inset;padding:5px;width:124px}
+#infoPanel.alternative #build fieldset ul{margin-top:5px;width:125px}
+#infoPanel.alternative #build fieldset ul.flightType{margin-left:15px}
+#infoPanel.alternative #build fieldset,#infoPanel.alternative #build fieldset.roomTypes div{float:left;margin-left:8px;margin-right:7px;width:127px}
+#infoPanel.alternative #build fieldset.action{clear:both}
+#infoPanel.alternative #build fieldset.direct label{width:100px}
+#infoPanel.alternative #build fieldset.fullWidth a.evenMore{padding-bottom:5px}
+#infoPanel.alternative #build fieldset.fullWidth input.text{width:257px}
+#infoPanel.alternative #build fieldset.fullWidth select{width:267px}
+#infoPanel.alternative #build fieldset.fullWidth,#infoPanel.alternative #build fieldset.tripOptions,#infoPanel.alternative #build fieldset.action{width:270px}
+#infoPanel.alternative #build fieldset.multiCity div{float:left;margin-left:8px;margin-right:7px;padding:0;width:79px}
+#infoPanel.alternative #build fieldset.multiCity input.text{width:66px}
+#infoPanel.alternative #build fieldset.multiCity span,#infoPanel.alternative #build fieldset.roomTypes span{display:none}
+#infoPanel.alternative #build fieldset.multiCity,#infoPanel.alternative #build fieldset.roomTypes{margin-left:0;margin-right:0;padding:0;width:300px}
+#infoPanel.alternative #build fieldset.roomTypes select{margin-left:0;margin-right:0;width:124px}
+#infoPanel.alternative #build fieldset.travelers{margin-right:0;margin-top:-10px;padding:0;text-align:right;width:285px}
+#infoPanel.alternative #build fieldset.travelers > *{text-align:left}
+#infoPanel.alternative #build fieldset.travelers div{display:inline-block;float:none;margin-right:15px;width:57px;zoom:1}
+#infoPanel.alternative #build fieldset.travelers div select{width:54px!important}
+#infoPanel.alternative #build fieldset.travelers span{display:block;float:left;line-height:25px;margin-top:35px}
+#infoPanel.alternative #build fieldset.tripOptions{clear:both;margin-bottom:0;padding-bottom:0}
+#infoPanel.alternative #build h6{padding-left:8px}
+#infoPanel.alternative #build input.submit{margin-right:4px}
+#infoPanel.alternative #build .advanced{display:inline-block;margin:10px -10px 5px;padding-left:10px;padding-top:10px}
+#infoPanel.alternative #build .advanced fieldset.airline{margin-left:6px}
+#infoPanel.alternative #build .advanced fieldset.direct{width:100%}
+#infoPanel.alternative #build .advanced fieldset.direct input.check{margin-top:9px}
+#infoPanel.alternative #build .advanced fieldset.direct label{line-height:19px!important;margin-top:10px!important;width:200px!important}
+#infoPanel.alternative #build fieldset.action a.more{color:#ccc!important;margin-left:0;margin-top:18px}
+#infoPanel.alternative #build.highlight .advanced fieldset.direct input.check{margin-top:22px}
+#infoPanel div.theme{border:1px solid #d8d8d8}
+
+/* 
+ * Free panel layout elements
+ */
+ 
+/*Video block*/
+.video{border:0 none!important;padding-bottom:0!important}
+.video a{display:block;margin:0!important;overflow:hidden}
+.video iframe{border:0 none;display:block;margin:0!important}
+.video img{cursor:pointer}
+.video span{background:url(../Image/Icon/Sprite.png) no-repeat 0 0;cursor:pointer;height:38px;left:108px;position:absolute;top:140px;width:49px}
+
+/*Bulleted list*/
+.arrowhead{padding-left:0!important}
+.arrowhead li{list-style:none}
+.arrowhead li a{background:url(../Image/Icon/Sprite.png) no-repeat -384px -37px;color:#006ba3;padding-left:27px;text-decoration:none}
+.twoColumn{margin-right:100px!important;margin-top:25px;padding-left:0!important;width:auto}
+.twoColumn a{color:#006ba3;text-decoration:none}
+.twoColumn a:hover{text-decoration:underline}
+.twoColumn em{margin-left:3px}
+.twoColumn li{display:inline-block;list-style:none;margin-top:5px!important;min-width:225px;padding:3px 0;width:auto}
+
+/*FAQ*/
+.faq{margin-top:25px;padding-left:0}
+.faq a{border:0;color:#006ba3;cursor:pointer;font:13px Arial,Helvetica,sans-serif;margin-left:3px;text-decoration:none}
+.faq a.toggleShown{background:url(../Image/Icon/Sprite.png) no-repeat -387px -325px}
+.faq a.toggleVisibility{background:url(../Image/Icon/Sprite.png) no-repeat -384px -37px;color:#006ba3;display:inline-block;padding-left:27px;text-decoration:none}
+.faq p{margin-bottom:17px!important;padding-left:32px}
+
+/*Feature*/
+.feature .choice span{background-position:0 -145px}
+.feature .online span{background-position:-150px -145px}
+.feature .payment span{background-position:-220px -145px}
+.feature .report span{background-position:-294px -145px}
+.feature .service span{background-position:0 -212px}
+.feature .support span{background-position:-75px -145px}
+.feature h3{float:right;margin-bottom:5px;width:200px}
+.feature li{display:inline-block;margin-bottom:30px;margin-right:34px;max-width:282px;min-height:85px;padding-left:0}
+.feature p{float:right;width:200px}
+.feature span{background-image:url(../Image/Icon/Sprite.png);background-repeat:no-repeat;float:left;height:60px;margin-right:20px;width:60px}
+.feature,.faq,.faq li{list-style:none;width:100%}
+
+/*Testimonial*/
+.testimonial{margin-bottom:0!important;margin-top:10px!important;overflow:hidden}
+.testimonial div{display:inline;margin-left:74px;text-align:left;width:auto;zoom:1}
+.testimonial div em{background:url(../Image/Icon/Sprite.png) no-repeat -381px -225px;display:block;padding-left:22px}
+.testimonial div span{display:block;font-weight:700;padding-left:22px}
+.testimonial img{border-radius:5px;float:left;height:50px;width:50px}
+.testimonial li{background:#fff;border-color:#e8e8e8 #e8e8e8 #ccc;border-style:solid;border-width:1px;box-shadow:0 2px 1px #f4f4f4;float:left;margin-right:16px;min-height:111px;padding:14px 12px;width:282px}
+.testimonial li.last{margin-right:0}
+.testimonial q{float:right;font:13px Arial,Helvetica,sans-serif;margin-bottom:15px;min-height:35px;width:185px}
+
+/*Gallery*/
+#gallery{margin-bottom:60px;margin-top:50px;width:960px}
+#gallery .next{margin-left:-55px}
+#gallery .viewport{float:left;height:500px;margin-left:70px;overflow:hidden;width:801px}
+#gallery .viewport li{background:#fff;border-color:#e8e8e8 #e8e8e8 #ccc;border-style:solid;border-width:1px;box-shadow:0 2px 1px #f4f4f4;height:498px;overflow:hidden;width:799px}
+#gallery.scrollable .previous,#gallery.scrollable .next{margin-top:0}

@@ -2,3 +2,9 @@ c:\users\asad\documents\visual studio 2010\Projects\SakhrBlog\SakhrBlog\bin\Sakh
 c:\users\asad\documents\visual studio 2010\Projects\SakhrBlog\SakhrBlog\bin\SakhrBlog.pdb
 c:\users\asad\documents\visual studio 2010\Projects\SakhrBlog\SakhrBlog\obj\Debug\SakhrBlog.dll
 c:\users\asad\documents\visual studio 2010\Projects\SakhrBlog\SakhrBlog\obj\Debug\SakhrBlog.pdb
+C:\Users\Asad\Source\Repos\SakhrBlog\SakhrBlog\bin\SakhrBlog.dll.config
+C:\Users\Asad\Source\Repos\SakhrBlog\SakhrBlog\bin\SakhrBlog.dll
+C:\Users\Asad\Source\Repos\SakhrBlog\SakhrBlog\bin\SakhrBlog.pdb
+C:\Users\Asad\Source\Repos\SakhrBlog\SakhrBlog\obj\Debug\SakhrBlog.csprojResolveAssemblyReference.cache
+C:\Users\Asad\Source\Repos\SakhrBlog\SakhrBlog\obj\Debug\SakhrBlog.dll
+C:\Users\Asad\Source\Repos\SakhrBlog\SakhrBlog\obj\Debug\SakhrBlog.pdb

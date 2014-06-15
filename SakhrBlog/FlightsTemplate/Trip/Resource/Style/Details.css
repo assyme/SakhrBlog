@@ -1,0 +1,227 @@
+#acceptRules{float:left;width:703px;background:#c4dff3;padding:5px 10px;margin-top:17px}
+#acceptRules em{float:left;margin-left:8px}
+#acceptRules input.check{height:13px;width:13px;padding:0;float:left;margin:1px 0 0}
+#acceptRules label{float:left;font-weight:bold;margin-left:8px}
+#acceptRules.warning{background:#fee38b}
+#contentPanel div.message{float:left}
+#contentPanel h3{float:left}
+#contentPanel h3 a.alternative{float:left}
+#contentPanel h4{float:left}
+#contentPanel ol{float:left;width:585px}
+#contentPanel p{float:left;width:723px}
+#contentPanel p.quotes{width:700px;padding:10px}
+#contentPanel ul{float:left;width:688px}
+#contentPanel ul.itinerary{color:#333;width:723px !important;margin-top:2px !important;float:left;padding:0 !important}
+#contentPanel ul.itinerary a.information{margin-left:-26px;margin-top:-1px;padding:1px 23px 1px 26px;background:url(../../../Resource/Image/Icon/Alert.gif) no-repeat 100% -1px;text-decoration:none;color:#333}
+#contentPanel ul.itinerary a.information:hover,#contentPanel ul.itinerary div.fees div a.information:hover{text-decoration:underline}
+#contentPanel ul.itinerary div.fees a.expand{display:none}
+#contentPanel ul.itinerary div.fees div{float:left;display:block;min-height:16px;width:123px;}
+#contentPanel ul.itinerary div.fees div a.information{color:#006ba3;display:inline-block;padding-right:17px;background:url("../../../Resource/Image/Icon/Popup.png") no-repeat scroll right center transparent;text-decoration:none}
+#contentPanel ul.itinerary div.fees div a.information.flexibleRules{background-image:url("../../../Resource/Image/Icon/Rules/FlexiblePopup.png");padding-right:32px}
+#contentPanel ul.itinerary div.fees div a.information.regularRules{display:none}
+#contentPanel ul.itinerary div.fees div a.information.restrictiveRules{background-image:url("../../../Resource/Image/Icon/Rules/RestrictivePopup.png");padding-right:32px}
+#contentPanel ul.itinerary div.fees h4,#contentPanel ul.itinerary li.summary div.fees a.information,#contentPanel ul.itinerary li.summary div.details{display:none}
+#contentPanel ul.itinerary div.fees table{float:left;width:462px !important;margin:-1px 0 -3px !important;border-top:none !important;margin-right:20px !important}
+#contentPanel ul.itinerary div.fees table td{border-color:#fff;font-size:11px;padding-right:0 !important;vertical-align:middle}
+#contentPanel ul.itinerary div.fees table td.freeText{word-break:normal}
+#contentPanel ul.itinerary div.fees table td.first,#contentPanel ul.itinerary div.fees table th.first{padding-left:0}
+#contentPanel ul.itinerary div.fees table td.customerPrice{font-size:14px}
+#contentPanel ul.itinerary div.fees table td.less{color:#006ba3}
+#contentPanel ul.itinerary div.fees table td.price{font-size:14px;font-weight:bold}
+#contentPanel ul.itinerary div.fees table td.smallNumber{padding-left:0;padding-right:0}
+#contentPanel ul.itinerary div.fees table th{padding-right:0 !important}
+#contentPanel ul.itinerary div.fees table th.tinyCurrency{width:55px}
+#contentPanel ul.itinerary div.fees ul{float:left;width:482px;margin:-1px 0 -3px;padding:0;list-style-type:none}
+#contentPanel ul.itinerary div.fees ul li{float:left;width:482px;margin:0}
+#contentPanel ul.itinerary div.fees ul li p{float:left;padding:1px 10px 3px 0;margin:0;text-align:right}
+#contentPanel ul.itinerary div.fees.simple{display:none}
+#contentPanel ul.itinerary div.originDestination{border-top:solid 1px #fff}
+#contentPanel ul.itinerary div.originDestination p{display:block;float:right;padding:0 0 0 10px;font-size:11px;width:auto;margin:0}
+#contentPanel ul.itinerary div.originDestination,#contentPanel ul.itinerary div.fees,#contentPanel ul.itinerary li.footer h5{background:#daebf7;padding:4px 15px;width:693px;font-size:13px;font-weight:normal}
+#contentPanel ul.itinerary div.sector a.collapse{display:block;float:right;padding:1px 0 0 10px;width:auto;margin:0;font-size:11px;color:#666666;padding-right:20px;background:url(../../../Resource/Image/Icon/Collapse.png) no-repeat 100% 45%;cursor:pointer}
+#contentPanel ul.itinerary div.sector a.collapse:hover{text-decoration:underline}
+#contentPanel ul.itinerary div.sector h4,#contentPanel ul.itinerary div.originDestination h5{display:block;float:left;padding:0 10px 0 0;font-weight:normal;font-size:13px;color:#333}
+#contentPanel ul.itinerary div.sector p{display:block;float:right;padding:1px 0 0 10px;width:auto;margin:0;font-size:11px}
+#contentPanel ul.itinerary div.sector p em{font-style:normal;font-weight:normal;background:#fff;padding:0 3px;color:#000}
+#contentPanel ul.itinerary div.sector,#contentPanel ul.itinerary div.originDestination,#contentPanel ul.itinerary div.fees,#contentPanel ul.itinerary div.details table{float:left;margin:0}
+#contentPanel ul.itinerary div.sector,#contentPanel ul.itinerary li.total{background:#c4dff3;padding:4px 15px;width:693px}
+#contentPanel ul.itinerary input.submit{background:url(../../../Resource/Image/Icon/ArrowNext.gif) no-repeat 100% 50% !important;font:11px Arial,Helvetica,sans-serif;color:#006ba3;float:right;cursor:pointer;text-align:right;padding:0 14px 0 0;border:0;margin:-5px 0 11px;height:auto;box-shadow:none}
+#contentPanel ul.itinerary li{border-top:solid 1px #008ed6;display:block;width:723px;float:left;margin:10px 0 0}
+#contentPanel ul.itinerary li ul.tickets{float:left;margin:-5px 0 0 0;padding:0;list-style-type:none}
+#contentPanel ul.itinerary li ul.tickets li{float:left;background:#fee38b;padding:5px 14px 7px 14px;width:693px;margin:10px 0 0 0;border:1px solid #fee38b}
+#contentPanel ul.itinerary li ul.tickets li.refund{background:#deedbc;border-color:#deedbc}
+#contentPanel ul.itinerary li div.details ul{margin:0;padding:0;list-style-type:none;width:auto}
+#contentPanel ul.itinerary li div.details ul input.submit{height:auto}
+#contentPanel ul.itinerary li div.details ul li{margin:0}
+#contentPanel ul.itinerary li.flights div.details ul table td,#contentPanel ul.itinerary li.hotel div.details ul table td,#contentPanel ul.itinerary li.service div.details ul table td{vertical-align:top;padding:12px 10px 12px 0;border-top:solid 1px #cccccc}
+#contentPanel ul.itinerary li.flights div.details ul table td dfn,#contentPanel ul.itinerary li.service div.details ul table td dfn,#contentPanel ul.itinerary li.hotel div.details ul table td dfn,#contentPanel ul.itinerary li.hotel div.details ul table td.description address {font-size:11px;font-style:normal;display:block;line-height:13px;color:#888888}
+#contentPanel ul.itinerary li.flights div.details div.note{width:466px}
+#contentPanel ul.itinerary li.flights div.details div.note h6{background:transparent url(../../../Resource/Image/Icon/Alert.gif) no-repeat 0 0;margin-left:-26px;padding-left:26px}
+#contentPanel ul.itinerary li.flights div.details div.note p{width:459px}
+#contentPanel ul.itinerary li div.details ul table td dfn a{color:#888888}
+#contentPanel ul.itinerary li div.details ul table td dfn span{background:#ffeaa8;padding:0 4px;color:#000}
+#contentPanel ul.itinerary li div.details ul table td em,#contentPanel ul.itinerary li.hotel div.details ul table td em{font-style:normal}
+#contentPanel ul.itinerary li div.details ul table td.date{width:60px}
+#contentPanel ul.itinerary li div.details ul table td.date dfn{margin-top:16px;background:url(../../../Resource/Image/Icon/Baggage.gif) no-repeat 28px 25%}
+#contentPanel ul.itinerary li div.details ul table td.date dfn.NoBaggage{background-image:none}
+#contentPanel ul.itinerary li div.details ul table td.date em{font-size:11px;font-style:normal;display:block;line-height:13px;color:#888888}
+#contentPanel ul.itinerary li div.details ul table td.date p,#contentPanel ul.itinerary li div.details ul table td.origin p,#contentPanel ul.itinerary li div.details ul table td.destination p{font-weight:normal;width:auto;margin:0;float:none}
+#contentPanel ul.itinerary li div.details ul table td.destination,#contentPanel ul.itinerary li div.details ul table td.origin{width:176px}
+#contentPanel ul.itinerary li div.details ul table td.flight{padding-right:15px;width:198px}
+#contentPanel ul.itinerary li div.details ul table td.flight em.codeShared{padding-left:18px;background:url(../../../Resource/Image/Icon/CodeShared.gif) no-repeat 1px 45%}
+#contentPanel ul.itinerary li div.details ul table td.label{padding-right:0;width:24px}
+#contentPanel ul.itinerary li div.details ul table td.logo,#contentPanel ul.itinerary li.hotel div.details ul table td.thumbnail{padding-top:9px;width:35px}
+#contentPanel ul.itinerary li div.details ul table td.logo img,#contentPanel ul.itinerary li.hotel div.details ul table td.thumbnail img{margin:0}
+#contentPanel ul.itinerary li div.details ul table tr.first td,#contentPanel ul.itinerary li.hotel div.details ul table tr.first td,#contentPanel ul.itinerary li ul li{border-top:none !important}
+#contentPanel ul.itinerary li div.details ul table tr.last td.destination p,#contentPanel ul.itinerary li div.details ul table tr.first td.origin p,#contentPanel ul.itinerary li div.details ul table tr.first td.date p,#contentPanel ul.itinerary li div.details ul table tr.last td.date p,#contentPanel ul.itinerary li div.details ul table td p{font-weight:bold;width:auto;margin:0;float:none}
+#contentPanel ul.itinerary li ul.tickets li div.eTicket{float:left;width:233px;padding-right:10px;overflow:hidden}
+#contentPanel ul.itinerary li ul.tickets li div.eTicket p{margin:0 0 4px 0;font-size:13px}
+#contentPanel ul.itinerary li ul.tickets li div.eTicket em{font-size:24px;font-style:normal}
+#contentPanel ul.itinerary li ul.tickets li div.traveler{float:left;width:445px}
+#contentPanel ul.itinerary li ul.tickets li div.traveler p{margin:0;font-weight:bold;width:441px;word-wrap:break-word}
+#contentPanel ul.itinerary li ul.tickets li div.traveler em{display:block;font-style:normal;font-size:11px}
+#contentPanel ul.itinerary li ul.tickets li div.traveler dfn{font-style:normal;display:block}
+#contentPanel ul.itinerary li.coupon{background:#daebf7;border-top:none;margin-bottom:0;padding:5px 15px 5px 15px;text-align:right;width:693px}
+#contentPanel ul.itinerary li.coupon input.text{color:#444;font:13px Arial,Helvetica,sans-serif;margin-right:20px;padding:5px;width:177px}
+#contentPanel ul.itinerary li.coupon input.submit{margin-bottom:-5px;margin-top:7px;width:87px}
+#contentPanel ul.itinerary li.coupon p{display:inline-block;float:none;font-size:11px;margin:2px 20px 3px 0;width:150px}
+#contentPanel ul.itinerary li.hotel div.details img.map{margin:10px 0 5px 0;float:right}
+#contentPanel ul.itinerary li.hotel div.details img.map.overview{border-right:solid 1px #888888}
+#contentPanel ul.itinerary li.hotel div.details ul table td.destination,#contentPanel ul.itinerary li.hotel div.details ul table td.origin{width:177px}
+#contentPanel ul.itinerary li.hotel div.details ul table tr.last td.destination p,#contentPanel ul.itinerary li.hotel div.details ul table tr.first td.origin p,#contentPanel ul.itinerary li.hotel div.details ul table tr.first td.date p,#contentPanel ul.itinerary li.hotel div.details ul table tr.last td.date p,#contentPanel ul.itinerary li.hotel div.details ul table td p{font-weight:bold;width:auto;margin:0;float:none}
+#contentPanel ul.itinerary li.hotel div.hotelNotes{float:left;margin:10px 0 0 0;padding:8px 14px 12px 14px;width:693px;border:solid 1px #c7a946}
+#contentPanel ul.itinerary li.hotel div.hotelNotes h5{font-size:13px;font-weight:bold}
+#contentPanel ul.itinerary li.hotel div.hotelNotes p{font-size:11px;margin-top:4px;width:690px}
+#contentPanel ul.itinerary li.hotel ul.tickets li div.eVoucher{float:left;width:233px;padding-right:10px;overflow:hidden}
+#contentPanel ul.itinerary li.hotel ul.tickets li div.eVoucher p{margin:0 0 4px 0;font-size:13px}
+#contentPanel ul.itinerary li.hotel ul.tickets li div.eVoucher em{font-size:24px;font-style:normal;margin-bottom:2px;display:block}
+#contentPanel ul.itinerary li.hotel ul.tickets li div.eVoucher dfn{font-style:normal;font-size:11px;line-height:13px;margin:0 0 5px 0;display:block}
+#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms{float:left;width:445px;margin:0;padding:0}
+#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li{margin:0;width:375px;padding:0}
+#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li p{margin:0;font-weight:bold;width:375px}
+#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li ul{display:block;margin:0;padding:0;width:375px}
+#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li ul li{display:block;margin:0;padding:0;width:375px}
+#contentPanel ul.itinerary li.hotel ul.tickets li ul.rooms li ul li dfn{font-style:normal;font-size:13px;padding-left:10px}
+#contentPanel ul.itinerary li.footer{margin:10px 0 0 0;width:723px;border-top:solid 1px #008ed6;background:#daebf7}
+#contentPanel ul.itinerary li.footer div{float:left;padding:7px 0 10px 0}
+#contentPanel ul.itinerary li.footer div.issuer{width:242px;padding-left:15px;overflow:hidden}
+#contentPanel ul.itinerary li.footer div.contact{width:280px}
+#contentPanel ul.itinerary li.footer div.contact ul{float:left;width:235px !important;padding:0;margin:0}
+#contentPanel ul.itinerary li.footer div.contact ul li{float:left;width:276px !important;margin:0}
+#contentPanel ul.itinerary li.footer div.contact ul li em{float:left;color:#006ba3;font-style:normal;width:229px;font-size:11px}
+#contentPanel ul.itinerary li.footer div.contact ul li p{float:left;width:47px;margin:0}
+#contentPanel ul.itinerary li.footer div.reference{width:169px}
+#contentPanel ul.itinerary li.footer div.reference dfn{font-style:normal;display:block;font-size:11px}
+#contentPanel ul.itinerary li.footer div.reference em{width:165px;font-size:24px;font-style:normal;display:block;float:left}
+#contentPanel ul.itinerary li.footer div.reference h4{letter-spacing:-0.05em;width:165px}
+#contentPanel ul.itinerary li.footer div.reference p{width:165px;margin:6px 0 -1px 0}
+#contentPanel ul.itinerary li.footer h4{margin:0;padding:0 0 5px 0;color:#333;font-weight:bold;font-size:11px}
+#contentPanel ul.itinerary li.footer p{margin:0;font-size:11px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.receipt{float:left;width:232px;padding-right:10px;overflow:hidden}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.receipt p{margin:0 0 2px 0;font-size:13px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.receipt em{font-size:18px;font-style:normal;margin-bottom:2px;display:block}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.payment{float:left;width:340px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.payment p{margin:0;font-weight:bold;width:336px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.payment em{display:block;font-style:normal;font-size:11px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.payment dfn{display:block;font-style:normal}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.amount{float:left;width:111px}
+#contentPanel ul.itinerary li.receipt ul.tickets li div.amount p{margin:0;font-weight:bold;width:111px;text-align:right}
+#contentPanel ul.itinerary li.receipt table{width:723px;border-bottom:solid 2px #fff;border-collapse:collapse;margin-top:1px;float:left}
+#contentPanel ul.itinerary li.receipt table .amount{width:84px;padding-right:15px;text-align:right}
+#contentPanel ul.itinerary li.receipt table .package{width:74px;padding-left:15px}
+#contentPanel ul.itinerary li.receipt table td{border-bottom:solid 1px #cccccc;border-collapse:collapse;padding:4px 10px 4px 10px;vertical-align:top}
+#contentPanel ul.itinerary li.receipt table td.package{font-weight:bold}
+#contentPanel ul.itinerary li.receipt table td.details{width:72px}
+#contentPanel ul.itinerary li.receipt table td.for{width:197px}
+#contentPanel ul.itinerary li.receipt table td.for em{display:block;font-style:normal;font-size:11px}
+#contentPanel ul.itinerary li.receipt table td.on{width:53px;vertical-align:top}
+#contentPanel ul.itinerary li.receipt table tr.new td{vertical-align:middle}
+#contentPanel ul.itinerary li.receipt table td.reference{width:133px}
+#contentPanel ul.itinerary li.receipt table th{background:#daebf7;border-bottom:solid 10px #fff;border-collapse:collapse;padding:4px 10px 5px 10px;vertical-align:top;text-align:left;font-weight:normal}
+#contentPanel ul.itinerary li.service div.fees.simple{display:none}
+#contentPanel ul.itinerary li.summary{margin-bottom:-10px}
+#contentPanel ul.itinerary li.summary div.fees h4{display:block;font-weight:normal;font-size:13px;color:#333;padding:0}
+#contentPanel ul.itinerary li.summary div.fees a.expand{display:block;float:left;width:68px;margin:1px 0 0 0;font-size:11px;color:#666666;padding-right:20px;background:url(../../../Resource/Image/Icon/Expand.png) no-repeat 100% 45%;cursor:pointer;text-align:right}
+#contentPanel ul.itinerary li.summary div.fees a.expand:hover{text-decoration:underline}
+#contentPanel ul.itinerary li.summary div.fees.simple{display:block}
+#contentPanel ul.itinerary li.summary div.fees.simple a.expand{margin-left:482px}
+#contentPanel ul.itinerary li.total{margin-bottom:0;padding-bottom:5px}
+#contentPanel ul.itinerary li.total.average p.units,#contentPanel ul.itinerary div.fees ul li p.units{width:118px;font-size:11px;margin-top:1px;text-align:right}
+#contentPanel ul.itinerary div.fees ul li p.units.simple{width:382px}
+#contentPanel ul.itinerary li.total h4{display:block;float:left;width:349px;padding:0 10px 0 0;font-weight:normal;font-size:13px;color:#333}
+#contentPanel ul.itinerary li.total.average h4{width:113px}
+#contentPanel ul.itinerary li.total p{float:left;padding:0 10px 0 0;margin:0;text-align:right}
+#contentPanel ul.itinerary li.total p.customer,#contentPanel ul.itinerary div.fees ul li p.customer{width:211px;font-size:11px;margin-top:1px}
+#contentPanel ul.itinerary li.total p.customerPrice,#contentPanel ul.itinerary div.fees ul li p.customerPrice{margin-right:-37px;width:70px;font-size:	14px}
+#contentPanel ul.itinerary li.total p.customerPrice.less{color:#006ba3}
+#contentPanel ul.itinerary li.total p.price,#contentPanel ul.itinerary div.fees ul li p.price{width:70px;font-size:14px;font-weight:bold}
+#contentPanel ul.itinerary li.total p.price.less,#contentPanel ul.itinerary div.fees ul li p.price.less{color:#006ba3}
+#contentPanel ul.itinerary li.total p.simple{width:397px !important}
+#contentPanel ul.itinerary li.total p.status{padding:0;margin-top:1px;width:279px;font-weight:normal;font-size:11px;text-align:left}
+#contentPanel ul.itinerary li.total p.traveler,#contentPanel ul.itinerary div.fees ul li p.traveler{width:249px;font-size:13px}
+#contentPanel ul.itinerary li.total p.unit,#contentPanel ul.itinerary div.fees ul li p.unit{width:174px;font-size:11px;margin-top:1px}
+#contentPanel ul.itinerary li.total p.unitPrice,#contentPanel ul.itinerary div.fees ul li p.unitPrice{width:70px;font-size:14px}
+#contentPanel ul.itinerary li.total p.unitPrice.less{color:#006ba3}
+#contentPanel ul.itinerary li.total p.units{width:145px;font-size:11px;margin-top:1px}
+#contentPanel ul.itinerary li.total ul,#contentPanel ul.itinerary li.total li{margin:0;padding:0;width:693px}
+#contentPanel ul.itinerary.ticket{margin-top:20px !important}
+#contentPanel ul.itinerary.ticket li.total h4{width:232px}
+#contentPanel ul.itinerary.ticket li.total p.price{text-align:right;padding:0;width:60px;font-weight:normal;font-size:13px}
+#contentPanel ul.itinerary.ticket li.total p.units{width:110px;font-size:11px !important;margin-top:1px;text-align:right;padding:0}
+#contentPanel ul.itinerary.ticket div.fees{margin-top:10px}
+#contentPanel ul.itinerary.ticket div.fees table.fareList td{font-size:11px}
+#contentPanel ul.itinerary.ticket div.fees h4{color:#333;display:block;font-weight:normal;font-size:13px;padding:0}
+#contentPanel ul.itinerary.ticket div.fees table{width:570px !important;margin-right:0 !important}
+#contentPanel ul.itinerary li.insurance input[type="checkbox"]{margin:10px 5px 0 17px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock{display:inline-block;margin:15px 0;width:100%}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock em{background-image:url(../../../Resource/Image/Icon/Sprite.png);display:block;height:30px;margin:0 auto;width:30px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock h4{color:#666;display:block;float:none;font-size:13px;font-weight:700;padding-top:8px;text-align:center}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock li{display:inline-block;margin:0 16px;max-width:125px;width:auto}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock li.FlightDelay em{background-position:-94px -745px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock li.Medical em{background-position:-141px -744px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock li.baggage em{background-position:-46px -745px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock li.trip em{background-position:0 -747px}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock span{display:inline-block;margin-left:22px;margin-top:32px!important}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock span img{float:left;margin-left:0!important}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock ul{display:inline-block;float:right;margin-right:15px;padding-left:0;width:auto}
+#contentPanel ul.itinerary li.insurance div.insuranceBlock ul li span{color:#999;display:block;font-size:11px;line-height:13px;margin:0 auto!important;text-align:center;width:88px}
+#rules{float:left;list-style:square;padding:0 0 0 16px;margin-top:0 !important;width:705px !important}
+#rules li{margin-top:0 !important}
+#rules a{color:#006ba3}
+#contentPanel ul.itinerary li.hotel div.details ul table td.thumbnail{width:80px;padding-top:11px}
+#contentPanel ul.itinerary li.hotel div.details ul table td.thumbnail span.imageContainer{display:block;overflow:hidden;width:80px;height:60px}
+#contentPanel ul.itinerary li.hotel div.details ul table td.description{width:210px;padding-right:26px}
+#contentPanel ul.itinerary li.hotel div.details ul table td.description address,#contentPanel ul.itinerary li.hotel div.details ul table dfn{margin-top:9px}
+#contentPanel ul.itinerary li.hotel div.details ul table tr.contact td{padding:0px 10px 10px 0;border-top:none}
+#contentPanel ul.itinerary li.hotel div.details ul table tr.contact td address{font-size:11px;font-style:normal;line-height:13px;color:#333333}
+#contentPanel ul.itinerary li.hotel div.details ul table tr.contact td address dfn{display:inline}
+#contentPanel ul.itinerary li.hotel div.details ul table tr.contact td em{color:#888888}
+#contentPanel ul.itinerary li div.details div.note{float:right;margin:5px 0 15px 0;padding:10px 0 0;border-top:solid 1px #e9e8dc;color:#888888}
+#contentPanel ul.itinerary li div.details div.note h6{background:transparent url(../../../Resource/Image/Icon/Alert.gif) no-repeat 0 0;font-size:11px;margin-left:-26px;padding-left:26px}
+#contentPanel ul.itinerary li div.details div.note p{font-size:11px;margin-top:4px}
+#contentPanel ul.itinerary li.hotel div.details div.note{width:633px;margin-left:90px}
+#contentPanel ul.itinerary li.hotel div.details div.note p{width:616px}
+#contentPanel ul.itinerary li.hotel div.details div.note span.nobreak{white-space:nowrap}
+#contentPanel ul.itinerary li.service div.details ul table td.logo{width:5px}
+#contentPanel ul.itinerary li.service div.details ul table td.flight{width:195px}
+#contentPanel ul.itinerary li.service div.details ul table td.attachment{width:510px}
+#contentPanel ul.itinerary li.service div.details div.note{width:682px;padding-left:26px}
+#contentPanel ul.itinerary li.service div.details div.note p{width:600px}
+#contentPanel ul.itinerary li.service div.details img.map{margin:10px 0 5px 0}
+#contentPanel ul.itinerary li.service div.serviceNotes{float:left;margin:8px 0 0 0;padding:10px 14px 12px 14px;width:693px;border:solid 1px #c7a946}
+#contentPanel ul.itinerary li.service div.serviceNotes h5{font-size:13px}
+#contentPanel ul.itinerary li.service div.serviceNotes p{font-size:11px;margin-top:4px;width:587px}
+#contentPanel ul.itinerary li.service ul.tickets li div.eTicket dfn{font-style:normal;font-size:11px;line-height:13px;margin:0 0 5px 0;display:block}
+#contentPanel ul.itinerary li.hotel.summary div.fees ul{margin-left:0}
+#contentPanel ul.itinerary li.hotel .changeRoomType{margin-right:15px}
+* + html #contentPanel #contentPanel ul.itinerary li.hotel input.submit{padding-right:18px !important}
+#contentPanel ul.itinerary .fees .feeControl {vertical-align:middle}
+#contentPanel ul.itinerary .fees .feeControl a{font-size:11px;background:url(../../../Resource/Image/Icon/Expand.png) no-repeat center right;text-decoration:none;padding-left:14px;padding-right:16px;!padding-left:11px;color:#666666}
+#contentPanel ul.itinerary .fees .feeControl a.active{background-image:url(../../../Resource/Image/Icon/Collapse.png)}
+#contentPanel div.addon{float:left;width:723px;margin-top:-10px}
+#contentPanel div.addon ul{padding:0 0 2px;width:361px;border-right:1px solid #008ed6}
+#contentPanel div.addon ul li{list-style-type:none;margin:0;padding:0}
+#contentPanel div.addon ul fieldset{float:left;width:341px;padding:5px 10px 3px}
+#contentPanel div.addon ul fieldset input.check{height:13px;width:13px;padding:0;float:left;margin:1px 0 0}
+#contentPanel div.addon ul fieldset label{float:left;margin-left:8px}
+#contentPanel div.addon p{font-size:11px;margin:0;padding:30px 0 0 120px;width:240px;line-height:14px;color:#888888;background:url(../../../Resource/Image/Background/CompleteYourTrip.jpg) no-repeat 0 10px;min-height:105px}

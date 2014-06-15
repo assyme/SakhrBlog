@@ -1,0 +1,705 @@
+/* 
+ * Print
+ */
+
+
+
+/*
+ * Change Your Trip
+ */
+
+/*Build Trip*/
+#build{background:url(../../../Resource/Image/Background/Color/008ED6.90.png);margin-bottom:109px;min-height:178px;padding:15px;padding-bottom:3px}
+#build > *{vertical-align:top}
+#build a.help{padding-right:18px;background:url(../../../Resource/Image/Icon/HelpHome.png?v=1001) no-repeat 100% 45%;color:#fff;text-decoration:none}
+#build fieldset{display:inline-block;padding:0 3px 5px 15px;margin:0;overflow-x:hidden;width:210px; /*Backward compatibility*/ *display:inline;zoom:1}
+#build fieldset.hotelLocation, #build fieldset.origin{width:210px!important}
+#build fieldset.rooms{margin-top:13px}
+#panorama.small #build fieldset.rooms{margin-top:0}
+#panorama.small #build fieldset.rooms select{width:226px}
+#panorama.small #build fieldset.hotelBudget{padding-left:0}
+#build fieldset.hotelLocation label{width:98px}
+#build fieldset.action{float:right;padding-top:26px;padding-bottom:18px;text-align:right;width:auto!important}
+#build fieldset.action,#build fieldset.fullWidth,#build fieldset.tripOptions{width:980px}
+#build fieldset.action a.more{width:auto;background:url(../../../Resource/Image/Icon/Expand.png) no-repeat 100% 20%;font-size:13px;text-decoration:none;padding-right:22px;color:#fff;margin:10px;padding-bottom:5px;margin-left:11px;float:left;color:#ccc;margin-top:9px}
+#build fieldset.action a.more.toggleShown{background-image:url(../../../Resource/Image/Icon/Collapse.png)}
+#build fieldset.fullWidth select{width:438px!important}
+#build fieldset.rooms{padding-top:2px}
+#build fieldset.moreFlights{display:none}
+#build fieldset.multiCity,#build fieldset.roomTypes,#build fieldset.travelers{text-align:left;padding-right:3px;width:auto}
+#build fieldset.roomTypes{position:relative;right:-15px}
+#build fieldset.travelers{margin-right:0px!important}
+#build fieldset.travelers{margin-right:20px;margin-left:15px}
+#build.multiCity fieldset.travelers{margin-top:-29px!important}
+#build.multiCity fieldset.action{margin-bottom:12px;padding-top:20px}
+#build fieldset.hotelBudget select{width:226px}
+#build fieldset.travelers div{padding:0}
+#build fieldset.multiCity > *,#build fieldset.roomTypes > *,#build fieldset.travelers > *{text-align:left}
+#build fieldset.multiCity span,#build fieldset.roomTypes span,#build fieldset.travelers span{color:#fff;display:inline-block;float:left;line-height:35px;text-shadow:1px 1px 2px #808080; /*Backward compatibility*/ *display:inline;zoom:1}
+#build fieldset.travelers span{display:none}
+#build fieldset.roomTypes span,#build fieldset.travelers span{margin:22px 53px 0 11px}
+#build fieldset.multiCity span.first{margin-top:24px}
+#build fieldset.multiCity{padding:0!important}
+#build fieldset.multiCity div,#build fieldset.roomTypes div,#build fieldset.travelers div{display:inline-block;float:none;margin-right:15px;padding:0px 5px 0 0;width:auto!important; /*Backward compatibility*/ *display:inline;zoom:1}
+#build fieldset.multiCity div select,#build fieldset.roomTypes div select,#build fieldset.travelers div select{width:62px !important}
+#build fieldset.multiCity input.text{width:178px !important}
+#build fieldset.multiCity span{margin-left:15px;width:76px}
+#build fieldset.multiCity label,#build fieldset.roomTypes label,#build fieldset.travelers label{display:block;float:none !important;margin-top:0!important;width:57px !important}
+#build fieldset.tripOptions ul.tripType{display:none}
+#build fieldset.tripOptions ul.flightType{margin-top:0px}
+#build fieldset.tripOptions{margin-top:14px;padding-bottom:0}
+#build fieldset.direct label{margin-top:14px}
+#build fieldset.cabinClass{width:200px;margin-right:7px}
+#build fieldset.cabinClass select{width:210px}
+#build fieldset.start .flightsOnly_all ,#build fieldset.end  .flightsOnly_all {width:150px}
+#build fieldset.end{margin-right:14px}
+#build fieldset div.time{display:none}
+#build fieldset ul{float:none;width:100%!important}
+#build fieldset li{display:inline-block;width:auto!important; /*Backward compatibility*/ *display:inline;zoom:1}
+#build input.text{color:#000;border-style:solid;border-width:1px;border-color:#fff;border-radius:4px;font:13px Arial,Helvetica,sans-serif;margin:0;padding:5px 5px;width:214px}
+#build input.check,#build input.radio,#panorama.highlight input.radio{position:absolute;left:-9999px}
+#build a.button{background:#ffc61e;border:none;border-radius:4px;color:#333;cursor:pointer;display:inline-block;font:bold 12px/32px Arial,Helvetica,sans-serif;letter-spacing:0.05em;padding:0px 16px 0px 14px;text-transform:uppercase}
+#build select{color:#000;border-style:solid;border-width:1px;border-color:#fff;border-radius:4px;box-shadow:0px 0px 0px #d8d8d8 inset;font:13px Arial,Helvetica,sans-serif;margin:0;padding:5px 5px;width:208px; /*Backward compatibility*/ *display:inline;zoom:1}
+#build label{color:#fff;display:inline-block;font-size:11px;line-height:25px;text-shadow:1px 1px 2px #808080; /*Backward compatibility*/ *display:inline;zoom:1}
+#build label.check{background:url(../../../Resource/Image/Background/Checkbox.png?v=1001) no-repeat 0 0;cursor:pointer;height:20px;line-height:21px;padding:0 20px 0 27px;margin-top:29px}
+#build label.checked{background-position:0 -20px !important}
+#build label.radio{background:url(../../../Resource/Image/Background/Checkbox.png?v=1001) no-repeat 0 0;cursor:pointer;height:20px;line-height:21px;padding:0 20px 0 27px}
+#build label a{color:#fff}
+#build label a:hover{text-decoration:underline}
+#build #advancedBuild fieldset.airline{margin-left:0px;padding-left:0px}
+#build #advancedBuild{border-top:1px solid #aaa;display:inline-block;margin:20px 0 -25px -14px;padding-left:25px;padding-top:10px;width:994px}
+#build #advancedBuild fieldset.direct{margin-left:4px}
+
+/*Content*/
+#resultPanel{display:table;margin:0 auto -32px;position:relative;width:100%}
+#resultPanel .googleMap{display:none}
+#shortlist{background:#fff;border-top:1px solid #EEE;bottom:0;height:0;left:0;overflow:hidden;position:fixed;width:100%;z-index:99999}
+#shortlist.expand{height:auto;overflow:visible}
+
+/*Panorama Small */
+#panorama{background-color:#F8F8F8;background-position:0 0;box-shadow:0 0;min-height:inherit}
+#panorama .subTitle{color:#fff}
+#panorama.small{margin-bottom:-66px}
+#panorama.small .social{display:inline-block;margin-left:10px;width:auto}
+#panorama.small .subTitle{float:right;margin:35px 30px 0 0;text-align:right;width:100%}
+#panorama.small .subTitle .rating{display:inline-block;font-size:0;margin-top:0;vertical-align:top}
+#panorama.small .subTitle .tripAdvisor{display:inline-block;margin-top:0;vertical-align:top}
+#panorama.small .travellers{color:#ccc;display:table;font-size:11px;margin:38px 0 -54px 30px;width:125px}
+#panorama.small .travellers.roundTrip{margin:-1px 0 -17px 30px !important;white-space:nowrap;width:150px}
+#panorama.small .tripAdvisor{margin-right:0}
+#panorama.small h1 i.recommend{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -243px -482px;display:inherit;height:37px;margin:0 0 -7px 20px;width:20px}
+
+/* 
+ * Flight Listing Section
+ */
+
+/*One way*/
+#content .flightPanel li.showDetail .options{background-position:right -312px}
+#content .flightPanel.leave legend{background:red;border-radius:4px 4px 0 0;bottom:-2px;color:#FFF;font-size:12px;font-weight:700;left:0;padding:5px 10px;position:absolute;text-transform:uppercase}
+#content .flightPanel.leave,#content .flightPanel.return{width:410px}
+#content .flightPanel.return legend{background:#FCC312;border-radius:4px 4px 0 0;bottom:-2px;color:#FFF;font-size:12px;font-weight:700;left:0;padding:5px 10px;position:absolute;text-transform:uppercase}
+.flightPanel{background:#fff;border-top:0 none;display:inline-block;margin:0 -30px 0 170px;width:820px}
+.flightPanel .arrive{color:#444;font-size:15px;margin-left:5px;padding-top:7px;text-align:right;width:42px}
+.flightPanel .arrive .duration,.flightPanel .depart .airlines,.flightPanel .route li.last em{display:none}
+.flightPanel .arrive span{color:#ed4300;display:inline-block;font-size:11px;font-weight:400;margin-top:-2px;padding:0;text-align:center;vertical-align:top}
+.flightPanel .depart{color:#444;font-size:15px;padding-left:10px;padding-top:7px;width:50px}
+.flightPanel .depart span em.codeShared{background-position:-386px -40px}
+.flightPanel .duration{margin-left:16px;padding-top:8px;text-align:right;width:50px}
+.flightPanel .flight{font-size:13px;padding-top:6px;width:163px}
+.flightPanel .flight img{display:inline-block;margin-bottom:5px;margin-right:15px;margin-top:2px;vertical-align:top;width:35px}
+.flightPanel .flight span{display:inline-block;margin-top:-4px;vertical-align:middle;width:110px}
+.flightPanel .flight span em.codeShared,.flightPanel .depart span em.codeShared{background:url(../../../Resource/Image/Icon/SpriteListing.png) -386px -74px;padding-left:18px}
+.flightPanel .flight span i{font-style:normal}
+.flightPanel .flight.multiAirline img{margin-right:5px}
+.flightPanel .more{color:#5a7;margin:8px 4px 0 20px;min-width:29px;padding:0;text-decoration:none}
+.flightPanel .offer{display:inline-block;width:100%}
+.flightPanel .offer em{background:#ded;color:#385;display:block;font-size:11px;height:14px;line-height:15px;margin:0 0 0 37px;overflow:hidden;padding:5px 32px 5px 10px;text-shadow:0 1px 1px #fff;text-transform:uppercase;white-space:normal}
+.flightPanel .offer span{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -25px -336px;height:24px;position:absolute;right:0;top:0;white-space:nowrap;z-index:999}
+.flightPanel .options{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat right -340px;bottom:-18px;color:#5a7;font-size:11px;height:25px;padding-right:2px;position:absolute;right:218px;text-align:center;width:100px;z-index:999}
+.flightPanel .price{font-size:18px;padding-left:1px;padding-top:5px;text-align:right;width:99px}
+.flightPanel .price em{color:#999;font-size:11px;font-weight:400;margin-right:5px}
+.flightPanel .refundable{display:none;padding-left:20px;width:67px}
+.flightPanel .refundable span{border:1px solid #5a7;border-radius:8px;color:#5a7;display:inline-block;font-size:11px;margin-bottom:3px;margin-right:8px;padding:0 4px}
+.flightPanel .route{padding:0 10px;width:142px}
+.flightPanel .route li{background-image:url(../../../Resource/Image/Icon/SpriteListing.png);background-position:-4px -60px;background-repeat:no-repeat;color:#666;float:left;font-size:11px;min-height:25px;padding-top:20px;text-transform:uppercase}
+.flightPanel .route li.last{width:20px}
+.flightPanel .route li.technical,.flightPanel li .details .itinerary .route li.technical{background-position:-5px -270px;padding-top:6px}
+.flightPanel .route li.technical:hover{background-position:-5px -391px!important}
+.flightPanel .route li:hover,.flightPanel li .details li:hover{background-position:-4px -167px!important}
+.flightPanel .sell{text-align:right;width:80px}
+.flightPanel .sell .button{background:#008ed6;color:#fff;font-size:12px;letter-spacing:0.1em;padding:0;text-align:center;text-transform:uppercase;width:65px}
+.flightPanel .stop0 li{width:120px}
+.flightPanel .stop1 li{width:60px}
+.flightPanel .stop1.stop2 li:first-child{margin-left:40px}
+.flightPanel .stop2 li{width:40px}
+.flightPanel .stop3 li{width:30px}
+.flightPanel > li{position:relative}
+.flightPanel > li:hover div,.roundTrip .flightPanel li:hover,.flightPanel li.multiCity:hover{background:#F3F8FC;cursor:pointer}
+.flightPanel a{color:#008ED6;display:inline-block;text-decoration:none;vertical-align:top}
+.flightPanel li .details .flight{width:163px}
+.flightPanel li .details .flight img{display:inline;float:left}
+.flightPanel li div{width:760px}
+.flightPanel li div,.roundTrip .flightPanel li{background:#fff;border-bottom:1px solid #eee;display:inline-block;min-height:42px;padding:15px 30px 5px;position:relative}
+.flightPanel li.last div,.roundTrip .flightPanel li.last{border-bottom:0 none;padding-bottom:20px}
+.flightPanel li:hover .options{background-position:right -160px}
+.flightPanel li.multiCity{border-bottom:1px solid #EEE;padding:15px 0 5px}
+.flightPanel li.multiCity div{border-bottom:0 none;padding:0 30px}
+
+/*One Way Details*/
+#content .flightPanel li .fareDetails h4{color:#666;font-size:11px;font-weight:400;text-transform:uppercase}
+.flightPanel li .details{border-bottom:1px solid #008ed6;border-top:1px solid #008ed6;box-shadow:0 2px 2px #D5DBE0 inset;display:none;margin-left:-1px;margin-top:-1px;padding:5px 31px;width:762px}
+.flightPanel li .details .duration{margin-left:0;text-align:right;width:66px}
+.flightPanel li .details .flight dfn{color:#666;display:block;font-size:11px;line-height:13px;margin-left:50px;margin-bottom:2px}
+.flightPanel li .details .flight span{width:106px}
+.flightPanel li .details .flight span em{margin:3px 0}
+.flightPanel li .details .flight span,#content .flightPanel li.showDetail div.details,.flightPanelSummary p{display:inline-block}
+.flightPanel li .details .itinerary{width:560px}
+.flightPanel li .details .itinerary .layover{border:0 none;float:left;margin:-14px auto 0 0;padding:0;position:relative;text-align:center;width:100%;zoom:1}
+.flightPanel li .details .itinerary .layover p{background:#fff url(../../../Resource/Image/Icon/SpriteListing.png) -10px -306px;border:0 none;border-radius:15px;color:#666;font-size:11px;padding:5px 15px 5px 30px}
+.flightPanel li .details .itinerary .route li{border-bottom:0;padding-bottom:0;padding-top:20px}
+.flightPanel li .details .itinerary .route li.technical{background-position:-5px -439px;padding-top:6px}
+.flightPanel li .details .itinerary .route li.technical:hover{background-position:-5px -392px}
+.flightPanel li .details .itinerary > li{min-width:514px}
+.flightPanel li .details .itinerary li{border-bottom:1px solid #ddd;display:inline-block;padding:15px 0}
+.flightPanel li .details .itinerary li.last{border:0 none}
+.flightPanel li .details .route li{background-position:-4px -113px}
+.flightPanel li .details a.seatMap{color:#008ED6;display:none;font-size:11px}
+.flightPanel li .details,.flightPanel li .details div{background-color:#f3f8fc}
+.flightPanel li .fareDetails{margin-bottom:25px;margin-right:2px;margin-top:15px!important;width:auto}
+
+/*One Way Fare Details*/
+.flightPanel li .fareDetails{border-bottom:0 none;float:right;font-size:12px;padding:0;width:auto}
+.flightPanel li .fareDetails a{display:table;margin-bottom:3px}
+.flightPanel li .fareDetails dd{display:inline-block;margin:0;padding-bottom:2px;text-align:right;width:80px}
+.flightPanel li .fareDetails dd em{font-size:11px;margin-right:5px}
+.flightPanel li .fareDetails dl{color:#777;width:186px}
+.flightPanel li .fareDetails dl,.flightPanel li .fareDetails h4,#filter .airline ul.airlines{margin-bottom:10px}
+.flightPanel li .fareDetails dt{display:inline-block;margin:0;text-align:left;width:102px}
+.flightPanel li.selected div,.roundTrip .flightPanel li.selected{background:#FDF5D4;border-bottom:1px solid #FFC61E;border-top:1px solid #FFC61E;box-shadow:0 2px 2px #E3DDC3 inset;margin-top:-1px;width:350px}
+.flightPanel p,.flightPanel ul{color:#333;display:inline-block;vertical-align:top}
+.flightPanel.leave{border-right:1px solid #ddd;margin-right:1px}
+.flightPanel.leave li{width:350px}
+.flightPanel.return{border-left:1px solid #ddd;margin-left:-2px}
+.flightPanel.return li{width:349px}
+.flightPanel.sortByPrice .price,.flightPanel.sortByDeparts .depart,.flightPanel.sortByArrives .arrive,.flightPanel.sortByDuration .duration{font-weight:700}
+.roundTrip #wrapperLeave .flightPanel li.selected{box-shadow:1px 2px 2px #E3DDC3 inset}
+.roundTrip #wrapperReturn .flightPanel li.selected{box-shadow:-1px 2px 2px #E3DDC3 inset;width:352px}
+
+/*Round Trip*/
+.roundTrip{margin-top:-102px!important}
+.roundTrip .actionBar{margin-top:0;position:relative;z-index:9999}
+.roundTrip .actionBar li.airline{margin-left:16px;width:55px}
+.roundTrip .actionBar li.arrival{margin-left:11px;padding-left:0;padding-right:0;width:58px}
+.roundTrip .actionBar li.departure{margin-left:0;width:58px}
+.roundTrip .actionBar li.duration{margin-left:0;padding-left:0;width:59px}
+.roundTrip .actionBar li.duration a{padding-left:2px}
+.roundTrip .actionBar li.last{margin-right:0}
+.roundTrip .actionBar li.price{border-right:1px solid #fff;margin-left:9px;margin-right:5px;padding-right:58px;text-align:right;width:65px}
+.roundTrip .actionBar li.price.last{border-right:0 none;padding-right:0;width:66px}
+.roundTrip .flightPanel .arrive{margin-left:0;margin-right:6px;padding-top:0;text-align:right;width:40px}
+.roundTrip .flightPanel .arrive span{margin-top:0}
+.roundTrip .flightPanel .depart span{color:#999;display:block;font-size:11px;font-weight:400;width:100px}
+.roundTrip .flightPanel .duration{margin-left:0;padding-top:2px;width:52px}
+.roundTrip .flightPanel .flight{font-size:0;width:37px}
+.roundTrip .flightPanel .flight img{margin-top:-2px}
+.roundTrip .flightPanel .price{padding-left:8px;padding-top:0;width:82px}
+.roundTrip .flightPanel .selecTrip{background:url(../../../Resource/Image/Background/Checkbox.png) no-repeat 0 0;cursor:pointer;height:20px;line-height:21px;margin-left:13px;padding:0 20px 0 0;position:relative;z-index:999}
+.roundTrip .flightPanel .selecTrip input,.roundTrip .flightPanel .duration span,.roundTripPanel .flightPanel .depart span.stop.nonStop em,.roundTripPanel .sell{display:none}
+.roundTrip .flightPanel li.selected .selecTrip{background-position:0 -20px}
+.roundTrip .flightPanel.return{margin-left:-2px!important;text-align:left!important;width:407px!important}
+.roundTripPanel{float:right;width:759px}
+.roundTripPanel .flightPanel{float:left;margin-left:-31px}
+.roundTripPanel .flightPanel .depart{padding:0 5px;position:relative;width:79px}
+.roundTripPanel .flightPanel .depart span.stop{border-bottom:1px solid #ccc;position:absolute;right:6px;text-align:center;top:-9px;width:27px}
+.roundTripPanel .flightPanel .depart span.stop em{background:#FFF;border:1px solid #ccc;border-radius:11px;color:#777;display:inline-block;height:14px;position:relative;text-align:center;top:9px;width:14px}
+.roundTripPanel .flightPanel .depart span.stop.nonStop{background:url(../../../Resource/Image/Icon/SpriteListing.png) right -451px;border:0 none;height:14px;right:2px;top:0;width:29px}
+.roundTripPanel .flightPanel .flight{width:37px}
+.roundTripPanel .flightPanel .price{font-size:15px;padding-left:0;position:relative;width:70px}
+.roundTripPanel .flightPanel .price em{bottom:-13px;margin-right:0;position:absolute;right:0}
+.roundTripPanel .flightPanel li .actionBar{width:394px}
+.roundTripPanel .flightPanel li .actionBar li.airline{margin-left:17px;width:53px}
+.roundTripPanel .flightPanel li .actionBar li.arrival{width:49px}
+.roundTripPanel .flightPanel li .actionBar li.price{width:82px}
+.roundTripPanel .flightPanel.return li .actionBar{width:395px}
+.sticky{left:auto;position:fixed!important;top:0;z-index:99999}
+
+/*Flight Summary*/
+#flightSummary{background:#F3F8FC;border-bottom:1px solid #008ED6;color:#111;height:31px;margin:-31px -30px 0;padding:15px}
+#flightSummary li{display:inline-block;margin-right:53px;vertical-align:top;width:auto}
+#flightSummary li.roundTripPrice{float:right;margin-right:15px}
+#flightSummary li.roundTripPrice p.sell .button{margin-top:-1px;padding:0;width:65px}
+#flightSummary p{display:inline-block;vertical-align:top}
+#flightSummary p.arrive span{color:#ed4300;display:inline-block;margin-left:10px;padding:0;text-align:center;vertical-align:top}
+#flightSummary p.depart{padding:0 5px;position:relative;width:79px}
+#flightSummary p.depart span{color:#777;display:block;font-size:11px;font-weight:400;width:135px}
+#flightSummary p.depart span.stop{border-bottom:1px solid #ccc;position:absolute;right:8px;text-align:center;top:-9px;width:27px}
+#flightSummary p.depart span.stop em{background:#FFF;border:1px solid #ccc;border-radius:11px;color:#777;display:inline-block;height:14px;position:relative;text-align:center;top:9px;width:14px}
+#flightSummary p.depart span.stop.nonStop{background:url(../../../Resource/Image/Icon/SpriteListing.png) right -451px;border:0 none;height:14px;right:2px;top:0;width:29px}
+#flightSummary p.depart span.stop.nonStop em,#flightSummary p.stop .nonStop em{display:none}
+#flightSummary p.depart,#flightSummary p.arrive{font-size:15px}
+#flightSummary p.duration{margin-left:15px;margin-right:45px}
+#flightSummary p.duration span{display:block;font-size:11px;margin-top:-1px}
+#flightSummary p.flight{margin-top:4px;width:37px}
+#flightSummary p.flight img{display:inline-block;width:35px}
+#flightSummary p.price{font-size:20px;font-weight:700;margin:2px 15px 0 0}
+#flightSummary p.price em{color:#999;font-size:11px;font-weight:400}
+#flightSummary p.price strike{color:#999;display:block;font-size:11px;font-weight:400;margin-top:-2px;text-align:right}
+#flightSummary p.stop{margin:2px 5px;position:relative;width:35px}
+#flightSummary p.stop .nonStop{background:url(../../../Resource/Image/Icon/SpriteListing.png) right -451px;border:0 none;height:14px;margin-right:-1px;right:0;top:0;width:35px}
+#flightSummary p.stop span{border-bottom:1px solid #ccc;position:absolute;right:0;text-align:center;top:-9px;width:35px}
+#flightSummary p.stop span em{background:#FFF;border:1px solid #ccc;border-radius:11px;color:#777;display:inline-block;font-size:11px;height:14px;position:relative;text-align:center;top:9px;width:14px}
+#flightSummary span.filter{border-bottom:1px solid #DAEBF7;color:#008ed6;display:inline-block;float:left;font-weight:700;height:46px;margin-left:-15px;margin-right:31px;margin-top:-14px;padding-left:30px;padding-top:20px;position:relative;width:165px}
+#flightSummary.sticky{margin-top:0;width:988px;z-index:9998!important}
+#flightSummary.sticky li.roundTripPrice{margin-right:17px}
+
+/*Round trip destination*/
+#panoramaPanel p.destination{color:#fff;margin-top:-4px}
+#panoramaPanel p.destination span{display:inline-block;font-size:13px;font-weight:700;text-align:center}
+#panoramaPanel p.destination span em{font-size:11px;font-weight:400}
+#panoramaPanel p.destination span.leave{margin-left:199px;width:410px}
+#panoramaPanel p.destination span.return{margin-left:14px;width:368px}
+
+/* 
+ * Filter
+ */
+#filter{background:#f8f8f8;border-left:1px solid #ddd;border-right:1px solid #ccc;display:inline-block;height:100%;margin-bottom:-30px;margin-left:-31px;overflow:hidden;position:absolute;width:199px;z-index:99}
+#filter .airline em{color:#999;float:right;font-size:11px;margin-top:2px;vertical-align:top}
+#filter .airline ul.alliance{border-top:1px solid #eee;padding-top:10px}
+#filter .airline ul.alliance li{width:100%}
+#filter .airline ul.multiAirline li{border-bottom:1px solid #eee;margin-bottom:10px}
+#filter .airline ul.multiAirline li label{padding-bottom:4px;width:145px}
+#filter .airline.checkList label{width:90px}
+#filter .checkList label{margin-bottom:4px;width:145px}
+#filter .filter,#filter .apply{display:none}
+#filter .filterGroup{border-bottom:1px solid #ddd;border-top:0 solid #ddd;margin:0 0 -1px;padding:0 0 13px}
+#filter .filterGroup > legend{margin:15px 0 0 15px;padding-bottom:0}
+#filter .filterGroup fieldset.slider{border-top:0 solid #ddd;margin-bottom:0}
+#filter a.more{background:url(../../../Resource/Image/Icon/Expand.png) no-repeat center right;color:#555;cursor:pointer;display:inline-block;float:right;font-size:11px;margin-top:15px;padding-right:20px}
+#filter fieldset{border-top:1px solid #ddd;color:#444;margin:0 0 13px;padding:14px 15px 4px}
+#filter fieldset input[type=checkbox]{margin:2px 0 0;padding:0;vertical-align:top}
+#filter fieldset legend em{float:right}
+#filter fieldset.departs.slider{border-top:0 solid #ddd}
+#filter fieldset.slider .ui-slider-horizontal{margin-top:22px}
+#filter fieldset.slider.stops{border-top:1px solid #ddd}
+#filter label{color:#555;display:inline-block;font-size:12px}
+#filter legend{color:#777;float:left;font-size:11px;margin:0;padding:0 0 10px;text-transform:uppercase;width:100%}
+
+/* 
+ * Action Panel
+ */
+
+/*One way actionBar*/
+.actionBar{background:#daebf7;height:40px;margin:-30px -30px 0;overflow:hidden;padding:0 0 0 15px}
+.actionBar .offer{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat left -336px;height:29px;min-width:21px;position:absolute;right:91px;top:0;white-space:nowrap}
+.actionBar .offer em{background:#ded;color:#385!important;display:none;margin:0 0 0 40px !important;min-height:16px;padding:6px 16px 6px 10px;text-shadow:0 1px 1px #fff}
+.actionBar .offer:hover{background-position:-25px -336px;z-index:9999}
+.actionBar .offer:hover em{display:block}
+.actionBar li{color:#008ED6;display:inline-block;font-weight:400;padding:0;position:relative}
+.actionBar li a{display:block;height:40px;line-height:40px;padding:0 10px;text-decoration:none;text-shadow:1px 1px 0 #FFF}
+.actionBar li a em{font-weight:400;margin-right:5px}
+.actionBar li a:hover,#hotel a:hover,.flightPanel a:hover{text-decoration:underline;text-shadow:none}
+.actionBar li.airline{margin-left:17px;width:161px}
+.actionBar li.arrival{text-align:right;width:63px}
+.actionBar li.departure{margin-left:12px;width:66px}
+.actionBar li.duration{text-align:right;width:71px}
+.actionBar li.duration a,.roundTrip .actionBar li.departure a{padding-left:2px}
+.actionBar li.filterHead{border-right:1px solid #bbb;float:left;margin-left:-15px;margin-right:4px;margin-top:-14px;padding-left:15px;padding-top:15px;width:184px}
+.actionBar li.filterHead span{color:#444;display:inline-block;height:40px;line-height:40px}
+.actionBar li.hotelPrice{width:auto}
+.actionBar li.location{margin-left:15px;width:269px}
+.actionBar li.price{margin-left:10px;width:142px}
+.actionBar li.price a{text-align:right}
+.actionBar li.priceFrom{float:right;margin-right:0;position:relative}
+.actionBar li.priceFrom .button{border:0 none!important;border-radius:0 4px 0 0;display:inline-block;font-size:13px;font-weight:700;height:auto!important;letter-spacing:0.05em;line-height:normal;margin:-3px 0 -5px 6px;padding:15px 25px 12px;text-shadow:0 0 0;text-transform:uppercase;width:50px}
+.actionBar li.priceFrom .button:hover,.actionBar.tabbing li.selected a:hover{text-decoration:none}
+.actionBar li.priceFrom p{color:#333;display:inline-block;font-size:20px;font-weight:700;line-height:normal;margin:0 10px}
+.actionBar li.priceFrom p em{color:#666;font-size:11px;font-weight:400;margin-right:3px}
+.actionBar li.rating{margin:0 0 0 22px;padding:0 6px;width:66px}
+.actionBar li.sortAscending a{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat right -241px;color:#444!important;display:inline-block;padding-right:15px;text-shadow:none}
+.actionBar li.sortDescending a{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat right -275px;color:#444!important;display:inline-block;padding-right:15px;text-shadow:none}
+.actionBar li.stops{margin-left:-2px;width:151px}
+.actionBar li.switchView{float:right;margin-left:0;padding:0}
+.actionBar li.switchView a{display:inline-block;font-weight:700;height:40px;outline:none;padding:0 30px 0 25px;width:25px}
+.actionBar li.switchView a.list,.mapView .actionBar li.switchView a.map{background-color:#F3F8FC;display:none}
+.actionBar li.switchView a.map{background-color:#F3F8FC}
+.actionBar li.tripRating{margin:0 148px 0 7px}
+.actionBar.sticky{margin-top:0;top:0;width:1003px}
+.actionBar.tabbing li a{border-bottom:5px solid #DAEBF7;height:40px}
+.actionBar.tabbing li.overview a{margin-left:3px}
+.actionBar.tabbing li.selected a{border-bottom:5px solid #FFC61E;color:#444;height:35px;text-shadow:none}
+.mapView .actionBar li.switchView a.list{display:inline-block;padding:0 30px}
+.roundTrip .actionBar.sticky{top:62px}
+
+/* 
+ * Load More
+ */
+ 
+.loadMore{margin-bottom:-30px;padding:20px 0;text-align:center;width:100%}
+.loadMore a{background:#efefef;box-shadow:0 0 0 #aaa;display:inline-block;float:none;margin-bottom:0}
+.loadMore a:hover{background:#ced0d2}
+
+/* 
+ * Hotel Listing 
+ */
+ 
+/*Listing*/
+#hotel{background:#fff;border-top:0 none;display:inline-block;margin:0 -30px 0 170px;width:820px}
+#hotel .flight{padding-top:8px;width:163px}
+#hotel .hotel{width:272px}
+#hotel .hotel img{display:inline-block;height:50px;margin-bottom:1px;margin-right:20px;width:80px}
+#hotel .hotel span{display:inline-block;font-size:15px;line-height:17px;margin-bottom:5px;margin-top:2px;padding-right:16px;position:relative;vertical-align:top;width:154px}
+#hotel .hotel span em{color:#999;display:block;font-size:11px;margin-top:0}
+#hotel .hotel span i{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat 0 -658px;display:inline-block;height:22px;margin-left:5px;position:absolute;right:-10px;top:5px;vertical-align:top;width:13px}
+#hotel .more{margin-top:1px}
+#hotel .more,#hotel .shortlist{color:#5a7;display:block;margin:7px 4px 0 5px;padding:0;text-align:right;text-decoration:none}
+#hotel .offer{display:inline-block;width:100%}
+#hotel .offer em{background:#ded;color:#385;display:block;font-size:11px;height:14px;line-height:16px;margin:0 0 0 37px;overflow:hidden;padding:5px 32px 5px 10px;text-shadow:0 1px 1px #fff;text-transform:uppercase;white-space:normal;width:155px}
+#hotel .offer span{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -26px -337px;height:24px;position:absolute;right:0;top:0;white-space:nowrap;z-index:9999}
+#hotel .price{font-size:18px;margin-top:10px;padding-left:1px;text-align:right;width:114px}
+#hotel .price em{color:#999;font-size:11px;font-weight:400;margin-right:5px}
+#hotel .quickLinks{width:55px}
+#hotel .quickLinks .more{font-size:11px}
+#hotel .rating{width:72px}
+#hotel .sell{float:right;margin-top:5px;position:relative}
+#hotel .sell .button{background:#008ed6;color:#fff;height:32px;line-height:32px;margin-top:-1px;max-width:75px;padding:0;text-align:center;width:65px}
+#hotel .sell em{bottom:-10px;color:#999;font-size:11px;position:absolute;right:0;text-align:right;width:107px}
+#hotel .tripAdvisor{width:103px}
+#hotel > li{position:relative}
+#hotel > li:focus div{background:red}
+#hotel > li:hover div{background:#F3F8FC;cursor:pointer}
+#hotel a{color:#008ED6;display:inline-block;text-decoration:none;vertical-align:top}
+#hotel li div{background:#fff;border-bottom:1px solid #eee;display:inline-block;min-height:42px;padding:10px 30px 5px;position:relative;width:760px}
+#hotel li.last div{padding-bottom:15px}
+#hotel p{display:inline-block;vertical-align:top}
+#hotel.sortByLocation .location,#hotel.sortByRating .rating,#hotel.sortByTriprating .tripAdvisor,#hotel.sortByPrice .price{font-weight:700}
+
+/*Detailed Listing*/
+#hotel .details{background:#F3F8FC;border-bottom:1px solid #008ed6;border-top:1px solid #008ed6;box-shadow:0 2px 2px #D5DBE0 inset;display:none;margin-left:-1px;margin-top:-1px;padding:10px 0 10px 31px;width:794px}
+#hotel .details .amenities{display:inline-block;margin-top:10px;width:90px}
+#hotel .details .amenities li{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -251px -12px;display:inline-block;height:20px;margin:0 0 4px;text-indent:-9999px;width:20px}
+#hotel .details .amenities li.AirConditioning{background-position:-295px -59px}
+#hotel .details .amenities li.bar{background-position:-249px -12px}
+#hotel .details .amenities li.breakfast{background-position:-272px -35px}
+#hotel .details .amenities li.business{background-position:-249px -58px}
+#hotel .details .amenities li.coffeeShop{background-position:-272px -12px}
+#hotel .details .amenities li.gym{background-position:-273px -59px}
+#hotel .details .amenities li.hour{background-position:-296px -81px}
+#hotel .details .amenities li.internet{background-position:-295px -11px}
+#hotel .details .amenities li.pool{background-position:-295px -34px}
+#hotel .details .amenities li.restaurant{background-position:-250px -81px}
+#hotel .details .amenities li.roomService{background-position:-272px -81px}
+#hotel .details .amenities li.spa{background-position:-248px -34px}
+#hotel .details .board{margin:7px 5px 0 10px;width:187px}
+#hotel .details .board span{display:block}
+#hotel .details .offer{display:inline-block;position:relative;width:100%}
+#hotel .details .offer span{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -25px -337px;height:24px;position:absolute;right:-1px;top:-9px;white-space:nowrap;z-index:999}
+#hotel .details .price{margin-right:16px;width:119px}
+#hotel .details .ratesMore{border-top:1px solid #ddd;float:right;margin-bottom:5px;padding-right:34px;padding-top:9px;text-align:right;width:660px}
+#hotel .details .room{display:inline-block;margin-top:-9px;padding-left:6px;vertical-align:top;width:688px}
+#hotel .details .room li{border-bottom:1px solid #DDD;display:inline-block;margin-top:9px;padding:0 0 2px;width:100%}
+#hotel .details .room li.last{border:0 none}
+#hotel .details .roomClass{margin-top:7px;width:245px}
+#hotel .details .roomRate{font-size:18px;padding-left:1px;text-align:right;width:109px}
+#hotel .details .roomRate em{color:#666;display:block;font-size:11px;font-weight:400;margin-right:0;margin-top:-3px}
+#hotel .details .roomRate span em{display:inline;margin-right:5px}
+#hotel .details .sell{float:none;padding-bottom:0;width:65px}
+#hotel .details .sell em{bottom:3px;display:inline-block;margin-left:-35px;position:relative;width:100px}
+#hotel .details p{margin-bottom:5px}
+#hotel .details.offer em{background:#ded;color:#385;display:block;font-size:11px;height:14px;line-height:16px;margin:0 0 0 37px;overflow:hidden;padding:5px 32px 5px 10px;text-shadow:0 1px 1px #fff;text-transform:uppercase;white-space:normal;width:155px}
+#hotel li.showDetail div.details{display:inline-block}
+
+/*Rating*/
+.rating{margin:3px 15px;width:94px}
+.rating a{padding:0!important}
+.rating em{color:#999;display:block;font-size:11px}
+.rating span{background:url(../../../Resource/Image/Background/Hotel/BigStars.png) no-repeat -70px top;display:inline-block;margin-top:3px;min-height:18px;text-indent:-9000px;width:71px}
+.rating span.star0{background-position:-71px 0}
+.rating span.star1{background-position:-56px 0}
+.rating span.star2{background-position:-42px 0}
+.rating span.star3{background-position:-28px 0}
+.rating span.star4{background-position:-14px 0}
+.rating span.star5{background-position:0 0}
+
+/*TripAdvisor*/
+.tripAdvisor {margin-right:10px;margin-top:5px}
+.tripAdvisor em{display:block;font-size:11px;color:#999}
+.tripAdvisor span{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -44px -658px;display:inline-block;font-size:0px;height:19px;margin:0px;vertical-align:top;width:103px}
+.tripAdvisor span.rating5{background-position:-44px -640px}
+.tripAdvisor span.rating10{background-position:-44px -622px}
+.tripAdvisor span.rating15{background-position:-44px -604px}
+.tripAdvisor span.rating20{background-position:-44px -586px}
+.tripAdvisor span.rating25{background-position:-44px -568px}
+.tripAdvisor span.rating30{background-position:-44px -550px}
+.tripAdvisor span.rating35{background-position:-44px -532px}
+.tripAdvisor span.rating40{background-position:-44px -514px}
+.tripAdvisor span.rating45{background-position:-44px -496px}
+.tripAdvisor span.rating50{background-position:-44px -478px}
+.percentagePanel .tripAdvisor span.rating5{background-position:-74px -640px}
+.percentagePanel .tripAdvisor span.rating10{background-position:-74px -622px}
+.percentagePanel .tripAdvisor span.rating15{background-position:-74px -604px}
+.percentagePanel .tripAdvisor span.rating20{background-position:-74px -586px}
+.percentagePanel .tripAdvisor span.rating25{background-position:-74px -568px}
+.percentagePanel .tripAdvisor span.rating30{background-position:-74px -550px}
+.percentagePanel .tripAdvisor span.rating35{background-position:-74px -532px}
+.percentagePanel .tripAdvisor span.rating40{background-position:-74px -514px}
+.percentagePanel .tripAdvisor span.rating45{background-position:-74px -496px}
+.percentagePanel .tripAdvisor span.rating50{background-position:-74px -478px}
+
+/*Shortlist Panel*/
+.shortlistpanel{margin:0 auto;width:960px}
+.shortlistpanel .rating{background:url(../../../Resource/Image/Background/Hotel/BigStars.png) no-repeat -56px 4px;display:block;margin-left:0;margin-top:8px;width:35px}
+.shortlistpanel .rating span{background:#FFC61E;border-radius:4px;color:#fff;font-size:11px;height:15px;line-height:16px;margin-left:19px;overflow:hidden;text-align:center;text-indent:0;width:22px}
+.shortlistpanel .tripAdvisor{margin-left:59px;margin-top:-21px;vertical-align:top}
+.shortlistpanel a.close{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -172px -590px;height:23px;position:absolute;right:-8px;top:-15px;width:23px}
+.shortlistpanel p{height:45px;line-height:45px;width:100%}
+.shortlistpanel p .button{float:right;margin-top:6px;padding:0;width:65px}
+.shortlistpanel p a{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -236px -556px;color:#ed4300;padding-left:17px}
+.shortlistpanel p img{display:inline-block;height:60px;width:90px}
+.shortlistpanel p.hotel{margin-left:10px;margin-right:-45px;width:115px}
+.shortlistpanel p.items em{border:1px solid #ed4300;border-radius:16px;display:inline-block;height:16px;line-height:16px;text-align:center;width:16px}
+.shortlistpanel p.location{width:90px}
+.shortlistpanel p.price{font-size:18px;font-weight:700}
+.shortlistpanel p.price em{color:#999;display:block;font-size:11px;font-weight:400;margin-right:0}
+.shortlistpanel p.price,.shortlistpanel p.sell{float:right;font-size:17px;font-weight:400;text-align:right;width:95px}
+.shortlistpanel p.sell{margin-top:-25px}
+.shortlistpanel p.sell input{margin-top:0}
+.shortlistpanel ul{padding:30px 0 5px}
+.shortlistpanel ul li{border:1px solid #eee;border-radius:4px;display:inline-block;margin-bottom:20px;margin-right:10px;padding:10px 10px 4px;position:relative;width:284px}
+.shortlistpanel ul p{display:inline-block;height:auto;line-height:normal;vertical-align:top}
+
+/* 
+ * Hotel Map View
+ */
+
+/*Map View Listing*/
+#content.mapView .googleMap{display:inline-block;position:absolute!important}
+#content.mapView .googleMap.sticky{margin:40px 0 0 30px;position:fixed!important;right:auto;width:500px}
+.mapView #hotel{border-right:1px solid #bbb;margin-top:-4px;padding-bottom:10px;padding-top:3px;position:relative;vertical-align:top;width:317px;z-index:9999}
+.mapView #hotel .details{display:none!important}
+.mapView #hotel .hotel{width:290px}
+.mapView #hotel .hotel img{height:60px;margin-top:10px;width:70px}
+.mapView #hotel .hotel span{margin-left:0px;margin-top:10px;min-height:38px;padding-bottom:0;width:160px}
+.mapView #hotel .offer span{right:-1px}
+.mapView #hotel .price{bottom:18px;font-size:17px;font-weight:400;position:absolute;right:15px;width:85px}
+.mapView #hotel .price em{display:block;margin-right:0}
+.mapView #hotel .quickLinks,.mapView #hotel .rating em,.mapView .tripAdvisor em,.mapView #hotel .sell em,.mapView #hotel .hotel span em,.mapView #hotel .sell .button,.mapView .actionBar li.location{display:none}
+.mapView #hotel .rating{background:url(../../../Resource/Image/Background/Hotel/BigStars.png) no-repeat -56px 4px;display:block;margin-left:89px;margin-top:-23px;width:42px}
+.mapView #hotel .rating span{background:#E5B31C;border-radius:4px;color:#fff;font-size:12px;font-weight:700;height:15px;line-height:16px;margin-left:19px;overflow:hidden;text-align:center;text-indent:0;width:22px}
+.mapView #hotel .rating span.star1,.shortlistpanel .rating span.star1,#supplement .rating span.star1{background:#f5e1a4}
+.mapView #hotel .rating span.star2,.shortlistpanel .rating span.star2,#supplement .rating span.star2{background:#f1d582}
+.mapView #hotel .rating span.star3,.shortlistpanel .rating span.star3,#supplement .rating span.star3{background:#edca60}
+.mapView #hotel .rating span.star4,.shortlistpanel .rating span.star4,#supplement .rating span.star4{background:#eabe3e}
+.mapView #hotel .rating span.star5,.shortlistpanel .rating span.star5,#supplement .rating span.star5{background:#e6b31c}
+.mapView #hotel .rating,.mapView .tripAdvisor{display:block;margin-right:0}
+.mapView #hotel .sell{position:absolute;right:30px;top:41px}
+.mapView #hotel li{border-top:1px solid #EEE}
+.mapView #hotel li div{border:0 none;display:inline-block;margin-bottom:-12px;padding:0 15px;vertical-align:top;width:286px}
+.mapView .actionBar{border-radius:6px 6px 0 0;position:relative;z-index:99999}
+.mapView .actionBar li.rating{margin-left:5px;width:64px}
+.mapView .actionBar li.switchView{float:right}
+.mapView .actionBar li.tripRating{margin:0 15px 0 7px;width:116px}
+.mapView .actionBar.sticky{border-radius:0}
+.mapView .googleMap{height:100%;margin-left:0;right:-30px;width:500px}
+.mapView .tripAdvisor{margin-left:150px;margin-top:-22px}
+.mapView .tripAdvisor em,.shortlistpanel .tripAdvisor em{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -44px -658px;display:inline-block;font-size:0;height:20px;margin:-2px 0 0 -54px;vertical-align:top;width:30px}
+.mapView .tripAdvisor span,.shortlistpanel .tripAdvisor span{background:#66BE89;border-radius:4px;color:#FFF;font-size:12px;font-weight:700;height:16px;line-height:17px;margin-left:25px;text-align:center;width:22px}
+.mapView .tripAdvisor span.rating15,.shortlistpanel .tripAdvisor span.rating15,#supplement .tripAdvisor span.rating15,.mapView .tripAdvisor span.rating20,.shortlistpanel .tripAdvisor span.rating20,#supplement .tripAdvisor span.rating20{background:#abdbbe}
+.mapView .tripAdvisor span.rating25,.shortlistpanel .tripAdvisor span.rating25,#supplement .tripAdvisor span.rating25,.mapView .tripAdvisor span.rating30,.shortlistpanel .tripAdvisor span.rating30,#supplement .tripAdvisor span.rating30{background:#94d1ac}
+.mapView .tripAdvisor span.rating35,.shortlistpanel .tripAdvisor span.rating35,#supplement .tripAdvisor span.rating35,.mapView .tripAdvisor span.rating40,.shortlistpanel .tripAdvisor span.rating40,#supplement .tripAdvisor span.rating40{background:#7dc89b}
+.mapView .tripAdvisor span.rating45,.shortlistpanel .tripAdvisor span.rating45,#supplement .tripAdvisor span.rating45,.mapView .tripAdvisor span.rating50,.shortlistpanel .tripAdvisor span.rating50,#supplement .tripAdvisor span.rating50{background:#66be89}
+.mapView .tripAdvisor span.rating5,.shortlistpanel .tripAdvisor span.rating5,#supplement .tripAdvisor span.rating5,.mapView .tripAdvisor span.rating10,.shortlistpanel .tripAdvisor span.rating10,#supplement .tripAdvisor span.rating10{background:#c2e5d0}
+.shortlistpanel .tripAdvisor{display:block;margin-left:52px}
+
+/* 
+ * Hotel Description 
+ */
+ 
+/*Free Panel*/
+#freePanel #location a{display:none}
+#freePanel .twoColumnContent{float:left;line-height:1.5em;margin:0;padding:0;width:610px}
+.infoPanel{float:right;margin:14px 0 0 32px !important;width:300px}
+.infoPanel .map{border-top:0 none;margin-top:19px}
+.infoPanel .nearHotel{border-top:0 none;margin-bottom:10px;margin-top:0}
+.infoPanel .nearHotel ul{margin-top:-5px}
+.infoPanel > div{background:none;color:#555;float:right;margin-bottom:20px;padding:0 0 16px;width:300px}
+.infoPanel > div > h6{border-bottom:none;box-shadow:none;color:#444;font-size:15px;font-weight:700;line-height:21px;margin:0 0 15px;padding:15px 0 0;text-shadow:1px 1px 0 #FFF}
+.infoPanel ul.tripAdvisor{margin:15px 0 0}
+.infoPanel ul.tripAdvisor a{color:#555;display:inline-block;width:84px}
+.travellerReviews{border-top:1px solid #5a7!important;position:relative}
+.travellerReviews .lastBook{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -19px -311px;display:block;font-size:11px;font-style:normal;margin:12px 0 0;padding-left:20px;width:150px}
+.travellerReviews p{display:inline-block;width:155px}
+.travellerReviews p.count{background:#5a7;color:#fff;font-size:34px;line-height:normal;padding:14px 0 35px;position:absolute;right:0;text-align:center;top:0;vertical-align:top;width:100px}
+.travellerReviews p.count .liked{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -158px -332px;display:inline-block;height:40px;margin:15px 0;width:40px}
+.travellerReviews p.count em{display:block;font-size:13px}
+.twoColumnContent address{margin-bottom:5px}
+
+/*Travellers Choice Tripadvisor*/
+.percentagePanel{position:relative;vertical-align:top}
+.percentagePanel h6{padding-top:1px!important}
+.percentagePanel span{display:inline-block;font-weight:bold;margin:12px 0 0 12px;vertical-align:top}
+.percentagePanel  a.tripLogo{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -171px -631px;height:23px;position:absolute;left:84px;top:70px;width:127px}
+.percentagePanel  a.travellerChoice{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -307px -616px;height:70px;position:absolute;left:225px;top:28px;width:70px}
+.percentagePanel .percentage{border-radius:50px;color:#fff;background:#5a7;display:inline-block;font-size:34px;font-weight:normal;height:70px;line-height:21px;margin:0;text-align:center;width:70px}
+.percentagePanel .percentage em{display:block;font-size:11px;font-weight:bold;padding-top:10px;padding-left:3px;text-transform:uppercase}
+.percentagePanel .tripAdvisor span{margin-top:0;width:74px}
+
+/*Hotel Gallery*/
+#hotelGallery{margin:0 0 0 -30px !important;width:1020px}
+#hotelGallery .viewport{height:200px;width:1020px}
+#hotelGallery li{background:#f7f7f7;display:inline-block;height:200px;margin:0;overflow:hidden;width:340px}
+#hotelGallery ul{display:inline-block;width:100%}
+#hotelGallery.scrollable .next{margin:-16px 10px 0}
+#hotelGallery.scrollable .previous{margin:-16px 10px 0 -22px}
+
+/*Room Type*/
+.roomType{margin-bottom:13px!important}
+.roomType #hotel{margin:0 0 0 -30px;width:1020px}
+.roomType #hotel .amenities{margin:0 0 0 62px;width:288px}
+.roomType #hotel .details{margin-left:-1px;padding:0 30px 15px;width:963px}
+.roomType #hotel .details .room{line-height:1.5em;margin-top:0;padding-left:0;width:950px}
+.roomType #hotel .details .room li{border:0 none;margin-bottom:0}
+.roomType #hotel .hotel{margin-top:7px;width:380px}
+.roomType #hotel .hotel span{width:261px}
+.roomType #hotel .inclusion{margin-top:10px;width:237px}
+.roomType #hotel .inclusion span,.roomType #hotel .save span{color:#999;display:block;font-size:11px}
+.roomType #hotel .offer{display:inline-block;width:100%}
+.roomType #hotel .offer em{background:#ded;color:#385;display:block;font-size:11px;height:14px;line-height:16px;margin:0 0 0 37px;overflow:hidden;padding:5px 32px 5px 10px;text-shadow:0 1px 1px #fff;text-transform:uppercase;white-space:normal;width:155px}
+.roomType #hotel .offer span{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -26px -336px;height:24px;position:absolute;right:0;top:0}
+.roomType #hotel .price{font-weight:700;margin-top:7px;position:absolute;right:115px;width:187px}
+.roomType #hotel .quickLinks{margin-left:30px}
+.roomType #hotel .quickLinks .more{font-size:13px;margin-top:10px;text-align:left}
+.roomType #hotel .roomDetails{margin-bottom:0;width:595px}
+.roomType #hotel .sell{margin-top:2px;text-align:right}
+.roomType #hotel .sell .button{display:inline-block;float:none;margin-bottom:3px;margin-right:0}
+.roomType #hotel .sell em{bottom:auto;display:block;position:relative;right:auto;text-align:right;width:107px}
+.roomType #hotel li div{background:#F3F8FC;border-bottom:1px solid #008ed6;border-top:1px solid #008ed6;margin-bottom:-1px;margin-left:-3px;min-height:34px;padding:10px 32px 8px 33px;width:960px}
+.roomType #hotel li div.details{border-top:0 solid #008ED6;box-shadow:0 0}
+.roomType .actionBar{margin:20px -60px 0 -30px;padding:0 30px 0 17px}
+.roomType .actionBar a{color:#666}
+.roomType .actionBar li.inclusions{width:144px}
+.roomType .actionBar li.offers{width:266px}
+.roomType .actionBar li.roomType{width:339px}
+.roomType h3,.findHotel h3{margin:30px 0 15px}
+.roomType li.showDetail div{box-shadow:0 2px 2px #D5DBE0 inset}
+
+/*Traveller reviews*/
+.twoColumnContent .comments{margin-top:-8px}
+.twoColumnContent .comments a.loadMore{color:#008ed6;float:right;margin-top:0px;text-decoration:none;width:auto}
+.twoColumnContent .comments h3,.twoColumnContent .comments em{display:inline-block;margin:0!important;vertical-align:top}
+.twoColumnContent .comments img{border-radius:25px;float:left;height:50px;margin-right:15px;width:50px}
+.twoColumnContent .comments li{border-bottom:1px solid #ccc;padding:15px 0 10px;position:relative}
+.twoColumnContent .comments p{margin-left:65px!important}
+.twoColumnContent .comments span{position:absolute;right:0;top:15px}
+.twoColumnContent .googleMap{min-height:400px}
+
+/*Supplement*/
+#supplement{margin:0 auto;padding:30px 0;width:960px}
+#supplement .hotel{vertical-align:top;width:230px}
+#supplement .hotel img{display:inline-block;height:60px;width:70px}
+#supplement .hotel span{display:inline-block;margin-left:10px;margin-top:0;padding-bottom:0;vertical-align:top;width:125px}
+#supplement .hotel span em,#supplement .rating em,#supplement .tripAdvisor em,#supplement .sell em,#supplement .quickLinks{display:none}
+#supplement .rating{background:url(../../../Resource/Image/Background/Hotel/BigStars.png) no-repeat -56px 4px;display:block;margin-left:81px;margin-top:-25px;width:35px}
+#supplement .rating span{background:#FFC61E;border-radius:4px;color:#fff;font-size:11px;height:15px;line-height:16px;margin-left:19px;overflow:hidden;text-align:center;text-indent:0;width:22px}
+#supplement .sell{position:absolute;right:0;top:40px}
+#supplement .tripAdvisor{margin-left:138px;margin-top:-21px;vertical-align:top;width:52px}
+#supplement .tripAdvisor em{background:url(../../../Resource/Image/Icon/SpriteListing.png) no-repeat -44px -658px;display:inline-block;font-size:0;height:20px;margin:-2px 0 0 -54px;vertical-align:top;width:30px}
+#supplement .tripAdvisor span{background:#66BE89;border-radius:4px;color:#FFF;font-size:11px;height:16px;line-height:17px;margin-left:25px;text-align:center;width:22px}
+#supplement div{display:inline-block;margin-right:55px;overflow:hidden;vertical-align:top;width:auto}
+#supplement div.last{margin-right:0}
+#supplement h3{color:#888;font-size:18px;font-weight:400;margin-bottom:20px;text-shadow:1px 1px 0 #FFF}
+#supplement p.price{font-size:18px;font-weight:700;margin:-32px 0 24px}
+#supplement p.price em{color:#999;display:block;font-size:11px;font-weight:400;margin-right:0}
+#supplement p.price,#supplement p.sell{float:right;font-size:17px;font-weight:400;text-align:right;width:95px}
+#supplement ul{margin-bottom:-1px}
+#supplement ul li{border-bottom:1px solid #ddd;padding-top:10px}
+#supplement ul li div{margin-bottom:-16px;margin-right:0;padding-bottom:0;position:relative;width:280px}
+
+/*Find Hotel*/
+.findHotel{display:inline-block;width:100%}
+.findHotel #build{display:inline-block;margin-bottom:0;margin-left:-30px;min-height:95px;padding-top:6px}
+.findHotel #build fieldset{padding:2px 3px 5px 15px}
+.findHotel #build fieldset.action{padding:2px 3px 5px 0}
+.findHotel #build fieldset.end{margin-right:0}
+.findHotel #build fieldset.roomTypes{margin-left:2px;right:0}
+.findHotel #build fieldset.roomTypes div,.findHotel #build fieldset.travelers div{padding:0}
+.findHotel #build fieldset.roomTypes span{margin:22px 19px 0 0}
+.findHotel #build fieldset.rooms{margin-top:0;padding-top:0;width:auto}
+.findHotel #build fieldset.rooms label{display:block}
+.findHotel #build fieldset.rooms select{width:62px!important}
+.findHotel #build fieldset.travelers{margin-left:0;padding-top:0}
+.findHotel #build fieldset.tripOptions{padding:0 3px 0 15px !important}
+.findHotel #build a.button{margin-left:0;margin-right:25px;margin-top:21px}
+
+ @media print
+{
+ *{border:0 none!important;box-shadow:0 0 0 0!important;color:#000!important;page-break-after:avoid;page-break-before:avoid}
+ * html body,html{height:auto!important}
+ body{background:transparent!important;padding:35px 20px}
+
+ /*Hidden elements*/
+#primaryNavigation,#filter,#panoramaPanel *,.quickLinks,.roundTrip .flightPanel .selecTrip,.actionBar,.options,.button,.flightPanel .more,#flightSummary span.filter,.ratesMore,.findHotel,.loadMore,#supplement{display:none!important}
+
+ /*Basics*/
+ #footer{width:100%!important}
+ #content{background:none!important;border:0 none;margin:0!important;padding:0!important;width:100%!important}
+ #content.roundTrip{min-width:825px}
+ #flightSummary{margin:0!important;position:relative!important;width:97%}
+ #footer{margin:30px 0 0!important}
+ #freePanel{width:996px}
+ #hotelGallery{display:block}
+ #hotelGallery ul{dispaly:block!important}
+ #header a.logo{display:block!important}
+ #hotel .sell{float:none;margin:0}
+ #hotel .details,.flightPanel li .details,.flightPanel li .details div{background:none!important}
+ #hotel .sell em{right:85px!important;bottom:-45px!important}
+ #hotel .details{width:100%!important}
+ #hotel .details .sell em{display:block;margin:8px 0 0!important;position:relative!important;right:0px!important;bottom:0px!important;width:auto!important}
+ #hotel li div{border-bottom:1px solid #EEE!important;width:95%}
+ #hotel .details .room{width:89%}
+ #hotel .hotel, #hotel .details .roomClass{width:426px}
+ #hotel .details .sell{width:120px}
+ #hotel .hotel span{width:285px}
+ #hotel .tripAdvisor{width:190px}
+ #hotel .price,#hotel .sell{float:right}
+ #panorama{background:none!important;margin:0!important}
+ #panoramaPanel{margin:0!important;min-height:40px!important}
+ #panoramaPanel h1{display:block!important;margin:0 0 40px!important}
+ #resultPanel,#hotel{margin:0!important;width:100%!important}
+ #content .flightPanel.leave, #content .flightPanel.return{margin:0!important;padding:0!important;width:100%!important}
+ #wrapperLeave,#wrapperReturn{float:left!important;width:50%!important}
+ #wrapperReturn{margin-left:0px}
+ .percentagePanel .percentage{color:#FFF!important;font-size:34px!important}
+ .percentagePanel .percentage em{color:#FFF!important}
+ .roomType #hotel .details{width:auto!important}
+ .roomType #hotel .details .room{margin-right:13px}
+ .roomType #hotel li div{background:none!important;padding:10px 32px 8px 6px!important;width:987px!important}
+ .flightPanel li div, .roundTrip .flightPanel li{display:block!important}
+ .percentagePanel .tripAdvisor span{text-indent:-9999px}
+ .roundTripPanel .flightPanel .depart{margin-right:30px;width:109px}
+ .roundTrip .flightPanel .duration{width:82px}
+ .roundTripPanel{width:100%!important}
+ .roundTripPanel .flightPanel .flight{display:inline;text-indent:-9999px}
+ .roundTripPanel .flightPanel .depart span.stop em,#flightSummary p.depart span.stop em{border:1px solid #CCC!important}
+ .roundTripPanel .flightPanel .depart span.stop, #flightSummary p.depart span.stop{border-bottom:1px solid #CCC!important}
+ .roundTripPanel .flightPanel .depart span.stop.nonStop{border:0 none!important}
+ .flightPanel.multiCity li div{border-bottom:0 none!important}
+ .flightPanel.multiCity > li{border-bottom:1px solid #EEE!important}
+ .flightPanel.leave li,.flightPanel.return li{display:block;width:auto!important}
+ .flightPanel.leave{border-right:1px solid #DDD!important}
+ .flightPanel.return{border-left:1px solid #DDD!important}
+ .flightPanel{margin:20px 0 0!important;width:100%}
+ .flightPanel li div{width:100%}
+ .flightPanel li .details,.flightPanel li div{width:95%!important}
+ .flightPanel li .details div{border:0 none!important}
+ .flightPanel .price{float:right}
+ .flightPanel .flight{width:278px}
+ .flightPanel li .details .itinerary{width:700px}
+ .flightPanel li .details .flight{margin-right:81px;width:198px}
+ .flightPanel .flight span{width:196px}
+ .flightPanel li div,.roundTrip .flightPanel li{border-bottom:1px solid #EEE!important}
+ .roundTripPanel{display:inline-block;width:100%!important}
+ .percentagePanel span{font-size:11px!important}
+ .roomType #hotel .sell em{right:0px!important;bottom:0px!important;width:60px!important}
+ .roomType #hotel .amenities,.roomType #hotel .roomDetails{display:block!important;margin:10px 0 0 0!important;width:100%!important}
+ .flightPanel li .fareDetails{width:auto!important}
+}

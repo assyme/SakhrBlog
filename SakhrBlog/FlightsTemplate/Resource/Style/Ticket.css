@@ -1,0 +1,524 @@
+/*Inner pages*/
+
+@media print
+{
+ fieldset.actionList,#progress,#paging,#contentPanel a.alternative{display:none !important}
+ input.submit{display:none !important}
+}
+.popupLink{background:url(../../Resource/Image/Icon/Popup.png) no-repeat right center;padding-right:20px}
+.rating{text-indent:-9000px;background:url(../../Resource/Image/Background/Hotel/Stars.png) no-repeat left top;width:60px}
+.star1{background-position:-48px 0}
+.star2{background-position:-36px 0}
+.star3{background-position:-24px 0}
+.star4{background-position:-12px 0}
+.star5{background-position:0 0}
+.ui-corner-all{-moz-border-radius:6px;-webkit-border-radius:6px;-khtml-border-radius:6px;border-radius:6px}
+.ui-slider-horizontal{position:relative;text-align:left;height:13px;border:none;background:url(../Image/Icon/Slider/Background.gif) 50% 50% repeat-x;margin:-6px 5px}
+.ui-slider-horizontal .ui-slider-handle{position:absolute;z-index:2;width:10px;height:10px;cursor:default;top:1px;margin-left:-5px}
+.ui-slider-horizontal .ui-slider-range{position:absolute;z-index:1;display:block;border:0;background-position:0 0;top:5px;height:4px;border:none;background:#ffc61e}
+.ui-slider-horizontal .ui-slider-range-min{left:0}
+.ui-slider-horizontal .ui-slider-range-max{right:0}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{border:1px solid #888;background:#eee url(../Image/Icon/Slider/Default.png) 50% 50% repeat-x}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{border:1px solid #778;background:#dde url(../Image/Icon/Slider/Hover.png) 50% 50% repeat-x}
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{border:1px solid #aaa;background:#fff url(../Image/Icon/Slider/Active.png) 50% 50% repeat-x}
+#bookingReasons h6{padding-right:10px}
+#bookingReasons ul{padding:0 10px 0 0;margin-top:11px}
+#bookingReasons ul li{background:url(../Image/Icon/CheckLarge.gif) no-repeat 0 0;margin:0 0 5px 0;padding:0 0 0 26px}
+#build{overflow:hidden}
+#build a.help{color:#444;padding-bottom:1px;padding-right:17px;background:url(../Image/Icon/Help.png) no-repeat 100% 35%;text-decoration:none}
+#build a.more{float:left;margin:17px 0 0 12px;font-size:11px;line-height:20px;text-decoration:none;color:#555;display:none}
+#build a.save{float:left;width:36px;margin:1px 0 0 5px;text-indent:-9999px;overflow:hidden;height:13px;background:url(../Image/Caption/Save.gif) no-repeat 0 0;display:none}
+#build a:hover{text-decoration:underline}
+#build a.link{float:left;font-size:13px;line-height:17px;color:#006ba3;text-decoration:none;padding-right:14px;background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;box-shadow:none}
+#build fieldset{width:180px;margin:0 15px 5px 15px}
+#build fieldset div{border-bottom:none}
+#build fieldset noscript div{padding:0}
+#build fieldset div.date{float:left;width:125px;display:inline;margin:0 0 -2px -2px;padding:0 0 2px 2px}
+#build div.time select,#build fieldset.travelers div select{width:54px;float:right;margin-right:3px}
+#build fieldset div.time{display:none}
+#build fieldset ul{float:left;width:149px}
+#build fieldset ul.tripType{margin-bottom:5px}
+#build fieldset ul.flightType{}
+#build fieldset ul.flightType.first{padding-top:0;border-top:none}
+#build fieldset ul li{width:100%;padding:1px 0;overflow:hidden}
+#build fieldset.travelers{padding:2px 0 12px}
+#build fieldset.travelers div{float:left;padding:5px 0 0;width:170px}
+#build fieldset.travelers div label{width:67px;float:left}
+#build fieldset.multiCity{padding:4px 0 10px}
+#build fieldset.multiCity span{display:block}
+#build fieldset.multiCity div{float:left;padding:5px 5px 0 0;width:82px}
+#build fieldset.multiCity div label{width:75px;float:left}
+#build fieldset.multiCity div input.text{width:69px}
+#build fieldset.multiCity div.last{padding:0;width:174px}
+#build fieldset.multiCity div.last input.text{width:157px}
+#build fieldset.moreFlights{padding:3px 0 13px}
+#build fieldset.moreFlights span a{font-size:11px;text-decoration:none}
+#build fieldset.moreFlights span a.show:hover{text-decoration:underline}
+#build fieldset.moreFlights span a.evenMore{color:#006ba3}
+#build fieldset.tripOptions{margin-bottom:0;padding-bottom:7px}
+#build fieldset.action{clear:both;padding:0}
+#build fieldset.roomTypes div{width:175px;float:left;padding:0}
+#build h6{letter-spacing:-0.005em;margin-right:-5px}
+#build input.check{height:13px;width:13px;padding:0;float:left;margin:8px 0 0}
+#build input.radio{float:left;height:13px;display:inline;width:13px;margin:-1px 0 0}
+#build input.submit{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;font:13px Arial, Helvetica, sans-serif;color:#006ba3;margin:12px 15px 3px;float:right;cursor:pointer;text-align:right;padding:0 14px 0 0 !important;border:0;box-shadow:none}
+#build input.text{width:157px;margin:0;padding:1px 4px;font:13px Arial, Helvetica, sans-serif;color:#000}
+#build label{font-size:11px;line-height:19px;display:block;color:#444}
+#build label.check{float:left;margin:7px 0 0;line-height:15px;padding:0 0 0 4px;font-size:13px}
+#build label.radio{float:left;line-height:15px;font-size:13px;padding:0 0 0 8px}
+#build p{padding:0 0 7px 0}
+#build select{font:13px Arial, Helvetica, sans-serif;float:left;width:167px}
+#contentPanel{float:left;width:723px;margin:38px 0 0;padding:0 0 0 26px;line-height:1.5em}
+#contentPanel a{color:#006ba3;text-decoration:none}
+#contentPanel a.alternative{color:#006ba3;text-decoration:none;padding-right:15px;background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;font-size:13px;font-weight:normal;margin:-12px 0 17px 0;float:left;box-shadow:none}
+#contentPanel a.button{display:block;cursor:pointer;float:left;margin:10px 15px 10px 0;background:#008ed6 url(../Image/Background/Button.png) no-repeat 100% 55%;font:bold 13px Arial, Helvetica, sans-serif;color:#fff;padding:6px 25px 7px 14px;border:none;border-radius:6px;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;box-shadow:2px 2px 1px #ddd}
+#contentPanel a.button.secondary{background:#999999 url(../Image/Background/SecondaryButton.png) no-repeat 100% 55%; padding-right:14px;box-shadow:2px 2px 1px #ddd}
+#contentPanel a.submit{display:block;cursor:pointer;float:right;margin:30px 0 0 10px;background:#008ed6 url(../Image/Background/Button.png) no-repeat 100% 55%;font:bold 13px Arial, Helvetica, sans-serif;color:#fff;padding:6px 25px 7px 14px;border:none;border-radius:6px;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;box-shadow:0 2px 1px #f4f4f4}
+#contentPanel a.submit.secondary{background:#999999 url(../Image/Background/SecondaryButton.png) no-repeat 100% 55% !important; padding-right:14px !important;color:#fff !important;box-shadow:2px 2px 1px #ddd}
+#contentPanel div.message{width:684px;margin:10px 0 20px;padding:0 35px 11px 0;background:#fbfbfb;background-position:right top;background-repeat:no-repeat;border:2px solid #ccc}
+#contentPanel div.message p{padding:10px 14px 0 14px;line-height:19px;width:auto;margin:0;float:none}
+#contentPanel div.message p em{display:block;font-style:normal;font-weight:bold}
+#contentPanel div.message p dfn{display:block;font-style:normal;padding:0 0 0 10px}
+#contentPanel div.message strong{color:#cc3300;font-weight:bold;text-decoration:none}
+#contentPanel div.message ul{margin:0 0 0 12px}
+#contentPanel div.message ul li{margin-top:0;line-height:19px}
+#contentPanel div.message.confirmation{background-color:#fbfef5;background-image:url(../Image/Background/Message/Confirmation.gif);border-color:#acd357}
+#contentPanel div.message.error{background-color:#fff8f8;background-image:url(../Image/Background/Message/Error.gif);border-color:#cc3300}
+#contentPanel div.message.information{background-color:#fbfef5;background-image:url(../Image/Background/Message/Information.gif);border-color:#acd357}
+#contentPanel div.message.warning{background-color:#ffe;background-image:url(../Image/Background/Message/Warning.gif);border-color:#ffc61e}
+#contentPanel div.message a.alternative{display:inline-block;float:none;margin-top:0 !important;margin-bottom:0 !important}
+#contentPanel div.message a.button{display:inline-block;float:none;margin-top:0 !important;margin-bottom:6px !important}
+#contentPanel h3{font-size:13px;line-height:17px;padding:26px 0 1px}
+#contentPanel h3.first{padding-top:0}
+#contentPanel h3 a.alternative{color:#006ba3;text-decoration:none;padding-right:15px;background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;font-size:13px;font-weight:normal;box-shadow:none}
+#contentPanel h4{font-size:13px;line-height:17px;padding:26px 0 1px;color:#006ba3}
+#contentPanel h4 span{float:right;font-size:11px}
+#contentPanel img{margin:20px 0 20px 0}
+#contentPanel input.submit{display:block;cursor:pointer;float:right;margin:30px 0 0 10px;background:#008ed6 url(../Image/Background/Button.png) no-repeat 100% 55%;font:bold 13px Arial, Helvetica, sans-serif;color:#fff;padding:6px 23px 6px 9px;border:none;border-radius:6px;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;box-shadow:2px 2px 1px #ddd}
+#contentPanel input.submit.request{background:#999999 url(../Image/Background/Button.png) no-repeat 100% 55% !important;box-shadow:2px 2px 1px #ddd}
+#contentPanel input.submit.alternative{float:left;margin:10px 0 0 0}
+#contentPanel input.submit.button{margin:0 0 0 10px !important;display:inline !important;float:right !important}
+#contentPanel input.submit.secondary{background:#999999 !important; padding-right:9px !important;color:#fff !important;box-shadow:2px 2px 1px #ddd}
+#contentPanel ol{margin:10px 0 0 0;padding-left:30px}
+#contentPanel ol li,#contentPanel ul li{margin-top:10px}
+#contentPanel p{margin-top:10px}
+#contentPanel p.fineprint{color:#999;font-size:11px}
+#contentPanel p img,#contentPanel ol img,#contentPanel ul img{float:right;margin:3px 0 17px 25px}
+#contentPanel table.list{margin:30px 0;vertical-align:top;border-top:1px solid #DDDDDD}
+#contentPanel table.list a{text-decoration:none}
+#contentPanel table.list td{padding:4px 0;border-bottom:1px solid #DDDDDD}
+#contentPanel table.sheet{margin:30px 0 20px 0;vertical-align:top;border-top:1px solid #008ed6;border-collapse:collapse}
+#contentPanel table.sheet a{text-decoration:none}
+#contentPanel table.sheet th{background:#daebf7;padding:4px 0 4px 15px;border-bottom:1px solid #fff;font-weight:normal;text-align:left}
+#contentPanel table.sheet td{padding:4px 0 4px 15px;border-bottom:1px solid #DDDDDD}
+#contentPanel table img{margin:0}
+#contentPanel ul{margin:10px 0 0 0;padding-left:16px;list-style-type:square}
+#greatPrice{padding:15px 0 0 0 !important;height:90px;text-align:right;line-height:1.5em;overflow:hidden;background:url(../Image/Background/infoPanel/GreatPrice.gif) no-repeat 0 100%}
+#greatPrice em{font-size:14px;color:#006ba3;font-style:normal;letter-spacing:-.025em;padding:0 0 0 60px;display:block}
+#greatPrice p{font-size:11px;padding:0 0 4px 50px;line-height:13px;color:#555555;letter-spacing:-.025em}
+#infoPanel{float:left;display:inline;width:200px;margin:40px 11px 0 0}
+#infoPanel div{float:left;color:#555}
+#infoPanel div.footerSupport{height:100%;overflow:hidden;padding:0}
+#infoPanel div.headerSupport{padding:0;height:100%}
+#infoPanel div.footerSupport > div{border:1px solid #d8d8d8;padding-bottom:16px;width:198px;background-color:#fbfbfb;margin-bottom:15px;border-color:#e8e8e8 #e8e8e8 #cccccc #e8e8e8;border-radius:6px;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;box-shadow:0 2px 1px #f4f4f4}
+#infoPanel div.footerSupport > div > *{margin-left:15px;margin-right:15px}
+#infoPanel div.footerSupport > div > h6{font-size:13px;line-height:15px;margin:0 0 15px 0;padding:10px 15px 11px 15px;color:#444;border-bottom:1px solid #d8d8d8;box-shadow:0 1px 1px #E8E8E8}
+#infoPanel div.footerSupport > div > h6 > a{background-position:170px center;display:block;padding:10px 15px 12px 15px;margin:-10px -15px -12px -15px}
+#infoPanel div.footerSupport > div.hidden{display:block !important;padding-bottom:0}
+#infoPanel div.footerSupport > div.hidden > *{display:none}
+#infoPanel div.footerSupport > div.hidden > h6{background:none;display:block;margin:0;border-bottom:none;box-shadow:none}
+#infoPanel div.footerSupport > div > h6 > a{color:#444 !important;text-decoration:none}
+#infoPanel div.footerSupport > div > h6 > a:hover{color:#008ed6 !important;text-decoration:none}
+#needVisa{padding:15px 0 0 0 !important;height:90px;text-align:right;line-height:17px;overflow:hidden;background:url(../Image/Background/infoPanel/NeedVisa.gif) no-repeat 0 100%}
+#needVisa a{text-decoration:none;color:#006ba3}
+#needVisa em{font-size:14px;color:#006ba3;font-style:normal;letter-spacing:-.025em;padding:0 0 0 30px}
+#needVisa p{font-size:11px;padding:4px 0 0 60px;line-height:13px;color:#555555;letter-spacing:-.025em}
+#paging{overflow:hidden;padding-bottom:18px;margin:26px 0 0;width:100%;float:left}
+#paging a,#paging em{color:#006ba3;font-weight:bold;text-decoration:none}
+#paging a.next{float:right;line-height:17px;background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;padding:0 17px 0 0;box-shadow:none}
+#paging a.back{float:left;line-height:17px;padding-left:17px;background:url(../Image/Icon/ArrowBack.gif) no-repeat 0 50%}
+#paging a:hover,#contentPanel a.alternative:hover{text-decoration:underline}
+#paging div{width:199px;float:left}
+#paging ul{text-align:center;font-size:13px;line-height:17px;margin:0;padding:0;list-style-type:none;width:321px !important;float:left}
+#paging ul li{display:inline;margin-left:-3px;margin-top:0}
+#paging ul li a{padding:0 6px}
+#paging ul li p{padding:0;margin:0 10px 0 0;width:auto;display:inline;float:none}
+#paging ul li em,#paging ul li a.sf_PagerSelItem{background:#008ed6;padding:1px 3px 1px 4px;margin:0 5px 0 4px;color:#fff;font-style:normal;border-radius:3px;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px}
+#progress{overflow:hidden;margin:2px 0 25px !important;background:#eeeeee url(../Image/Background/Progress/Default.gif) repeat-x 0 0;height:26px !important;width:100% !important;padding:0 !important;list-style-type:none !important;float:none !important;display:none !important}
+#progress li{float:left;padding:0 16px 0 0 !important;background:url(../Image/Background/Progress/Shadow.gif) no-repeat 100% 0;line-height:26px;margin-top:0 !important}
+#progress li a,#progress li p{float:left;font-size:13px;text-decoration:none;color:#666;padding:0 8px 0 11px;margin:0;width:auto;line-height:26px}
+#progress li a:hover{text-decoration:underline}
+#progress li.complete{background:#acd357 url(../Image/Background/Progress/ShadowLink.gif) no-repeat 100% 0}
+#progress li.current{background:#acd357 url(../Image/Background/Progress/ShadowActive.gif) no-repeat 100% 0}
+#progress li.current a,#progress li.complete a,#progress li.current p,#progress li.complete p{color:#fff;background:#acd357 url(../Image/Background/Progress/Link.gif) repeat-x 0 0}
+#progress li.inactive p{color:#999999}
+#progress li.current a,#progress li.current p{font-weight:bold}
+#progress li.last,#progress li.last a,#progress li.last p{width:100%;margin-right:-100%}
+#travelExpert{padding:20px 0 0 0 !important;height:85px;text-align:right;line-height:17px;overflow:hidden;background:url(../Image/Background/infoPanel/TravelExpert.gif) no-repeat 0 100%}
+#travelExpert em{font-size:14px;color:#006ba3;font-style:normal;letter-spacing:-.025em}
+#travelExpert p{font-size:11px;padding:4px 0 0 45px;line-height:13px;color:#555555;letter-spacing:-.025em;box-shadow:none}
+#tripSummary input.submit{background:url(../Image/Icon/ArrowNext.gif) no-repeat 100% 50%;font:11px Arial, Helvetica, sans-serif;color:#006ba3;margin:0px 13px -4px 0;float:right;cursor:pointer;text-align:right;padding:5px 17px 6px 10px !important;border:0;width:156px}
+#tripSummary ul{margin:0 15px 2px 15px;width:170px;float:left}
+#tripSummary ul em{font-size:11px;line-height:13px;font-style:normal;float:left;width:156px}
+#tripSummary ul input.submit{margin:6px 0 2px 0}
+#tripSummary ul input.submit.alternative{background:url(../Image/Icon/ArrowBack.gif) no-repeat 0 50%;float:none;padding-left:17px !important;text-align:left}
+#tripSummary ul li{margin-bottom:8px;padding-bottom:8px;float:left;border-bottom:1px solid #cccccc}
+#tripSummary ul li.flight table{float:left;margin-top:10px}
+#tripSummary ul li.flight table td{vertical-align:top}
+#tripSummary ul li.flight table td dfn{color:#888888;font-size:11px;font-weight:normal;text-align:left;font-style:normal;display:block}
+#tripSummary ul li.flight table td p,#tripSummary ul table td em{width:auto;line-height:normal;display:block}
+#tripSummary ul li.flight table td.date{width:26px;font-size:11px;padding:0 13px 0 0}
+#tripSummary ul li.flight table td.departure,#tripSummary ul table td.arrival{width:55px;font-size:11px}
+#tripSummary ul li.flight ul{margin:0 0 9px 0 !important;float:left}
+#tripSummary ul li.flight ul li{float:left;border-bottom:none;margin-bottom:0;padding-bottom:0}
+#tripSummary ul li.flight ul li em{float:none;width:auto;font-size:inherit;line-height:normal}
+#tripSummary ul li.flight ul li em.codeShared{padding-left:18px;background:url(../Image/Icon/CodeShared.gif) no-repeat 1px 2px}
+#tripSummary ul li.flight ul li img{float:left;width:35px;height:20px;margin-top:2px}
+#tripSummary ul li.flight ul li p{float:left;margin:4px 0 0 13px;width:109px}
+#tripSummary ul li.hotel p.rating {height:11px;margin:5px 0 7px 0;width:60px}
+#tripSummary ul li.last{margin-bottom:0;padding-bottom:0;border-bottom:none}
+#tripSummary ul p{display:block;width:156px}
+img.flag{margin:0 !important;padding:3px 0 0}
+em.icon{float:left;width:16px;height:16px;display:block;background-repeat:no-repeat}
+em.icon span{display:none}
+#searchBy a.more{background:url(../Image/Icon/Expand.png) no-repeat center right;color:#555;cursor:pointer;display:inline-block;font-size:11px;margin-top:5px;padding-right:20px;float:right}
+#searchBy fieldset{margin:13px 15px;border-bottom:1px solid #ddd;padding:0 0 13px;color:#444}
+#searchBy fieldset label{display:inline-block}
+#searchBy fieldset input[type="checkbox"]{margin:2px 0 0 0;padding:0;vertical-align:top}
+#searchBy fieldset li{margin-bottom:4px}
+#searchBy fieldset li * {vertical-align:middle}
+#searchBy fieldset legend{font-size:11px;padding:0 0 10px 0; margin:0;width:100%}
+#searchBy fieldset legend em{color:#888;float:right;font-style:normal}
+#searchBy .field{padding-bottom:15px;margin-top:-1px;margin-bottom:0}
+#searchBy .field label{font-size:11px;margin-bottom:5px}
+#searchBy .field input{color:#000; font:13px; margin:0;padding:1px 4px;width:157px}
+#searchBy .checkDoubleList ul{overflow:hidden;width:100%}
+#searchBy .checkDoubleList li{float:left;width:84px}
+#searchBy .checkLine ul{overflow:hidden;width:100%}
+#searchBy .checkLine li{float:left;padding-right:15px;width:auto}
+#searchBy .checkList label{width:145px}
+#searchBy .last{border:none;margin-bottom:-12px}
+#searchBy .slider{border:none;margin-bottom:-6px}
+#searchBy .slider .ui-slider{width:157px}
+fieldset.actionList{margin:-1px 0 0 20px;float:right}
+fieldset.actionList select{margin:4px 0 0 5px;height:19px;font:13px Arial, Helvetica, sans-serif}
+*+ html #contentPanel input.submit{padding:2px 15px 2px 0 !important}
+
+/*Forms*/
+
+* html ul.form1 li.telephone fieldset li.area input,* html ul.form3 li.telephone fieldset li.area input{width:30px}
+* html ul.form1 li.telephone fieldset li.number input,* html ul.form3 li.telephone fieldset li.number input{width:147px}
+*+ html ul.form1 input.radio,* html ul.form1 input.radio,*+ html ul.form1 input.check,* html ul.form1 input.check{margin-top:4px}
+*+ html ul.form3 select{height:2.0}
+input.readonly{background-color:#eee}
+h4.contact,h4.section,h4.traveler{width:703px;background:#c4dff3;padding:4px 10px !important;font-size:13px !important;font-weight:normal;color:#333 !important;margin-top:12px;border-top:solid 1px #008ed6}
+h4.contact{width:703px;background:#c4dff3;padding:3px 10px !important;font-size:13px !important;font-weight:normal;color:#333 !important;margin-top:12px;border-top:solid 1px #008ed6}
+h4.related{margin-top:1px !important}
+h4.section a{text-decoration:none}
+h4.section a:hover{text-decoration:underline}
+h5.traveler,h5.section{width:703px;background:#daebf7;padding:3px 10px !important;font-size:13px !important;font-weight:normal;color:#333 !important;margin-top:2px;font-size:13px;line-height:17px;float:left}
+h5.section{margin-top:1px}
+ul.form1{margin:0 !important;padding:0 !important;list-style-type:none !important;width:auto !important}
+ul.form1 a.help{padding-right:18px;background:url(Image/Icon/Help.png) no-repeat 100% 45%;text-decoration:none;color:#444 !important}
+ul.form1 a.save{float:left;height:13px;width:36px;text-indent:-9999px;overflow:hidden;margin:3px 0 0 -15px;background:url(Image/Caption/Save.gif) no-repeat 0 0}
+ul.form1 div{float:left;color:#444;width:212px;padding:0 35px 0 0}
+ul.form1.build div.noscript{float:none;width:auto;padding:0}
+ul.form1 div.noscript a.save{margin:3px 0 0 5px}
+ul.form1 div.noscript a.link{float:left}
+ul.form1 div.mandatory{background:url(Image/Icon/MandatoryLarge.gif) no-repeat 223px 4px}
+ul.form1 fieldset{display:block;float:left;width:264px}
+ul.form1 input.check{float:left;margin:3px 0 0;height:14px;width:15px}
+ul.form1 input.radio,ul.form1 input.check{float:left;width:13px;height:13px}
+ul.form1 input.submit{margin:-3px 0 0 248px !important;float:left !important}
+ul.form1 input.submit.secondary{margin:-3px 0 0 10px !important}
+ul.form1 input.text{float:left;font:13px Arial, Helvetica, sans-serif;width:221px;padding:1px 3px;color:#444}
+ul.form1 label{line-height:19px;float:left}
+ul.form1 label em{float:left;font-style:normal}
+ul.form1 label.check{line-height:19px;float:left;padding-left:8px}
+ul.form1 label.mandatory,ul.form1 label.radio,ul.form1 label.check{padding:0 20px 0 8px}
+ul.form1 li{float:left;width:723px;padding:10px 0 11px;margin:-1px 0 0 !important;border-top:solid 1px #ddd}
+ul.form1 li.acceptRules{border-top:none}
+ul.form1 li.acceptRules fieldset{float:left;width:595px;background:#c4dff3;padding:5px 10px;margin-top:10px;margin-bottom:10px}
+ul.form1 li.acceptRules fieldset em{float:left;margin-left:20px;line-height:normal !important}
+ul.form1 li.acceptRules fieldset input.check{height:13px;width:13px;padding:0;float:left;margin:1px 0 0}
+ul.form1 li.acceptRules fieldset label{float:left;font-weight:bold;margin-left:8px;line-height:normal !important}
+ul.form1 li.acceptRules fieldset.warning{background:#fee38b}
+ul.form1 li.travelers ul{margin:0 !important;padding:0 !important;list-style-type:none !important;width:auto !important}
+ul.form1 li.travelers ul li.adults{width:55px;padding-left:0 !important}
+ul.form1 li.travelers ul li.adults select{width:55px}
+ul.form1 li.travelers ul li.children select,ul.form1 li.travelers ul li.children{width:78px}
+ul.form1 li.travelers ul li.infants select,ul.form1 li.travelers ul li.infants{width:67px}
+ul.form1 li.roomTypes ul,ul.form1 li.multiCity ul{margin:0 !important;padding:0 !important;list-style-type:none !important;width:auto !important}
+ul.form1 li.roomTypes ul li{border-top:none;padding:0 0 8px 0px;margin:0 !important;width:230px}
+ul.form1 li.multiCity ul li{border-top:none;padding:0 0 8px 0px;margin:0 !important;width:520px}
+ul.form1 li.multiCity ul li p{padding:3px 0 0 30px}
+ul.form1 li.roomTypes ul li div{width:95px;padding:2px 0 0}
+ul.form1 li.multiCity ul li label{width:60px;padding:2px 0 0 35px}
+ul.form1 li.multiCity ul li label.mandatory{width:60px;padding:0 0 0 35px;background:url(Image/Icon/MandatoryLarge.gif) no-repeat 15px 4px}
+ul.form1 li.roomTypes ul li select{width:135px}
+ul.form1 li.multiCity fieldset{width:485px}
+ul.form1 li.multiCity div{padding:0}
+ul.form1 li.multiCity ul li input.text{width:125px}
+ul.form1 li.multiCity ul li.location label{width:60px;padding:1px 0 0 35px;float:left}
+ul.form1 li.multiCity ul li.location div{padding:0;width:425px;float:left}
+ul.form1 li.multiCity ul li.location div p{width:385px !important;padding:0}
+ul.form1 li.multiCity ul li.location div label{width:385px !important;padding:6px 0;background:none}
+ul.form1 li.multiCity ul li.location div label.radio{float:left;clear:none;width:355px;padding:2px 20px 2px 8px}
+ul.form1 li.moreFlights div{width:300px}
+ul.form1 li.moreFlights div a{font-size:13px;text-decoration:none}
+ul.form1 li.moreFlights div a.show:hover{text-decoration:underline}
+ul.form1 li.moreFlights div a.evenMore{color:#006ba3}
+ul.form1 li.dateMonthYear fieldset select.date{width:40px;margin-right:9px}
+ul.form1 li.dateMonthYear fieldset select.month{width:84px;margin-right:9px}
+ul.form1 li.dateMonthYear fieldset select.year{width:53px}
+ul.form1 li.geographicArea label{float:none;clear:both;padding:6px 0;display:block;line-height:15px}
+ul.form1 li.geographicArea label.check{float:left;clear:none;width:175px;padding:2px 20px 2px 8px}
+ul.form1 li.geographicArea ul{margin:0 0 0 -15px !important;display:inline;float:left;padding:0 !important;list-style-type:none !important;width:225px !important}
+ul.form1 li.geographicArea ul li,ul.form1 li.location ul li,ul.form1 li.travelers ul li{border-top:none;padding:0 0 0 15px;margin:0 !important;width:405px}
+ul.form1 li.location fieldset p{display:block;margin:0 !important;float:left;width:305px !important;font-size:13px;color:#cc3300}
+ul.form1 li.location label.radio{float:left;clear:none;width:355px;padding:2px 20px 2px 8px}
+ul.form1 li.location label{float:none;clear:both;padding:6px 0;display:block;line-height:15px}
+ul.form1 li.location ul{margin:5px 0 0 -15px !important;display:inline;float:left;padding:0 !important;list-style-type:none !important;width:405px !important}
+ul.form1 li.tripType ul,ul.form1 li.flightType ul{margin:0px 0 0 -15px !important;display:inline;float:left;padding:0 !important;list-style-type:none !important;width:225px !important}
+ul.form1 li.tripType ul li,ul.form1 li.flightType ul li{border-top:none;padding:0 0 0 15px;margin:0 !important;width:225px}
+ul.form1 li.message textarea,ul.form1 li.address textarea{height:50px !important}
+ul.form1 li.submit,ul.form1 li.first{border-top:none}
+ul.form1 li.telephone fieldset label{display:block;font-size:11px;padding-top:1px;line-height:17px;color:#999}
+ul.form1 li.telephone fieldset li{border-top:none !important;margin:0 2px 0 8px !important;padding:0;display:inline;float:left}
+ul.form1 li.telephone fieldset li.area{width:40px}
+ul.form1 li.telephone fieldset li.area input{width:30px}
+ul.form1 li.telephone fieldset li.country{width:59px}
+ul.form1 li.telephone fieldset li.country input{width:49px}
+ul.form1 li.telephone fieldset li.number{width:157px}
+ul.form1 li.telephone fieldset li.number input{width:147px}
+ul.form1 li.telephone fieldset ul{float:left;display:inline;margin:0 -2px 0 -8px !important;width:236px !important;padding:0 !important;list-style:none !important}
+ul.form1 p{display:block;float:left;margin:0 !important;width:180px !important;font-size:13px;font-weight:bold;color:#cc3300}
+ul.form1 p em{font-style:normal;color:#006ba3}
+ul.form1 select.time{display:none}
+ul.form1 textarea{float:left;font:13px Arial, Helvetica, sans-serif;width:221px;height:100px;padding:1px 0 1px 3px;color:#444}
+ul.form1.build div{width:95px}
+ul.form1.build div.mandatory{background:url(Image/Icon/MandatoryLarge.gif) no-repeat 110px 4px}
+ul.form1.build li.location ul li{width:570px}
+ul.form1.build li.location fieldset p{width:385px !important}
+ul.form1.build li.location label.radio{width:511px}
+ul.form1.build li.location ul{width:485px !important}
+ul.form1.build p{width:260px !important;}
+ul.form1.build input.submit{margin:-3px 0 0 130px !important}
+ul.form1.build input.submit.secondary{margin:-3px 0 0 10px !important}
+ul.form7{float:left;width:741px !important;margin:9px -15px 18px 0 !important;padding:0 !important;list-style-type:none !important}
+ul.form7 fieldset{height:22px}
+ul.form7 input.check{height:14px;width:15px}
+ul.form7 label.check{padding:0 3px 0 0}
+ul.form7 li{width:88px;float:left;padding:7px 15px 0 0;margin-top:0 !important;overflow:hidden}
+ul.form3{float:left;width:741px !important;margin:9px -15px 18px 0 !important;padding:0 !important;list-style-type:none !important}
+ul.form3.first{margin:0px -15px 18px 0 !important}
+ul.form3.tightSibling{margin-bottom:-10px !important}
+div.contact{float:left;padding-top:20px;width:723px}
+div.contact ul.form3 {margin:9px -15px 0 0 !important}
+ul.form3 div{display:block;font-size:11px;padding-bottom:1px;line-height:17px}
+ul.form3 div.mandatory{background:url(Image/Icon/MandatorySmall.gif) no-repeat 100% 45%}
+ul.form3 fieldset{height:22px}
+ul.form3 div.error,ul.form3 label.error{color:#cc3300 !important;font-weight:bold;background:none !important}
+ul.form3 div.error.mandatory,ul.form3 label.error.mandatory{background:url(Image/Icon/MandatorySmall.gif) no-repeat 100% 45% !important}
+ul.form3 img{float:none !important;margin:0 !important}
+ul.form3 input.check,ul.form3 input.radio{height:14px;width:15px}
+ul.form3 input.file,ul.form3 input.text{padding:1px 3px;font:13px Arial, Helvetica, sans-serif;color:#444;width:222px}
+ul.form3 input.readonly{background-color:#eee}
+ul.form3 label.check,ul.form3 label.radio{padding:0 3px 0 0}
+ul.form3 li{width:231px;float:left;padding:7px 15px 0 0;margin-top:0 !important;overflow:hidden;min-height:43px}
+ul.form3 li.address,ul.form3 li.paragraph{width:479px}
+ul.form3 li.dateMonthYear fieldset select.date{width:48px;margin-right:9px}
+ul.form3 li.dateMonthYear fieldset select.month{width:100px;margin-right:9px}
+ul.form3 li.dateMonthYear fieldset select.year{width:63px}
+ul.form3 li.double{width:477px}
+ul.form3 li.double input.text{width:468px}
+ul.form3 li.triple{width:723px}
+ul.form3 li.empty{height:40px}
+ul.form3 li.frequentFlier{width:740px;padding:0}
+ul.form3 li.frequentFlier div{width:231px;padding:27px 15px 0 0;float:left;font-size:13px;text-align:right;margin:0}
+ul.form3 li.frequentFlier div img{float:right !important;margin:-2px 0 0 10px !important}
+ul.form3 li.frequentFlier fieldset{height:48px;float:left}
+ul.form3 li.frequentFlier ul{float:left;width:auto !important;margin:0 !important;padding:0 !important;list-style-type:none !important}
+ul.form3 li.frequentFlier ul li{float:left;padding:7px 15px 0 0;overflow:hidden}
+ul.form3 li.frequentFlier ul li label{display:block;font-size:11px;padding-bottom:1px;line-height:17px}
+ul.form3 li.frequentFlier ul li label.mandatory{background:url(Image/Icon/MandatorySmall.gif) no-repeat 100% 45%}
+ul.form3 li.half input.text{width:99px !important}
+ul.form3 li.half span{text-align:center;display:inline-block;width:13px}
+ul.form3 li.message{width:723px}
+ul.form3 li.message fieldset{height:auto}
+ul.form3 li.message textarea{font:13px Arial, Helvetica, sans-serif;width:714px;height:150px;padding:1px 0 1px 3px;color:#444}
+ul.form3 li.unlimited fieldset{height:auto !important}
+ul.form3.subform li.address{width:393px}
+ul.form3.subform li.address textarea{width:384px}
+ul.form3 li.address fieldset,ul.form3 li.paragraph fieldset{height:auto}
+ul.form3 li.address textarea,ul.form3 li.paragraph textarea{font:13px Arial, Helvetica, sans-serif;width:469px;height:50px;padding:1px 0 1px 3px;color:#444}
+ul.form3 li.checkline.icon fieldset{padding-right:30px !important}
+ul.form3 li.checkline fieldset{float:left;padding-right:10px}
+ul.form3 li.checkline fieldset input.file{margin-left:10px}
+ul.form3 li.checkline img.icon{display:inline;position:relative;top:11px;padding-right:5px}
+ul.form3 li.checkline select{display:inline;float:none !important;margin-left:5px;width:auto !important}
+ul.form3 li.checklist{height:auto}
+ul.form3 li.checklist.icon fieldset{height:45px;margin-top:-5px}
+ul.form3 li.checklist img.icon{display:inline;position:relative;top:11px;padding-right:5px}
+ul.form3 li.checklist select{display:inline;float:none !important;margin-left:5px;width:auto !important}
+ul.form3 li.short{width:108px}
+ul.form3 li.long{width:723px}
+ul.form3 li.monthYear fieldset select.month{width:110px;margin-right:9px}
+ul.form3 li.monthYear fieldset select.year{width:76px}
+ul.form3 li.telephone fieldset{height:auto}
+ul.form3 li.paymentMethod{clear:left}
+ul.form3 li.telephone fieldset label{display:block;font-size:11px;padding-top:1px;line-height:17px;color:#999}
+ul.form3 li.telephone fieldset li{margin:0 2px 0 8px;padding:0;display:inline;float:left}
+ul.form3 li.telephone fieldset li.area{width:41px}
+ul.form3 li.telephone fieldset li.area input{width:30px}
+ul.form3 li.telephone fieldset li.country{width:60px}
+ul.form3 li.telephone fieldset li.country input{width:49px}
+ul.form3 li.telephone fieldset li.number{width:158px}
+ul.form3 li.telephone fieldset li.number input{width:147px}
+ul.form3 li.telephone fieldset ul{float:left;display:inline;margin:0 -2px 0 -8px !important;width:243px !important;padding:0 !important}
+ul.form3 select,ul.form1 select{float:left;font:13px Arial, Helvetica, sans-serif;color:#444;width:230px}
+ul.form3.subform{width:713px !important;padding-left:10px !important;margin:1px -15px 0 0!important;background:#daebf7;padding-bottom:10px !important}
+ul.form3.subform input.text{width:217px}
+ul.form3.subform select{width:230px}
+ul.form3.subform li{width:227px;padding:7px 9px 0 0}
+ul.form3.subform li.double{width:463px}
+ul.form3.subform li.compactSubmit{padding-top:15px;margin-bottom:-10px}
+ul.form3.subform li.compactSubmit input.submit.button{float:none !important}
+ul.form3.subform li.message{width:595px}
+ul.form3.subform li.message fieldset{height:auto}
+ul.form3.subform li.message textarea{font:13px Arial, Helvetica, sans-serif;width:585px;height:150px;padding:1px 0 1px 3px;color:#444}
+ul.form3.subform li.half input.text{width:96px !important}
+ul.form3.subform li.half span{text-align:center;display:inline-block;width:13px}
+ul.form3.subform li.telephone fieldset li{margin:0 0 0 8px}
+ul.form3.subform li.triple{width:702px}
+ul.form3.subform li.submit{width:702px;padding-top:10px}
+ul.form3.subform li.dateMonthYear fieldset select.date{margin-right:8px}
+ul.form3.subform li.dateMonthYear fieldset select.month{margin-right:7px}
+ul.form3.subform div.mandatory{background:url(Image/Icon/MandatorySmallBlueBack.gif) no-repeat 100% 45%}
+
+/*Grids*/
+
+div.oversizeGrid{overflow-x:auto;margin-bottom:10px;width:723px}
+div.oversizeGrid table{margin-bottom:0}
+table.grid{width:723px;margin:0;border-collapse:collapse;border-top:solid 1px #fff;margin-bottom:10px}
+table.grid tr.clickable.hover{background-color:#f3f8fc !important;cursor:pointer}
+table.grid tr.selected{background:#fdf5d4}
+table.grid tr.subsubtotal td{background-color:#f3f8fc;border-top:1px solid #fff !important}
+table.grid tr.subtotal td{background-color:#daebf7;border-top:1px solid #fff !important}
+table.grid tr.supplementary,table.grid tr.supplementary td{background:#fbfbfb;color:#999 !important}
+table.grid tr.total td{background-color:#c4dff3;border-top:1px solid #fff !important}
+table.grid th{color:#444;text-align:left;vertical-align:top;padding:4px 10px 5px;background-color:#daebf7;font-weight:normal;font-size:11px;border-bottom:1px solid #fff}
+table.grid th a:hover{text-decoration:underline}
+table.grid th a.sort{padding-right:14px}
+table.grid th a.descending{background:url(Image/Icon/TinyArrowDown.gif) no-repeat right 5px}
+table.grid th a.ascending{background:url(Image/Icon/TinyArrowUp.gif) no-repeat right 5px}
+table.grid th a, table.grid th a:visited{color:#444 !important;text-decoration:none}
+table.grid td{color:#444;text-align:left;vertical-align:top;border-top:1px solid #cccccc;padding:5px 10px 8px}
+table.grid td.first,table.grid th.first{text-align:left !important;padding-left:10px !important}
+table.grid td.caption{text-align:right !important}
+table.grid td.check,table.grid th.check{width:20px}
+table.grid td.check{padding:0}
+table.grid td.error,table.grid th.error{color:#cc3300 !important;font-weight:bold}
+table.grid td.last,table.grid th.last,table.grid td.right{text-align:right !important;padding-right:10px !important}
+table.grid td.nowrap,table.grid th.nowrap{white-space:nowrap}
+table.grid td.optional,table.grid th.optional,table.grid td.optional input,table.grid th.optional input{color:#999 !important}
+table.grid td.tinyNumber,table.grid th.tinyNumber{text-align:right !important;width:20px}
+table.grid td.smallNumber,table.grid th.smallNumber,table.grid td.count{text-align:right !important;width:30px}
+table.grid td.number,table.grid th.number{text-align:right !important;width:50px}
+table.grid td.longNumber,table.grid th.longNumber{text-align:right !important;width:65px}
+table.grid td.bookingReference,table.grid th.bookingReference,table.grid td.reference,table.grid th.reference{width:60px}
+table.grid td.longReference,table.grid th.longReference{width:105px}
+table.grid td.icon,table.grid th.icon{width:20px;padding:5px}
+table.grid td.icon img,table.grid th.icon img{max-height:16px}
+table.grid td.tinyText,table.grid th.tinyText{width:30px}
+table.grid td.smallText,table.grid th.smallText,table.grid td.type,table.grid th.type{width:60px}
+table.grid td.text,table.grid th.text{width:90px}
+table.grid td.longText,table.grid th.longText{width:120px}
+table.grid td.fineprint{color:#999;font-size:11px;text-align:center}
+table.grid td.freeText,table.grid th.freeText,table.grid td.detail,table.grid th.detail{}
+table.grid td.freeText dfn,table.grid td.detail dfn{display:block;clear:both}
+table.grid td.freeText em,table.grid td.detail em{font-style:normal}
+table.grid td.freeText a,table.grid td.detail a{display:block;color:#888888 !important}
+table.grid td.freeText a.defaultClick,table.grid td.detail a.defaultClick{color:#006ba3 !important}
+table.grid td.freeText a span,table.grid td.detail a span{font-size:11px;line-height:13px;cursor:pointer;display:inline-block}
+table.grid td.smallDate,table.grid th.smallDate{width:30px;text-align:center}
+table.grid td.date,table.grid th.date,table.grid td.created,table.grid th.created,table.grid td.updated,table.grid th.updated,table.grid td.leaveOn,table.grid th.leaveOn,table.grid td.returnOn,table.grid th.returnOn{width:50px;text-align:center}
+table.grid td.longDate,table.grid th.longDate{width:75px;text-align:center}
+table.grid td.tinyCurrency,table.grid th.tinyCurrency{text-align:right;white-space:nowrap;width:35px}
+table.grid td.tinyCurrency input.text{text-align:right;width:35px}
+table.grid td.smallCurrency,table.grid th.smallCurrency,table.grid td.amount,table.grid th.amount{text-align:right;white-space:nowrap;width:55px}
+table.grid td.smallCurrency input.text,table.grid td.amount input.text{text-align:right;width:55px}
+table.grid td.smallCurrency span,table.grid td.amount span{font-size:11px;line-height:15px;display:block;color:#888888}
+table.grid td.currency,table.grid th.currency,table.grid td.billed,table.grid th.billed,table.grid td.due,table.grid th.due{text-align:right;white-space:nowrap;width:75px}
+table.grid td.currency input.text,table.grid td.billed input.text,table.grid td.due input.text{text-align:right}
+table.grid td.currency span,table.grid td.billed span,table.grid td.due span{font-size:11px;line-height:15px;display:block;color:#888888}
+table.grid td.longCurrency,table.grid th.longCurrency{text-align:right;white-space:nowrap;width:95px}
+table.grid td.longCurrency input.text{text-align:right}
+table.grid td.supplement{background-color:#f3f8fc}
+table.grid td.supplementary{background:#fbfbfb;color:#999 !important}
+table.grid td dfn{font-style:normal;font-size:11px;line-height:13px;color:#888888 !important}
+table.grid td a{text-decoration:none}
+table.grid td a:hover{text-decoration:underline}
+table.grid td a,table.grid td a:visited{color:#006ba3}
+table.grid tr.private,table.grid tr.estimate,table.grid tr.secondary{background-color:#fbfbfb}
+table.grid tr.private *,table.grid tr.estimate *,table.grid tr.secondary *{color:#999 !important}
+table.grid tr.history{background:#fbfbfb}
+table.grid tr.history td{border-top:1px solid #e9e8dc}
+table.grid tr.history *{color:#999 !important}
+table.grid li{float:left;padding:0 4px 0 0}
+table.grid li a,table.grid li a:visited{float:left;width:16px;height:16px;display:block;cursor:pointer}
+table.grid input.text{font:13px Arial, Helvetica, sans-serif;width:85%;padding:1px 3px;color:#444}
+table.grid input.check{height:13px;width:13px;padding:0;margin:8px 0 0}
+table.grid.dense td,table.grid.dense th{padding-left:5px;padding-right:5px}
+
+/*Generic*/
+
+#content{width:100%;margin:0}
+#contentPanel{padding:0 !important}
+#header h1{width:723px;height:75px;margin:0 0 5px 0;text-indent:-9999px;overflow:hidden;background-repeat:no-repeat !important}
+#billingList,#paymentList{font:11px "lucida console","courier new",courier,monospace;margin-top:0 !important;border-top:solid 1px #bbbbbb !important}
+#billingList tr.subsubtotal td,#billingList tr.subtotal td,#billingList th,#paymentList tr.subsubtotal td,#paymentList tr.subtotal td,#paymentList th{border-top:solid 1px #bbbbbb !important;border-bottom:solid 1px #bbbbbb}
+#billingList tbody td,#paymentList tbody td{padding-bottom:2px !important;padding-top:2px !important}
+#billingList tbody tr.first td,#billingList th,#paymentList tbody tr.first td,#paymentList th{padding-top:8px !important}
+#billingList tbody tr.last td,#billingList th,#paymentList tbody tr.last td,#paymentList th{padding-bottom:10px !important}
+#contentPanel ul.itinerary li.receipt table th{border-top:none !important}
+#contentPanel ul.itinerary li ul.tickets li{border:solid 1px #c7a946 !important}
+#contentPanel ul.itinerary li ul.tickets li.refund{border:solid 1px #9bbe4e !important}
+#contentPanel ul.itinerary li ul.tickets li ul li{border:none !important}
+#contentPanel ul.itinerary li div.fees{border-top:1px solid #008ed6}
+#note{float:left;margin:10px 0 0 0;padding:0 14px 12px 14px;width:693px;border:solid 1px #c7a946}
+#note h5{float:none;font-size:11px;margin-top:10px}
+#note p{float:none;font-size:11px;margin-top:4px;width:687px !important}
+#note em{background:#ff0;font-style:normal;padding:0 5px}
+#page{display:block;float:left;page-break-after:always;margin-top:1px;clear:both}
+#page.landscape #header h1{width:1090px !important}
+#page.landscape #note{width:1060px !important}
+#page.landscape #note p{width:1054px !important}
+#page.landscape div.message{width:1050px !important}
+#page.landscape h4.section{width:1070px !important}
+#page.landscape table.grid{width:1090px !important}
+#page.landscape ul.form3{width:1108px !important;margin-bottom:0 !important}
+#page.landscape ul.form3 li{padding-right:45px}
+#page.landscape #contentPanel ul.itinerary li.footer{width:1090px !important}
+#page.landscape #contentPanel ul.itinerary li.footer div.issuer{margin-right:183px !important}
+#page.landscape #contentPanel ul.itinerary li.footer div.contact{margin-right:184px !important}
+*{color:#080808 !important;page-break-after:avoid;page-break-before:avoid}
+body{margin:0;color:#444;font:13px Arial, Helvetica, sans-serif}
+form,fieldset{margin:0;padding:0;border:none}
+h1,h2,h3,h4,h5,h6,p{margin:0}
+h2{color:#555;font:27px DINWeb,Arial,Helvetica,sans-serif;font-weight:normal;line-height:1.2em;margin-bottom:18px}
+h2 em{font-style:normal}
+h4.section{margin-top:30px}
+ul.form3{width:761px !important;margin-bottom:0 !important}
+ul.form3 li{padding-right:45px}
+h4.total{font:11px "lucida console","courier new",courier,monospace}
+h4.total span.amount{width:125px !important}
+h4.total span.caption{width:210px !important}
+h4.credit{}
+h4.due{border-top:solid 1px #c7a946 !important}
+h4.section.related{float:none !important;clear:both !important}
+img{display:block;border:none}
+input.submit{color:#fff !important}
+table.grid td.bookingReference,table.grid th.bookingReference,table.grid td.reference,table.grid th.reference{width:45px}
+ul{padding:0;margin:0;list-style:none}
+.hidden{display:none !important}
