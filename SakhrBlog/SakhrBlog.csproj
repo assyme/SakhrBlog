@@ -1973,6 +1973,8 @@
     <Content Include="FlightsTemplate\Trip\Resource\Template\AFlights.html" />
     <Content Include="FlightsTemplate\Trip\Resource\Template\arrayedJsonRendering.js" />
     <Content Include="FlightsTemplate\Trip\Resource\Template\Flights.html" />
+    <Content Include="FlightsTemplate\Trip\Resource\Template\SFlights.html" />
+    <Content Include="FlightsTemplate\Trip\Resource\Template\structuredJsonRender.js" />
     <Content Include="index.aspx" />
     <Content Include="Index.html" />
     <Content Include="NewPost.aspx" />
@@ -2053,6 +2055,12 @@
     <Content Include="FlightsTemplate\Resource\Image\Chart\CodeBase\FIProgressBar.as" />
     <Content Include="FlightsTemplate\Resource\Image\Chart\FCF_Line.fla" />
     <Content Include="FlightsTemplate\Resource\Image\Icon\Information.gif.bak" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlightsTemplate\Trip\Resource\Template\struct.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlightsTemplate\Trip\Resource\Template\flights.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
