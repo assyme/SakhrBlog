@@ -2,20 +2,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
 </head>
     <body>
-        <p>
-            <a href="FlightsTemplate/Trip/Resource/Template/Flights.html">Static template.</a>
-        </p>
-        <p style="margin-top: 10%;">
-            <a href="FlightsTemplate/Trip/Resource/Template/AFlights.html">Arrayed JSON Rendering.</a>
-        </p>
-        <p style="margin-top: 10%;">
-            <a href="FlightsTemplate/Trip/Resource/Template/SFlights.html">Structered JSON Rendering.</a>
-        </p>
-        
-        <p style="margin-top: 5%">
-            <a href="Search.aspx">Interstitial test</a>
-        </p>
+        <div class="container">
+            <h3>Json Rendering Test Cases</h3>
+            <table class="table">
+                <tr>
+                    <th>Rows</th>
+                    <th>Pure Html</th>
+                    <th>Non Structured Json</th>
+                    <th>Structured Json</th>
+                </tr>
+                <tr>
+                    <td>400</td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/Flights.html">Static template.</a></td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/AFlights.html">Arrayed JSON Rendering.</a></td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/SFlights.html">Structered JSON Rendering.</a></td>
+                </tr>
+                <tr>
+                    <td>800</td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/Flights_800.html">Static template.</a></td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/AFlights_800.html">Arrayed JSON Rendering.</a></td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/SFlights_800.html">Structered JSON Rendering.</a></td>
+                </tr>
+                <tr>
+                    <td>1200</td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/Flights_1200.html">Static template.</a></td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/AFlights_1200.html">Arrayed JSON Rendering.</a></td>
+                    <td><a href="FlightsTemplate/Trip/Resource/Template/SFlights_1200.html">Structered JSON Rendering.</a></td>
+                </tr>
+
+            </table>
+
+
+
+
+            <p style="margin-top: 5%">
+                <a href="Search.aspx">Interstitial test</a>
+            </p>
+        </div>
     </body>
 </html>
