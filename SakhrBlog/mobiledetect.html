@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mobile Detect Demo</title>
+    <script src="//cdn.jsdelivr.net/mobile-detect.js/0.3.0/mobile-detect.min.js"></script>
+    <script src="FlightsTemplate/Resource/JavaScript/Default.js"></script>
+</head>
+    <body>
+        <div id="container">
+            <h1>Mobile Device Detection Demo</h1>
+            
+        </div>
+
+        <script type="text/javascript">
+            var md = new MobileDetect(window.navigator.userAgent);
+            if (md.mobile() || md.tablet()) {
+                $('#container').append('<p>mobile = ' + md.mobile() + '</p>');
+                $('#container').append('<p>phone = ' + md.phone() + '</p>');
+                $('#container').append('<p>mobile = ' + md.os() + '</p>');
+                $('#container').append('<p>Browser Agent = ' + md.userAgent() + '</p>');
+            } else {
+                $('#container').append('<p>Currently viewing in browser</p>');
+            }
+            
+
+        </script>
+    </body>
+</html>

@@ -1989,6 +1989,7 @@
     <Content Include="FlightsTemplate\Trip\Resource\Template\structuredJsonRender.js" />
     <Content Include="index.aspx" />
     <Content Include="Index.html" />
+    <Content Include="mobiledetect.html" />
     <Content Include="NewPost.aspx" />
     <Content Include="Results.aspx" />
     <Content Include="scripts\index.js" />
