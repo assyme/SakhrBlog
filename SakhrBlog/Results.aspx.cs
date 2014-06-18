@@ -18,13 +18,13 @@ namespace SakhrBlog
         protected override void Render(HtmlTextWriter writer)
         {
             base.Render(writer);
+        
             
-            Response.BufferOutput = false;
-            writer.Write("<p>Loading..</p>");
-            writer.Flush();
-            Thread.Sleep(10000);
+            
+            
+            
             writer.Write("<p>Result data loaded<p>");
-            writer.Flush();
+          
            
         
         }

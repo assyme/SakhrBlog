@@ -2,11 +2,13 @@
 $(document).ready(function () {
     //start rendering an arrayed json. 
     var elem = $('#resultPanel .flightPanel');
+    var rowText = "";
     //$.getJSON('flights.json', function(data) {
         data.Flights.forEach(function(flight,idx) {
-            var rowText = renderRow(flight);
-            elem.append(rowText);
+            rowText += renderRow(flight);
+            
         });
+        elem.append(rowText);
     //});
     
 
