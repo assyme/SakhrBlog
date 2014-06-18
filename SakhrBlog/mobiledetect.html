@@ -17,8 +17,9 @@
             if (md.mobile() || md.tablet()) {
                 $('#container').append('<p>mobile = ' + md.mobile() + '</p>');
                 $('#container').append('<p>phone = ' + md.phone() + '</p>');
-                $('#container').append('<p>mobile = ' + md.os() + '</p>');
+                $('#container').append('<p>os = ' + md.os() + '</p>');
                 $('#container').append('<p>Browser Agent = ' + md.userAgent() + '</p>');
+                $('#container').append('<p>tablet = ' + md.tablet() + '</p>');
             } else {
                 $('#container').append('<p>Currently viewing in browser</p>');
             }
