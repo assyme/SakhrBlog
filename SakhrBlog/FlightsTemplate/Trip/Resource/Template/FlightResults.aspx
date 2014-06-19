@@ -12,28 +12,67 @@
     <!--<link href="../../../Resource/Style/Default.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../Style/Trip.css" rel="stylesheet" type="text/css" media="all" />-->
     <script type="text/javascript" src="../../../Resource/JavaScript/Default.js"></script>
-
+    <script src="//cdn.jsdelivr.net/mobile-detect.js/0.3.0/mobile-detect.min.js"></script>
+    <link rel="stylesheet" href="" type="text/css" id="cssLink" />
     <!-- Layout for mobile devices. Do not copy this comment -->
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=320, user-scalable=no, minimal-ui">
-    <link href="../../../Resource/Style/DefaultMobile.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript">optimizeMobile();</script>
+    <script type="text/javascript">
+
+        var getLinkElement = function(filename) {
+            var fileref = document.createElement("link");
+            fileref.setAttribute("rel", "stylesheet");
+            fileref.setAttribute("type", "text/css");
+            fileref.setAttribute("href", filename);
+            return fileref;
+        }
+
+        var getMetaElement = function(name,content) {
+            var fileref = document.createElement("meta");
+            fileref.setAttribute("name", name);
+            fileref.setAttribute("content", content);
+            return fileref;
+        }
+
+        var md = new MobileDetect(window.navigator.userAgent);
+
+        var controlCss;
+        var cssLink = document.getElementById("cssLink");
+        if (md.mobile() != null) {
+            //its a mobile device. load mobile css
+            controlCss = "../../../Resource/Style/DefaultMobile.css";
+            cssLink.setAttribute("href", controlCss);
+            var meta = getMetaElement("apple-mobile-web-app-capable", "yes");
+            cssLink.parentNode.insertBefore(meta, cssLink);
+            meta = getMetaElement("viewport", "width=320, user-scalable=no, minimal-ui");
+            cssLink.parentNode.insertBefore(meta, cssLink);
+            optimizeMobile();
+        } else {
+            controlCss = "../../../Resource/Style/Default.css";
+            cssLink.setAttribute("href", controlCss);
+            var tripcss = getLinkElement("../Style/Trip.css");
+            cssLink.parentNode.insertBefore(tripcss, cssLink.nextSibling);
+        }
+
+        
+
+    </script>
+
     <style>
         #interstitial {
-           height:100%;
-			width:100%;
-			position:fixed;
-			left:0;
-			top:0;
-			z-index:1000 !important;
-			background-color:white;
-        }
-        #interstitial > .message {
+            height: 100%;
+            width: 100%;
             position: fixed;
-            top: 50%;
-            left:40%;
+            left: 0;
+            top: 0;
+            z-index: 1000 !important;
+            background-color: white;
         }
+
+            #interstitial > .message {
+                position: fixed;
+                top: 50%;
+                left: 40%;
+            }
     </style>
 </head>
 <body>
