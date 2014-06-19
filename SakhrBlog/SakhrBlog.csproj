@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adpage.html" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\site.css" />
     <Content Include="FlightsTemplate\Resource\Image\Background\bg.jpg" />
@@ -1949,6 +1950,7 @@
     <Content Include="FlightsTemplate\Resource\JavaScript\Default.jQuery.tinyCarousel.source.js" />
     <Content Include="FlightsTemplate\Resource\JavaScript\Default.js" />
     <Content Include="FlightsTemplate\Resource\JavaScript\Default.source.js" />
+    <Content Include="FlightsTemplate\Resource\JavaScript\flightresults.js" />
     <Content Include="FlightsTemplate\Resource\JavaScript\HotelDescription.js" />
     <Content Include="FlightsTemplate\Resource\JavaScript\HotelDescription.source.js" />
     <Content Include="FlightsTemplate\Resource\JavaScript\HotelListing.jQuery.sonar.source.js" />
@@ -1980,6 +1982,7 @@
     <Content Include="FlightsTemplate\Trip\Resource\JsonData\arrayedJson_1200.js" />
     <Content Include="FlightsTemplate\Trip\Resource\JsonData\arrayedJson_400.js" />
     <Content Include="FlightsTemplate\Trip\Resource\JsonData\arrayedJson_800.js" />
+    <Content Include="FlightsTemplate\Trip\Resource\Template\FlightResults.aspx" />
     <Content Include="FlightsTemplate\Trip\Resource\Template\Flights.html" />
     <Content Include="FlightsTemplate\Trip\Resource\Template\Flights_1200.html" />
     <Content Include="FlightsTemplate\Trip\Resource\Template\Flights_800.html" />
@@ -2006,6 +2009,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FlightsTemplate\Trip\Resource\Template\FlightResults.aspx.cs">
+      <DependentUpon>FlightResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlightsTemplate\Trip\Resource\Template\FlightResults.aspx.designer.cs">
+      <DependentUpon>FlightResults.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

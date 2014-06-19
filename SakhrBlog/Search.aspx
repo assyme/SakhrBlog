@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport" content="width=device-width"/>
     <title></title>
     <script type="text/javascript" src="FlightsTemplate/Resource/JavaScript/Default.js"></script>
 </head>
@@ -21,8 +22,7 @@
                 
             }
             advert.prototype.show = function(elem) {
-                $(elem).html('');
-                $(elem).html('Loading..');
+                window.location = elem;
             }
             return new advert();
         })();
@@ -30,7 +30,7 @@
 
         $('#btnPost').bind('click', function () {
             console.log("Execute get request");
-            advert.show('body');
+            advert.show('adpage.html');
             $.ajax({
                 type: "POST",
                 url: "Search.aspx/GetResults_POST",
@@ -45,7 +45,7 @@
         $('#btnGet').bind('click', function(e) {
             //e.preventDefaults();
             console.log("Execute get request");
-            advert.show('body');
+            advert.show('adpage.html');
             $.ajax({
                 type : "GET",
                 url: "Search.aspx/GetResults",
